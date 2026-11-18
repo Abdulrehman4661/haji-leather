@@ -1,0 +1,583 @@
+/* ==========================================================================
+   HAJI LEATHER — MOBILE RESPONSIVE STYLESHEET
+   Clean, Fast, Modern Artisan Aesthetic
+   ========================================================================== */
+
+:root {
+  --color-bg: #0c0a08;
+  --color-card: #15120f;
+  --color-card-hover: #1e1915;
+  --color-gold: #cba265;
+  --color-gold-light: #e5c593;
+  --color-border: rgba(203, 162, 101, 0.22);
+  --color-border-subtle: rgba(255, 255, 255, 0.08);
+
+  --color-text-main: #f5f0ea;
+  --color-text-muted: #aca398;
+  --color-text-dim: #736b61;
+
+  --color-whatsapp: #25D366;
+  --color-whatsapp-hover: #2ced76;
+  --color-instagram: #E1306C;
+  --color-instagram-hover: #fa387a;
+
+  --font-serif: 'Cinzel', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  --container-max: 1140px;
+  --transition: all 0.25s ease;
+}
+
+/* Base Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  background-color: var(--color-bg);
+  color: var(--color-text-main);
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  background-color: var(--color-bg);
+  overflow-x: hidden;
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.container {
+  width: 92%;
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-gold {
+  color: var(--color-gold);
+}
+
+/* ==========================================================================
+   Clean, Accurate Mobile-Optimized Header
+   ========================================================================== */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: rgba(12, 10, 8, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--color-border);
+  padding: 0.65rem 0;
+  width: 100%;
+}
+
+.header-container {
+  width: 92%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-shrink: 0;
+}
+
+.header-logo-img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1.5px solid var(--color-gold);
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(203, 162, 101, 0.3);
+}
+
+.header-brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-name {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.header-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.45rem 0.85rem;
+  border-radius: 20px;
+  transition: var(--transition);
+  white-space: nowrap;
+}
+
+.btn-wa {
+  background-color: var(--color-whatsapp);
+  color: #041208;
+}
+
+.btn-wa:hover {
+  background-color: var(--color-whatsapp-hover);
+  transform: translateY(-1px);
+}
+
+.btn-ig {
+  background: linear-gradient(45deg, #f09433 0%, #dc2743 50%, #bc1888 100%);
+  color: #ffffff;
+}
+
+.btn-ig:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.1);
+}
+
+/* ==========================================================================
+   Product Gallery Section
+   ========================================================================== */
+.gallery-section {
+  padding: 3.5rem 0 5rem 0;
+}
+
+.gallery-header {
+  max-width: 680px;
+  margin: 0 auto 3rem auto;
+}
+
+.gallery-title {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  color: #fff;
+  margin-bottom: 1.4rem; /* Clear breathing space under HAJI LEATHER */
+}
+
+.gallery-collections-title {
+  font-family: var(--font-sans);
+  font-size: 1.35rem;
+  font-weight: 900; /* Bold Collections */
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  display: inline-block;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.gallery-collections-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 48px;
+  height: 2px;
+  background-color: var(--color-gold);
+  border-radius: 2px;
+}
+
+/* Products Grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.product-card {
+  background: var(--color-card);
+  border: 1px dashed var(--color-border);
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+}
+
+.product-card:hover {
+  border-color: var(--color-gold);
+  background: var(--color-card-hover);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.product-img-box {
+  height: 210px;
+  background: #0f0c0a;
+  border-bottom: 1px dashed rgba(203, 162, 101, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+}
+
+.placeholder-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.45rem;
+}
+
+.icon-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(203, 162, 101, 0.1);
+  color: var(--color-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.space-tag {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-gold-light);
+}
+
+.space-note {
+  font-size: 0.75rem;
+  color: var(--color-text-dim);
+}
+
+.product-details {
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.item-title {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.4rem;
+}
+
+.item-desc {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
+  flex-grow: 1;
+}
+
+.item-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--color-border-subtle);
+  padding-top: 0.8rem;
+  gap: 0.5rem;
+}
+
+.status-pill {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-gold);
+  background: rgba(203, 162, 101, 0.12);
+  padding: 0.15rem 0.5rem;
+  border-radius: 3px;
+}
+
+.wa-order-btn {
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--color-whatsapp);
+  white-space: nowrap;
+}
+
+.wa-order-btn:hover {
+  color: var(--color-whatsapp-hover);
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   Quick Query Card
+   ========================================================================== */
+.query-cta-card {
+  background: linear-gradient(145deg, #16120e 0%, #100d0a 100%);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.8rem;
+  flex-wrap: wrap;
+}
+
+.query-cta-text h3 {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 0.35rem;
+}
+
+.query-cta-text p {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.query-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+}
+
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.75rem 1.3rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  transition: var(--transition);
+}
+
+.cta-wa {
+  background-color: var(--color-whatsapp);
+  color: #041208;
+}
+
+.cta-wa:hover {
+  background-color: var(--color-whatsapp-hover);
+  transform: translateY(-2px);
+}
+
+.cta-ig {
+  background: linear-gradient(45deg, #f09433 0%, #dc2743 50%, #bc1888 100%);
+  color: #fff;
+}
+
+.cta-ig:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+.site-footer {
+  background-color: #060504;
+  border-top: 1px solid var(--color-border);
+  padding: 2.5rem 0;
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.footer-brand-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.footer-logo-thumb {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--color-gold);
+}
+
+.footer-brand-title {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: #fff;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+}
+
+.footer-links a:hover {
+  color: var(--color-gold);
+}
+
+.sep {
+  color: var(--color-gold);
+}
+
+.copyright {
+  font-size: 0.72rem;
+  color: var(--color-text-dim);
+}
+
+/* ==========================================================================
+   Floating WhatsApp Button
+   ========================================================================== */
+.floating-wa-btn {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  z-index: 9999;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: var(--color-whatsapp);
+  color: #041208;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 18px rgba(37, 211, 102, 0.45);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.floating-wa-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 24px rgba(37, 211, 102, 0.65);
+}
+
+/* ==========================================================================
+   Responsive Media Queries (Carefully tuned for Mobile)
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-section {
+    padding: 2.5rem 0 4rem 0;
+  }
+  .gallery-title {
+    font-size: 2.1rem;
+    margin-bottom: 1.2rem;
+  }
+  .query-cta-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.8rem 1.4rem;
+  }
+  .query-buttons {
+    width: 100%;
+    flex-direction: column;
+  }
+  .cta-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 540px) {
+  /* Mobile Header Precision */
+  .header-container {
+    gap: 0.4rem;
+  }
+  .header-logo-img {
+    width: 36px;
+    height: 36px;
+  }
+  .brand-name {
+    font-size: 0.95rem;
+    letter-spacing: 0.06em;
+  }
+  .header-actions {
+    gap: 0.35rem;
+  }
+  .header-btn {
+    padding: 0.38rem 0.6rem;
+    font-size: 0.72rem;
+  }
+  .header-btn .btn-text {
+    display: none; /* Shows clean icons on narrow mobile screens for maximum room */
+  }
+  .header-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  /* Single Column Product Grid */
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+  .product-img-box {
+    height: 180px;
+  }
+  .gallery-title {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+  .gallery-collections-title {
+    font-size: 1.15rem;
+    letter-spacing: 0.22em;
+  }
+  .floating-wa-btn {
+    bottom: 16px;
+    right: 16px;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (max-width: 360px) {
+  .brand-name {
+    font-size: 0.85rem;
+  }
+  .header-logo-img {
+    width: 32px;
+    height: 32px;
+  }
+}
