@@ -826,19 +826,19 @@ button {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 18px;
+  gap: clamp(28px, 5vw, 64px);
   width: 100%;
-  max-width: 1140px;
+  max-width: 900px;
   position: relative;
   margin: 0 auto;
 }
 
 @media (max-width: 1024px) {
   .rack-track {
-    justify-content: flex-start;
-    width: max-content;
-    padding: 0 24px;
-    gap: 14px;
+    justify-content: center;
+    width: 100%;
+    padding: 0 16px;
+    gap: clamp(16px, 4vw, 36px);
   }
 }
 

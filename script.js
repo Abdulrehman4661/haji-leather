@@ -1205,7 +1205,7 @@ document.addEventListener('DOMContentLoaded', () => {
       };
     });
 
-    // Resize calculation for 6 compact Trending Pelle Pelle pieces on the rack
+    // Resize calculation for compact Trending Pelle Pelle pieces on the rack
     function calculateRackDimensions() {
       if (!rackTrack) return;
       const isMobile = window.innerWidth < 800;
@@ -1213,8 +1213,9 @@ document.addEventListener('DOMContentLoaded', () => {
       rackTrack.style.height = `${height}px`;
 
       const parentWidth = rackTrack.parentElement ? rackTrack.parentElement.clientWidth : window.innerWidth * 0.9;
-      const sideWidth = isMobile ? 74 : Math.min(125, Math.max(80, Math.floor((parentWidth - 110) / garments.length)));
-      const frontWidth = isMobile ? 210 : Math.min(290, Math.floor(2.6 * sideWidth));
+      const isTwoPieces = garments.length <= 2;
+      const sideWidth = isMobile ? (isTwoPieces ? 100 : 74) : (isTwoPieces ? 135 : Math.min(125, Math.max(80, Math.floor((parentWidth - 110) / garments.length))));
+      const frontWidth = isMobile ? (isTwoPieces ? 230 : 210) : (isTwoPieces ? 310 : Math.min(290, Math.floor(2.6 * sideWidth)));
 
       garments.forEach(g => {
         g.sideWidth = sideWidth;
