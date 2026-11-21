@@ -1505,9 +1505,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Hero Feature Jacket Quick View helper
-  window.activeHeroFeatureId = 'HL-PP011';
+  window.activeHeroFeatureId = 'HL-PP045';
   window.openHeroFeatureQuickView = function() {
-    openProductQuickView(window.activeHeroFeatureId || 'HL-PP011');
+    openProductQuickView(window.activeHeroFeatureId || 'HL-PP045');
   };
 
   function updateCategoryCounts() {
