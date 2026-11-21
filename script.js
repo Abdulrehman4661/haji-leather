@@ -1530,10 +1530,152 @@ document.addEventListener('DOMContentLoaded', () => {
     if (countPlush) countPlush.textContent = rawProducts.filter(p => p.category === 'Plush & Encrusted').length;
   }
 
+  // ==========================================================================
+  // 11. CINEMATIC HERO CAMPAIGN SLIDER (3 FEATURED PELLE PELLE SLIDES)
+  // ==========================================================================
+  function initHeroCampaignSlider() {
+    const sliderSection = document.getElementById('heroSlider');
+    if (!sliderSection) return;
+
+    const slides = Array.from(sliderSection.querySelectorAll('.hero-slide'));
+    const dots = Array.from(sliderSection.querySelectorAll('.hero-dot'));
+    const prevBtn = document.getElementById('heroSlidePrev');
+    const nextBtn = document.getElementById('heroSlideNext');
+    const counterCurrent = document.getElementById('heroCounterCurrent');
+
+    if (slides.length <= 1) return;
+
+    let currentIndex = 0;
+    let autoPlayTimer = null;
+    const intervalMs = 5000;
+
+    function goToSlide(index) {
+      if (index < 0) {
+        currentIndex = slides.length - 1;
+      } else if (index >= slides.length) {
+        currentIndex = 0;
+      } else {
+        currentIndex = index;
+      }
+
+      slides.forEach((slide, idx) => {
+        if (idx === currentIndex) {
+          slide.classList.add('active');
+        } else {
+          slide.classList.remove('active');
+        }
+      });
+
+      dots.forEach((dot, idx) => {
+        if (idx === currentIndex) {
+          dot.classList.add('active');
+        } else {
+          dot.classList.remove('active');
+        }
+      });
+
+      if (counterCurrent) {
+        counterCurrent.textContent = String(currentIndex + 1).padStart(2, '0');
+      }
+    }
+
+    function nextSlide() {
+      goToSlide(currentIndex + 1);
+    }
+
+    function prevSlide() {
+      goToSlide(currentIndex - 1);
+    }
+
+    function startAutoPlay() {
+      stopAutoPlay();
+      autoPlayTimer = setInterval(nextSlide, intervalMs);
+    }
+
+    function stopAutoPlay() {
+      if (autoPlayTimer) {
+        clearInterval(autoPlayTimer);
+        autoPlayTimer = null;
+      }
+    }
+
+    // Attach button listeners
+    if (nextBtn) {
+      nextBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        nextSlide();
+        startAutoPlay();
+      });
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        prevSlide();
+        startAutoPlay();
+      });
+    }
+
+    // Attach dot listeners
+    dots.forEach((dot, idx) => {
+      dot.addEventListener('click', (e) => {
+        e.preventDefault();
+        goToSlide(idx);
+        startAutoPlay();
+      });
+    });
+
+    // Pause on hover
+    sliderSection.addEventListener('mouseenter', stopAutoPlay);
+    sliderSection.addEventListener('mouseleave', startAutoPlay);
+
+    // Touch Swipe Detection for mobile devices
+    let touchStartX = 0;
+    let touchStartY = 0;
+    sliderSection.addEventListener('touchstart', (e) => {
+      if (e.touches && e.touches[0]) {
+        touchStartX = e.touches[0].clientX;
+        touchStartY = e.touches[0].clientY;
+        stopAutoPlay();
+      }
+    }, { passive: true });
+
+    sliderSection.addEventListener('touchend', (e) => {
+      if (e.changedTouches && e.changedTouches[0]) {
+        const diffX = e.changedTouches[0].clientX - touchStartX;
+        const diffY = e.changedTouches[0].clientY - touchStartY;
+        if (Math.abs(diffX) > 40 && Math.abs(diffX) > Math.abs(diffY)) {
+          if (diffX < 0) {
+            nextSlide();
+          } else {
+            prevSlide();
+          }
+        }
+      }
+      startAutoPlay();
+    }, { passive: true });
+
+    // Keyboard navigation when slider area is focused
+    sliderSection.setAttribute('tabindex', '0');
+    sliderSection.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') {
+        prevSlide();
+        startAutoPlay();
+      } else if (e.key === 'ArrowRight') {
+        nextSlide();
+        startAutoPlay();
+      }
+    });
+
+    // Start playback
+    startAutoPlay();
+  }
+
   // Boot
   updateCategoryCounts();
   renderProducts();
   updateCartUI();
   updateWishlistUI();
   initVarsityWardrobeRack();
+  initHeroCampaignSlider();
 });
