@@ -301,10 +301,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Links with data-cat attribute
-  document.querySelectorAll('[data-cat]').forEach(el => {
+  // Links with data-cat or data-category attribute
+  document.querySelectorAll('[data-cat], [data-category]').forEach(el => {
+    if (el.classList.contains('cat-pill')) return; // Handled by categoryTabs listener
     el.addEventListener('click', () => {
-      const cat = el.getAttribute('data-cat');
+      const cat = el.getAttribute('data-cat') || el.getAttribute('data-category');
       if (cat) {
         currentCategory = cat;
         if (categoryTabs) {
@@ -1008,8 +1009,297 @@ document.addEventListener('DOMContentLoaded', () => {
       .replace(/'/g, '&#039;');
   }
 
+  // ==========================================================================
+  // 10. DODGEHELL-STYLE INTERACTIVE VARSITY CLOTHES RACK PHYSICS ENGINE
+  // ==========================================================================
+  function initVarsityWardrobeRack() {
+    const rackTrack = document.getElementById('rackTrack');
+    const wardrobeStage = document.getElementById('wardrobeStage');
+    const rackStatusLine = document.getElementById('rackStatusLine');
+    if (!rackTrack) return;
+
+    const slotElements = Array.from(rackTrack.querySelectorAll('.garment-slot'));
+    if (!slotElements.length) return;
+
+    const defaultSubline = 'Handcrafted Wool & Leather Letterman Jackets — Hover or tap any jacket to inspect & quick view';
+
+    // Garments physics state
+    const garments = slotElements.map((slot, index) => {
+      const pendulum = slot.querySelector('.garment-pendulum');
+      const sideWrap = slot.querySelector('.photo-side-wrap');
+      const frontWrap = slot.querySelector('.photo-front-wrap');
+      const tagContainer = slot.querySelector('.tag-container');
+      const tagCard = slot.querySelector('.tag-card');
+      const id = slot.getAttribute('data-id');
+      const ariaLabel = slot.getAttribute('aria-label') || '';
+
+      // Extract title & price for status line
+      let name = 'Varsity Jacket';
+      let price = '$285';
+      const labelMatch = ariaLabel.match(/: (.*?), Price: (.*)/);
+      if (labelMatch) {
+        name = labelMatch[1];
+        price = labelMatch[2];
+      }
+
+      return {
+        index,
+        id,
+        name,
+        price,
+        slot,
+        pendulum,
+        sideWrap,
+        frontWrap,
+        tagContainer,
+        tagCard,
+        a: (index % 2 === 0 ? 1 : -1) * (6 + (index * 1.5) % 6), // Initial slight tilt
+        v: 0,
+        tagAngle: 0,
+        k: 0,
+        targetK: 0,
+        isHovered: false,
+        isLanding: true,
+        sideWidth: 88,
+        frontWidth: 245
+      };
+    });
+
+    // Resize calculation matching Dodgehell
+    function calculateRackDimensions() {
+      if (!rackTrack) return;
+      const isMobile = window.innerWidth < 800;
+      const stageHeight = wardrobeStage ? wardrobeStage.clientHeight : window.innerHeight * 0.75;
+      const height = isMobile ? 340 : Math.min(540, Math.max(300, 0.58 * stageHeight));
+      rackTrack.style.height = `${height}px`;
+
+      const parentWidth = rackTrack.parentElement ? rackTrack.parentElement.clientWidth : window.innerWidth * 0.9;
+      const sideWidth = isMobile ? 86 : Math.min(98, Math.max(64, Math.floor((parentWidth - 260) / garments.length)));
+      const frontWidth = isMobile ? 220 : Math.min(270, Math.floor(2.85 * sideWidth));
+
+      garments.forEach(g => {
+        g.sideWidth = sideWidth;
+        g.frontWidth = frontWidth;
+        if (g.k === 0) {
+          g.slot.style.width = `${g.sideWidth}px`;
+          g.slot.style.marginLeft = '0px';
+          g.slot.style.marginRight = '0px';
+        }
+      });
+    }
+
+    calculateRackDimensions();
+    window.addEventListener('resize', calculateRackDimensions);
+
+    // Physics Animation Loop
+    let isLoopRunning = false;
+    let lastTime = performance.now();
+
+    function triggerPhysicsLoop() {
+      if (!isLoopRunning) {
+        isLoopRunning = true;
+        lastTime = performance.now();
+        requestAnimationFrame(updatePhysics);
+      }
+    }
+
+    function updatePhysics(now) {
+      const deltaSec = Math.min((now - lastTime) / 1000, 0.1);
+      lastTime = now;
+
+      let keepRunning = false;
+
+      // Sub-stepping for numerical stability
+      let remaining = deltaSec;
+      while (remaining > 0.0001) {
+        const step = Math.min(remaining, 0.016);
+        garments.forEach(g => {
+          if (!g.isLanding) {
+            // Spring-mass-damper: acceleration = -30*angle - 2.4*velocity
+            g.v += (-30 * g.a - 2.4 * g.v) * step;
+            g.a += g.v * step;
+            // Angle bounds with gentle bounce
+            if (g.a > 13) {
+              g.a = 13;
+              g.v = -0.3 * g.v;
+            } else if (g.a < -13) {
+              g.a = -13;
+              g.v = -0.3 * g.v;
+            }
+          }
+        });
+        remaining -= step;
+      }
+
+      const tagLag = 1 - Math.exp(-7 * deltaSec);
+      const hoverLerp = 1 - Math.exp(-deltaSec / 0.22);
+
+      garments.forEach(g => {
+        // Tag angle lag tracking
+        g.tagAngle += (g.a - g.tagAngle) * tagLag;
+        const tagDiff = g.tagAngle - g.a;
+
+        // Hover expand/collapse progress
+        if (Math.abs(g.targetK - g.k) > 0.001) {
+          g.k += (g.targetK - g.k) * hoverLerp;
+          keepRunning = true;
+        } else {
+          g.k = g.targetK;
+        }
+
+        // Smoothstep curve for expansion
+        const s = g.k * g.k * (3 - 2 * g.k);
+        const currentWidth = g.sideWidth + (g.frontWidth - g.sideWidth) * s;
+        const currentMargin = 8 * s;
+
+        g.slot.style.width = `${currentWidth}px`;
+        g.slot.style.marginLeft = `${currentMargin}px`;
+        g.slot.style.marginRight = `${currentMargin}px`;
+
+        // Cross-fade side to front
+        if (s <= 0.48) {
+          g.sideWrap.style.display = 'flex';
+          g.sideWrap.style.opacity = '1';
+          g.sideWrap.style.transform = `perspective(900px) rotateY(${-(s / 0.48 * 88)}deg)`;
+          g.frontWrap.style.display = 'none';
+          g.frontWrap.style.opacity = '0';
+        } else {
+          g.sideWrap.style.display = 'none';
+          g.sideWrap.style.opacity = '0';
+          const f = (s - 0.48) / 0.52;
+          g.frontWrap.style.display = 'flex';
+          g.frontWrap.style.opacity = `${f}`;
+          g.frontWrap.style.transform = `scale(${0.88 + 0.12 * f})`;
+        }
+
+        // Pendulum 3D rotation
+        g.pendulum.style.transform = `rotate(${g.a.toFixed(2)}deg) rotateY(${(-14 * (1 - s)).toFixed(2)}deg)`;
+
+        // Tag swinging
+        if (g.tagContainer) {
+          g.tagContainer.style.transform = `rotate(${(-22 + tagDiff).toFixed(2)}deg)`;
+        }
+        if (g.tagCard) {
+          g.tagCard.style.transform = `rotate(${(14 - 0.5 * tagDiff).toFixed(2)}deg)`;
+        }
+
+        // Continue running if moving
+        if (Math.abs(g.v) > 0.02 || Math.abs(g.a) > 0.02 || Math.abs(tagDiff) > 0.02) {
+          keepRunning = true;
+        }
+      });
+
+      if (keepRunning) {
+        requestAnimationFrame(updatePhysics);
+      } else {
+        isLoopRunning = false;
+      }
+    }
+
+    // Hover interactions
+    function onSlotEnter(targetIndex) {
+      garments.forEach((g, idx) => {
+        if (idx !== targetIndex) {
+          g.targetK = 0;
+          g.isHovered = false;
+          g.slot.classList.remove('active');
+        }
+      });
+
+      const current = garments[targetIndex];
+      if (!current) return;
+
+      current.targetK = 1;
+      current.isHovered = true;
+      current.slot.classList.add('active');
+
+      // Nudge adjacent jackets so rack feels connected
+      if (targetIndex > 0) garments[targetIndex - 1].v += 15;
+      if (targetIndex < garments.length - 1) garments[targetIndex + 1].v -= 15;
+
+      if (rackStatusLine) {
+        rackStatusLine.textContent = `${current.name} — ${current.price} (Click to open Quick View)`;
+      }
+
+      triggerPhysicsLoop();
+    }
+
+    function onSlotLeave(targetIndex) {
+      const current = garments[targetIndex];
+      if (current) {
+        current.targetK = 0;
+        current.isHovered = false;
+        current.slot.classList.remove('active');
+      }
+
+      if (rackStatusLine) {
+        rackStatusLine.textContent = defaultSubline;
+      }
+
+      triggerPhysicsLoop();
+    }
+
+    // Attach Event Listeners to each slot
+    garments.forEach((g, idx) => {
+      g.slot.addEventListener('mouseenter', () => onSlotEnter(idx));
+      g.slot.addEventListener('mouseleave', () => onSlotLeave(idx));
+      g.slot.addEventListener('focus', () => onSlotEnter(idx));
+      g.slot.addEventListener('blur', () => onSlotLeave(idx));
+
+      // Click or Tap
+      g.slot.addEventListener('click', (e) => {
+        e.preventDefault();
+        // If on mobile and not hovered yet, activate on first tap
+        if (window.innerWidth < 800 && !g.isHovered) {
+          onSlotEnter(idx);
+          return;
+        }
+        openProductQuickView(g.id);
+      });
+
+      g.slot.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          openProductQuickView(g.id);
+        }
+      });
+    });
+
+    // Scroll inertia sway
+    let lastScrollY = window.scrollY;
+    let lastScrollTime = performance.now();
+    window.addEventListener('scroll', () => {
+      const now = performance.now();
+      if (now - lastScrollTime >= 90) {
+        const currentY = window.scrollY;
+        const speed = (currentY - lastScrollY) / Math.max((now - lastScrollTime) / 1000, 0.05);
+        lastScrollY = currentY;
+        lastScrollTime = now;
+
+        if (Math.abs(speed) > 20) {
+          const impulse = Math.min(Math.max(0.015 * speed, -10), 10);
+          garments.forEach((g, i) => {
+            g.v += impulse * Math.sin(2.2 * i + 1);
+          });
+          triggerPhysicsLoop();
+        }
+      }
+    }, { passive: true });
+
+    // Initial Staggered Landing Drop
+    garments.forEach((g, i) => {
+      setTimeout(() => {
+        g.slot.classList.add('has-landed');
+        g.isLanding = false;
+        g.v += (i % 2 === 0 ? 1 : -1) * (20 + (i * 3) % 12);
+        triggerPhysicsLoop();
+      }, 90 * i + 150);
+    });
+  }
+
   // Boot
   renderProducts();
   updateCartUI();
   updateWishlistUI();
+  initVarsityWardrobeRack();
 });

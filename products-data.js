@@ -1,5 +1,210 @@
-// Haji Leather Catalog - Scraped & Curated from Luxwearz
+// Haji Leather Catalog - Scraped from Luxwearz + Dodgehell Varsity Collection
 window.HAJI_PRODUCTS = [
+  {
+    "id": "HL-V01",
+    "name": "BISAG Maroon Letterman Varsity Jacket",
+    "category": "Varsity Jackets",
+    "price": 285,
+    "originalPrice": 385,
+    "image": "cloth-hanging/jacket_01_maroon_front.png",
+    "sideImage": "cloth-hanging/jacket_01_maroon_side.png",
+    "images": [
+      "cloth-hanging/jacket_01_maroon_front.png",
+      "cloth-hanging/jacket_01_maroon_side.png"
+    ],
+    "description": "Traditional 24oz heavy Melton wool body with genuine top-grain cowhide leather sleeves, solid snap buttons, and striped knit ribbed collar and cuffs.",
+    "rating": 5,
+    "reviewCount": 38,
+    "brand": "Haji Leather Atelier",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ],
+    "inStock": true
+  },
+  {
+    "id": "HL-V02",
+    "name": "Navy Blue Collegiate Varsity Jacket",
+    "category": "Varsity Jackets",
+    "price": 260,
+    "originalPrice": 350,
+    "image": "cloth-hanging/jacket_02_navy_front.png",
+    "sideImage": "cloth-hanging/jacket_02_navy_side.png",
+    "images": [
+      "cloth-hanging/jacket_02_navy_front.png",
+      "cloth-hanging/jacket_02_navy_side.png"
+    ],
+    "description": "Deep collegiate navy Melton wool with cream full-grain leather arms, double-welt pockets, and diamond quilted thermal lining.",
+    "rating": 4.9,
+    "reviewCount": 29,
+    "brand": "Haji Leather Atelier",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "inStock": true
+  },
+  {
+    "id": "HL-V03",
+    "name": "Chenille Patches Multi-Color Varsity Jacket",
+    "category": "Varsity Jackets",
+    "price": 295,
+    "originalPrice": 395,
+    "image": "cloth-hanging/jacket_03_patches_front.png",
+    "sideImage": "cloth-hanging/jacket_03_patches_side.png",
+    "images": [
+      "cloth-hanging/jacket_03_patches_front.png",
+      "cloth-hanging/jacket_03_patches_side.png"
+    ],
+    "description": "Bespoke letterman featuring custom chenille embroidery patches, chain-stitched typography, and premium cowhide contrast leather trim.",
+    "rating": 5,
+    "reviewCount": 42,
+    "brand": "Haji Leather Atelier",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "inStock": true
+  },
+  {
+    "id": "HL-V04",
+    "name": "Powder Blue Leather Sleeve Varsity Jacket",
+    "category": "Varsity Jackets",
+    "price": 275,
+    "originalPrice": 370,
+    "image": "cloth-hanging/jacket_04_powderblue_front.png",
+    "sideImage": "cloth-hanging/jacket_04_powderblue_side.png",
+    "images": [
+      "cloth-hanging/jacket_04_powderblue_front.png",
+      "cloth-hanging/jacket_04_powderblue_side.png"
+    ],
+    "description": "Soft powder blue wool body paired with pure white drum-dyed cowhide sleeves and retro striped knit trims.",
+    "rating": 4.8,
+    "reviewCount": 21,
+    "brand": "Haji Leather Atelier",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "inStock": true
+  },
+  {
+    "id": "HL-V05",
+    "name": "Purple & Cream Hooded Letterman Varsity",
+    "category": "Varsity Jackets",
+    "price": 290,
+    "originalPrice": 390,
+    "image": "cloth-hanging/jacket_05_purple_front.png",
+    "sideImage": "cloth-hanging/jacket_05_purple_side.png",
+    "images": [
+      "cloth-hanging/jacket_05_purple_front.png",
+      "cloth-hanging/jacket_05_purple_side.png"
+    ],
+    "description": "Custom detachable fleece hood, deep imperial purple wool, warm cream leather sleeves, and interior phone chest pocket.",
+    "rating": 4.9,
+    "reviewCount": 26,
+    "brand": "Haji Leather Atelier",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ],
+    "inStock": true
+  },
+  {
+    "id": "HL-V06",
+    "name": "Brooklyn Red & Blue Varsity Jacket",
+    "category": "Varsity Jackets",
+    "price": 270,
+    "originalPrice": 365,
+    "image": "cloth-hanging/jacket_06_redblue_front.png",
+    "sideImage": "cloth-hanging/jacket_06_redblue_side.png",
+    "images": [
+      "cloth-hanging/jacket_06_redblue_front.png",
+      "cloth-hanging/jacket_06_redblue_side.png"
+    ],
+    "description": "Iconic streetwear varsity silhouette with dual-tone arms, high-density ribbed waistband, and custom brass snap buttons.",
+    "rating": 4.8,
+    "reviewCount": 33,
+    "brand": "Haji Leather Atelier",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL"
+    ],
+    "inStock": true
+  },
+  {
+    "id": "HL-V07",
+    "name": "Gold Satin Baseball Varsity Bomber",
+    "category": "Varsity Jackets",
+    "price": 250,
+    "originalPrice": 340,
+    "image": "cloth-hanging/jacket_07_satin_front.png",
+    "sideImage": "cloth-hanging/jacket_07_satin_side.png",
+    "images": [
+      "cloth-hanging/jacket_07_satin_front.png",
+      "cloth-hanging/jacket_07_satin_side.png"
+    ],
+    "description": "Glossy heavyweight vintage gold satin finish with black & white athletic ribbed trims and lightweight quilted lining.",
+    "rating": 4.9,
+    "reviewCount": 19,
+    "brand": "Haji Leather Atelier",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "inStock": true
+  },
+  {
+    "id": "HL-V08",
+    "name": "Vintage Grey & Navy Leather Varsity",
+    "category": "Varsity Jackets",
+    "price": 280,
+    "originalPrice": 380,
+    "image": "cloth-hanging/jacket_08_vintage_front.png",
+    "sideImage": "cloth-hanging/jacket_08_vintage_side.png",
+    "images": [
+      "cloth-hanging/jacket_08_vintage_front.png",
+      "cloth-hanging/jacket_08_vintage_side.png"
+    ],
+    "description": "Heather grey 24oz wool torso with dark navy full-grain leather arms, antique brass hardware, and collegiate athletic cut.",
+    "rating": 5,
+    "reviewCount": 35,
+    "brand": "Haji Leather Atelier",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "2XL",
+      "3XL"
+    ],
+    "inStock": true
+  },
   {
     "id": "HL-101",
     "name": "Vanson Leather Technical SportRider Men’s Leather Motorcycle Pants – Black Competition-Weight Cowhide",
