@@ -1,4 +1,3 @@
-// Haji Leather Catalog - Scraped from Luxwearz + Dodgehell Varsity Collection
 window.HAJI_PRODUCTS = [
   {
     "id": "HL-V01",
@@ -156,17 +155,17 @@ window.HAJI_PRODUCTS = [
   },
   {
     "id": "HL-V07",
-    "name": "Gold Satin Baseball Varsity Bomber",
-    "category": "Varsity Jackets",
-    "price": 250,
-    "originalPrice": 340,
-    "image": "cloth-hanging/jacket_07_satin_front.png",
-    "sideImage": "cloth-hanging/jacket_07_satin_side.png",
+    "name": "Gold Satin Baseball Varsity Bomber Jacket",
+    "category": "Bomber & Flight",
+    "price": 255,
+    "originalPrice": 350,
+    "image": "cloth-hanging/rack_06_satinbomber_front.png",
+    "sideImage": "cloth-hanging/rack_06_satinbomber_side.png",
     "images": [
-      "cloth-hanging/jacket_07_satin_front.png",
-      "cloth-hanging/jacket_07_satin_side.png"
+      "cloth-hanging/rack_06_satinbomber_front.png",
+      "cloth-hanging/rack_06_satinbomber_side.png"
     ],
-    "description": "Glossy heavyweight vintage gold satin finish with black & white athletic ribbed trims and lightweight quilted lining.",
+    "description": "Heavyweight satin finish athletic baseball bomber jacket with contrast striped ribbed cuffs, collar, and waist, finished with enamel snap closures.",
     "rating": 4.9,
     "reviewCount": 19,
     "brand": "Haji Leather Atelier",
@@ -327,19 +326,17 @@ window.HAJI_PRODUCTS = [
   },
   {
     "id": "HL-105",
-    "name": "Vanson Leather Satellite MK2 SportRider Men’s Leather Sport Motorcycle Jacket – Reflective Piping",
+    "name": "Vanson SportRider Heavy Cowhide Biker Jacket",
     "category": "Biker & Moto",
-    "price": 945,
-    "originalPrice": 1276,
-    "image": "https://store.luxwearz.com/wp-content/uploads/2026/10/satellite-mk2-sportrider-gallery-1-original-430a61183d.webp",
+    "price": 895,
+    "originalPrice": 1095,
+    "image": "cloth-hanging/rack_02_biker_front.png",
     "images": [
-      "https://store.luxwearz.com/wp-content/uploads/2026/10/satellite-mk2-sportrider-gallery-1-original-430a61183d.webp",
-      "https://store.luxwearz.com/wp-content/uploads/2026/10/satellite-mk2-sportrider-gallery-2-original-42dec398c2.webp",
-      "https://store.luxwearz.com/wp-content/uploads/2026/10/satellite-mk2-sportrider-gallery-3-original-4d0886e9e2.webp",
-      "https://store.luxwearz.com/wp-content/uploads/2026/10/satellite-mk2-sportrider-gallery-4-original-df455221e6.webp",
-      "https://store.luxwearz.com/wp-content/uploads/2026/10/satellite-mk2-sportrider-gallery-5-original-b4bbc3a429.webp"
+      "cloth-hanging/rack_02_biker_front.png",
+      "cloth-hanging/rack_02_biker_side.png",
+      "https://store.luxwearz.com/wp-content/uploads/2026/10/satellite-mk2-sportrider-gallery-1-original-430a61183d.webp"
     ],
-    "description": "Discover the SATELLITE MK2 SPORTRIDER by VANSON LEATHER. Handcrafted from competition-grade genuine leather with heavy-duty hardware. Free US delivery $399+.",
+    "description": "Competition-weight black cowhide motorcycle leather jacket with asymmetrical heavy-gauge brass zippers, dual zippered cuffs, and cafe racer snap collar.",
     "rating": 4.9,
     "reviewCount": 37,
     "brand": "VANSON LEATHER",
@@ -353,7 +350,8 @@ window.HAJI_PRODUCTS = [
       "44",
       "46"
     ],
-    "inStock": true
+    "inStock": true,
+    "sideImage": "cloth-hanging/rack_02_biker_side.png"
   },
   {
     "id": "HL-106",
@@ -844,19 +842,17 @@ window.HAJI_PRODUCTS = [
   },
   {
     "id": "HL-123",
-    "name": "Vanson Leather Flying Fortress Crew Men’s Sheepskin Flight Jacket – Brown Sheepskin",
+    "name": "Vanson Flying Fortress B-3 Sheepskin Shearling Flight Bomber",
     "category": "Bomber & Flight",
     "price": 1700,
-    "originalPrice": 2295,
-    "image": "https://store.luxwearz.com/wp-content/uploads/2026/10/flying-fortress-crew-jacket-brown-sheepskin-b3-133-gallery-1-original-cf0ef69a26.webp",
+    "originalPrice": 2100,
+    "image": "cloth-hanging/rack_03_bomber_front.png",
     "images": [
-      "https://store.luxwearz.com/wp-content/uploads/2026/10/flying-fortress-crew-jacket-brown-sheepskin-b3-133-gallery-1-original-cf0ef69a26.webp",
-      "https://store.luxwearz.com/wp-content/uploads/2026/10/flying-fortress-crew-jacket-brown-sheepskin-b3-133-gallery-2-original-fd67a45440.webp",
-      "https://store.luxwearz.com/wp-content/uploads/2026/10/flying-fortress-crew-jacket-brown-sheepskin-b3-133-gallery-3-original-2a405c08ad.webp",
-      "https://store.luxwearz.com/wp-content/uploads/2026/10/flying-fortress-crew-jacket-brown-sheepskin-b3-133-gallery-4-original-cb26e54492.webp",
-      "https://store.luxwearz.com/wp-content/uploads/2026/10/flying-fortress-crew-jacket-brown-sheepskin-b3-133-gallery-5-original-af62882c85.webp"
+      "cloth-hanging/rack_03_bomber_front.png",
+      "cloth-hanging/rack_03_bomber_side.png",
+      "https://store.luxwearz.com/wp-content/uploads/2026/10/flying-fortress-crew-jacket-brown-sheepskin-b3-133-gallery-1-original-cf0ef69a26.webp"
     ],
-    "description": "Discover the FLYING FORTRESS CREW JACKET by VANSON LEATHER. Handcrafted from competition-grade genuine leather with heavy-duty hardware.",
+    "description": "Authentic WWII B-3 military flight bomber jacket in thick genuine sheepskin with plush cream shearling collar, dual throat latches, and adjustable brass waist straps.",
     "rating": 4.9,
     "reviewCount": 36,
     "brand": "VANSON LEATHER",
@@ -870,7 +866,8 @@ window.HAJI_PRODUCTS = [
       "44",
       "46"
     ],
-    "inStock": true
+    "inStock": true,
+    "sideImage": "cloth-hanging/rack_03_bomber_side.png"
   },
   {
     "id": "HL-124",
@@ -1909,19 +1906,17 @@ window.HAJI_PRODUCTS = [
   },
   {
     "id": "HL-160",
-    "name": "PELLE PELLE AMERICA QUILTED JACKET",
-    "category": "Classic Leather",
+    "name": "Pelle Pelle America Quilted Heritage Leather Jacket",
+    "category": "Pelle Pelle",
     "price": 598,
-    "originalPrice": 807,
-    "image": "https://store.luxwearz.com/wp-content/uploads/2026/10/pelle-6x5-51589792956735.webp",
+    "originalPrice": 798,
+    "image": "cloth-hanging/rack_01_pelle_front.png",
     "images": [
-      "https://store.luxwearz.com/wp-content/uploads/2026/10/pelle-6x5-51589792956735.webp",
-      "https://store.luxwearz.com/wp-content/uploads/2026/10/pelle-6x5-51589792891199.webp",
-      "https://store.luxwearz.com/wp-content/uploads/2026/10/pelle-6x5-51589792923967.webp",
-      "https://store.luxwearz.com/wp-content/uploads/2026/10/pelle-6x5-51589792989503.webp",
-      "https://store.luxwearz.com/wp-content/uploads/2026/10/pelle-6x5-51589792760127.webp"
+      "cloth-hanging/rack_01_pelle_front.png",
+      "cloth-hanging/rack_01_pelle_side.png",
+      "https://store.luxwearz.com/wp-content/uploads/2026/10/pelle-6x5-51589792956735.webp"
     ],
-    "description": "Shop the PELLE PELLE AMERICA QUILTED JACKET in full-grain lambskin leather. Premium YKK zips, tailored fit, free US shipping over $399 & 30-day returns.",
+    "description": "Iconic Pelle Pelle New York heritage jacket in heavy brown antiqued cowhide with diamond quilt panels, ornate gold crest embroidery, and solid brass zipper hardware.",
     "rating": 4.8,
     "reviewCount": 30,
     "brand": "LuxWearz",
@@ -1935,7 +1930,8 @@ window.HAJI_PRODUCTS = [
       "3XL",
       "4XL"
     ],
-    "inStock": true
+    "inStock": true,
+    "sideImage": "cloth-hanging/rack_01_pelle_side.png"
   },
   {
     "id": "HL-161",
@@ -1999,19 +1995,17 @@ window.HAJI_PRODUCTS = [
   },
   {
     "id": "HL-163",
-    "name": "Pelle Pelle Encrusted Varsity Plush",
-    "category": "Classic Leather",
+    "name": "Pelle Pelle Encrusted Plush Varsity Leather Jacket",
+    "category": "Pelle Pelle",
     "price": 350,
-    "originalPrice": 473,
-    "image": "https://store.luxwearz.com/wp-content/uploads/2026/10/pelle-6x5-40180628685119.webp",
+    "originalPrice": 475,
+    "image": "cloth-hanging/rack_05_pelleplush_front.png",
     "images": [
-      "https://store.luxwearz.com/wp-content/uploads/2026/10/pelle-6x5-40180628685119.webp",
-      "https://store.luxwearz.com/wp-content/uploads/2026/10/pelle-6x5-51817085468991-scaled.webp",
-      "https://store.luxwearz.com/wp-content/uploads/2026/10/pelle-6x5-40180628488511.webp",
-      "https://store.luxwearz.com/wp-content/uploads/2026/10/pelle-6x5-51817085698367-scaled.webp",
-      "https://store.luxwearz.com/wp-content/uploads/2026/10/pelle-6x5-40180628586815.webp"
+      "cloth-hanging/rack_05_pelleplush_front.png",
+      "cloth-hanging/rack_05_pelleplush_side.png",
+      "https://store.luxwearz.com/wp-content/uploads/2026/10/pelle-6x5-40180628685119.webp"
     ],
-    "description": "Shop the Pelle Pelle Encrusted Varsity Plush in full-grain lambskin leather. Premium YKK zips, tailored fit, free US shipping over $399 & 30-day returns.",
+    "description": "Signature Marc Buchanan design featuring bold multi-color rhinestone encrusted PELLE PELLE leather lettering across black body with contrast white cowhide sleeves.",
     "rating": 4.8,
     "reviewCount": 34,
     "brand": "LuxWearz",
@@ -2025,7 +2019,8 @@ window.HAJI_PRODUCTS = [
       "3XL",
       "4XL"
     ],
-    "inStock": true
+    "inStock": true,
+    "sideImage": "cloth-hanging/rack_05_pelleplush_side.png"
   },
   {
     "id": "HL-164",

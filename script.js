@@ -1012,6 +1012,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // ==========================================================================
   // 10. DODGEHELL-STYLE INTERACTIVE VARSITY CLOTHES RACK PHYSICS ENGINE
   // ==========================================================================
+  // ==========================================================================
+  // 10. DODGEHELL-STYLE INTERACTIVE ATELIER CLOTHES RACK PHYSICS ENGINE
+  // ==========================================================================
   function initVarsityWardrobeRack() {
     const rackTrack = document.getElementById('rackTrack');
     const wardrobeStage = document.getElementById('wardrobeStage');
@@ -1021,7 +1024,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const slotElements = Array.from(rackTrack.querySelectorAll('.garment-slot'));
     if (!slotElements.length) return;
 
-    const defaultSubline = 'Handcrafted Wool & Leather Letterman Jackets — Hover or tap any jacket to inspect & quick view';
+    const defaultSubline = 'Archival Atelier Rack — Pelle Pelle • Biker • Bomber • Varsity (Select any piece to inspect)';
+
+    const styleNames = {
+      'pelle': '[PELLE PELLE]',
+      'biker': '[BIKER & MOTO]',
+      'bomber': '[BOMBER & FLIGHT]',
+      'varsity': '[VARSITY & LETTERMAN]'
+    };
 
     // Garments physics state
     const garments = slotElements.map((slot, index) => {
@@ -1031,10 +1041,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const tagContainer = slot.querySelector('.tag-container');
       const tagCard = slot.querySelector('.tag-card');
       const id = slot.getAttribute('data-id');
+      const styleType = slot.getAttribute('data-style') || 'varsity';
       const ariaLabel = slot.getAttribute('aria-label') || '';
 
       // Extract title & price for status line
-      let name = 'Varsity Jacket';
+      let name = 'Archival Leather Jacket';
       let price = '$285';
       const labelMatch = ariaLabel.match(/: (.*?), Price: (.*)/);
       if (labelMatch) {
@@ -1047,6 +1058,7 @@ document.addEventListener('DOMContentLoaded', () => {
         id,
         name,
         price,
+        styleType,
         slot,
         pendulum,
         sideWrap,
@@ -1070,7 +1082,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!rackTrack) return;
       const isMobile = window.innerWidth < 800;
       const stageHeight = wardrobeStage ? wardrobeStage.clientHeight : window.innerHeight * 0.75;
-      const height = isMobile ? 340 : Math.min(540, Math.max(300, 0.58 * stageHeight));
+      const height = isMobile ? Math.min(390, Math.max(320, window.innerHeight * 0.46)) : Math.min(540, Math.max(300, 0.58 * stageHeight));
       rackTrack.style.height = `${height}px`;
 
       const parentWidth = rackTrack.parentElement ? rackTrack.parentElement.clientWidth : window.innerWidth * 0.9;
@@ -1217,8 +1229,9 @@ document.addEventListener('DOMContentLoaded', () => {
       if (targetIndex > 0) garments[targetIndex - 1].v += 15;
       if (targetIndex < garments.length - 1) garments[targetIndex + 1].v -= 15;
 
+      const badge = styleNames[current.styleType] || '[ATELIER]';
       if (rackStatusLine) {
-        rackStatusLine.textContent = `${current.name} — ${current.price} (Click to open Quick View)`;
+        rackStatusLine.textContent = `${badge} ${current.name} — ${current.price} (Click / Tap to open Quick View)`;
       }
 
       triggerPhysicsLoop();
@@ -1239,6 +1252,66 @@ document.addEventListener('DOMContentLoaded', () => {
       triggerPhysicsLoop();
     }
 
+    // Filter Bar Buttons Wiring
+    const filterPills = document.querySelectorAll('#rackFilterBar .rack-filter-pill');
+    filterPills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        filterPills.forEach(p => p.classList.remove('active'));
+        pill.classList.add('active');
+        const style = pill.getAttribute('data-style');
+
+        let firstMatchIndex = -1;
+        garments.forEach((g, idx) => {
+          const match = style === 'all' || g.styleType === style;
+          if (match) {
+            g.slot.classList.remove('dimmed');
+            if (firstMatchIndex === -1) firstMatchIndex = idx;
+          } else {
+            g.slot.classList.add('dimmed');
+          }
+          // Give gentle sway impulse
+          g.v += (idx % 2 === 0 ? 1 : -1) * 12;
+        });
+
+        if (firstMatchIndex !== -1) {
+          onSlotEnter(firstMatchIndex);
+          if (window.innerWidth < 800) {
+            garments[firstMatchIndex].slot.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+          }
+        }
+        triggerPhysicsLoop();
+      });
+    });
+
+    // Touch Swipe vs Tap Detection for Mobile
+    let touchStartX = 0;
+    let touchStartY = 0;
+    let isSwiping = false;
+
+    rackTrack.addEventListener('touchstart', (e) => {
+      if (e.touches && e.touches[0]) {
+        touchStartX = e.touches[0].clientX;
+        touchStartY = e.touches[0].clientY;
+        isSwiping = false;
+      }
+    }, { passive: true });
+
+    rackTrack.addEventListener('touchmove', (e) => {
+      if (e.touches && e.touches[0]) {
+        const dx = Math.abs(e.touches[0].clientX - touchStartX);
+        const dy = Math.abs(e.touches[0].clientY - touchStartY);
+        if (dx > 10 || dy > 10) {
+          isSwiping = true;
+        }
+      }
+    }, { passive: true });
+
+    rackTrack.addEventListener('touchend', () => {
+      if (isSwiping) {
+        setTimeout(() => { isSwiping = false; }, 160);
+      }
+    }, { passive: true });
+
     // Attach Event Listeners to each slot
     garments.forEach((g, idx) => {
       g.slot.addEventListener('mouseenter', () => onSlotEnter(idx));
@@ -1249,10 +1322,15 @@ document.addEventListener('DOMContentLoaded', () => {
       // Click or Tap
       g.slot.addEventListener('click', (e) => {
         e.preventDefault();
-        // If on mobile and not hovered yet, activate on first tap
-        if (window.innerWidth < 800 && !g.isHovered) {
-          onSlotEnter(idx);
-          return;
+        if (isSwiping) return; // Prevent accidental click while swiping on mobile
+
+        // On mobile and not hovered yet, activate & center on first tap
+        if (window.innerWidth < 800) {
+          if (!g.isHovered) {
+            onSlotEnter(idx);
+            g.slot.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+            return;
+          }
         }
         openProductQuickView(g.id);
       });

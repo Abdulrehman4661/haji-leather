@@ -64,13 +64,13 @@
       <nav class="desktop-nav" aria-label="Primary Navigation">
         <ul class="nav-list">
           <li><a href="#catalog" class="nav-link active" data-cat="all">Archive (78)</a></li>
-          <li><a href="#heroSection" class="nav-link highlight-link">Varsity Rack (8)</a></li>
+          <li><a href="#heroSection" class="nav-link highlight-link">Atelier Rack (8)</a></li>
+          <li><a href="#catalog" class="nav-link" data-cat="Pelle Pelle">Pelle Pelle (20)</a></li>
+          <li><a href="#catalog" class="nav-link" data-cat="Biker & Moto">Biker &amp; Moto</a></li>
+          <li><a href="#catalog" class="nav-link" data-cat="Bomber & Flight">Bomber &amp; Shearling</a></li>
           <li><a href="#catalog" class="nav-link" data-cat="Varsity Jackets">Varsity Collection</a></li>
           <li><a href="#catalog" class="nav-link" data-cat="Classic Leather">Men's Classic</a></li>
           <li><a href="#catalog" class="nav-link" data-cat="Women's Jackets">Women's Edition</a></li>
-          <li><a href="#catalog" class="nav-link" data-cat="Racing & Motorcycle">Motorsport & Suits</a></li>
-          <li><a href="#catalog" class="nav-link" data-cat="Bomber & Flight">Bomber & Shearling</a></li>
-          <li><a href="#custom-atelier" class="nav-link">Custom Made</a></li>
           <li><a href="#payoneer-payment" class="nav-link">Payoneer / Banking</a></li>
           <li><a href="#size-guide" class="nav-link" id="nav-size-guide-btn">Size Chart</a></li>
         </ul>
@@ -140,15 +140,14 @@
         <p>15% OFF entire order with coupon <strong>WELCOME15</strong></p>
       </div>
       <ul class="drawer-nav">
-        <li><a href="#heroSection" class="drawer-link special">🧥 Varsity Clothes Rack (8)</a></li>
+        <li><a href="#heroSection" class="drawer-link special">🧥 Atelier Hanging Clothes Rack (8)</a></li>
         <li><a href="#catalog" class="drawer-link active" data-cat="all">✦ Complete Archive (78)</a></li>
-        <li><a href="#catalog" class="drawer-link" data-cat="Varsity Jackets">🎓 Varsity & Letterman Jackets</a></li>
+        <li><a href="#catalog" class="drawer-link" data-cat="Pelle Pelle">💎 Pelle Pelle Collection (20)</a></li>
+        <li><a href="#catalog" class="drawer-link" data-cat="Biker & Moto">⚡ Heavy Biker &amp; Moto Hides</a></li>
+        <li><a href="#catalog" class="drawer-link" data-cat="Bomber & Flight">✈️ Bomber &amp; Shearling Jackets</a></li>
+        <li><a href="#catalog" class="drawer-link" data-cat="Varsity Jackets">🎓 Varsity &amp; Letterman Jackets</a></li>
         <li><a href="#catalog" class="drawer-link" data-cat="Classic Leather">🧥 Men's Classic Leather</a></li>
         <li><a href="#catalog" class="drawer-link" data-cat="Women's Jackets">👗 Women's Silhouette Collection</a></li>
-        <li><a href="#catalog" class="drawer-link" data-cat="Racing & Motorcycle">🏍️ Motorsport & Track Suits</a></li>
-        <li><a href="#catalog" class="drawer-link" data-cat="Biker & Moto">⚡ Heavy Biker & Moto Hides</a></li>
-        <li><a href="#catalog" class="drawer-link" data-cat="Bomber & Flight">✈️ Bomber & Shearling Jackets</a></li>
-        <li><a href="#catalog" class="drawer-link" data-cat="Riding Gear & Accessories">🧤 Technical Pants & Gear</a></li>
         <li><a href="#custom-atelier" class="drawer-link special">✂️ Bespoke Custom Commission</a></li>
         <li><a href="#payoneer-payment" class="drawer-link">💳 Payoneer / Bank Transfer Details</a></li>
         <li><a href="#size-guide" class="drawer-link" id="mobile-size-guide-btn">📏 Precision Sizing Guide</a></li>
@@ -174,7 +173,7 @@
   </aside>
   <div class="drawer-backdrop" id="drawer-backdrop"></div>
 
-  <!-- Interactive Wardrobe Clothes Rack Hero Section (Dodgehell Varsity Architecture) -->
+  <!-- Interactive Wardrobe Clothes Rack Hero Section (Pelle Pelle, Biker, Bomber & Varsity) -->
   <section class="editorial-hero" id="heroSection">
     <div class="wardrobe-stage" id="wardrobeStage">
       <!-- Ambient Lighting Sheen & Watermark Background -->
@@ -185,19 +184,28 @@
       <div class="wardrobe-header">
         <div class="wardrobe-eyebrow">
           <span class="eyebrow-dot"></span>
-          <span>HAJI LEATHER ATELIER • SIALKOT ARCHIVE • EST. 1998</span>
+          <span>HAJI LEATHER ATELIER • EST. 1998 • ARCHIVAL SHOWCASE</span>
         </div>
         <h1 class="wardrobe-headline">
-          <span class="headline-primary">VARSITY</span>
+          <span class="headline-primary">ATELIER RACK</span>
           <span class="headline-contrast">COLLECTION</span>
         </h1>
-        <p class="wardrobe-sub">Bespoke 24oz Heavy Melton Wool &amp; Competition Top-Grain Cowhide Letterman Jackets</p>
+        <p class="wardrobe-sub">Pelle Pelle • Competition Biker • B-3 Shearling Bomber • Archival Varsity</p>
+      </div>
+
+      <!-- Quick Filter Pills for the Rack (Pelle Pelle, Biker, Bomber, Varsity) -->
+      <div class="rack-style-filter-bar" id="rackFilterBar">
+        <button type="button" class="rack-filter-pill active" data-style="all">All Styles (8)</button>
+        <button type="button" class="rack-filter-pill" data-style="pelle">Pelle Pelle (2)</button>
+        <button type="button" class="rack-filter-pill" data-style="biker">Biker &amp; Moto (1)</button>
+        <button type="button" class="rack-filter-pill" data-style="bomber">Bomber &amp; Flight (2)</button>
+        <button type="button" class="rack-filter-pill" data-style="varsity">Varsity (3)</button>
       </div>
 
       <!-- Mobile Touch Swipe Hint -->
       <div class="rack-mobile-hint" aria-hidden="true">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 8L22 12L18 16"/><path d="M6 8L2 12L6 16"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
-        <span>Swipe rack horizontally to inspect all 8 archival varsity jackets</span>
+        <span>Swipe rack horizontally or tap any jacket to inspect &amp; quick view</span>
       </div>
 
       <!-- Clothes Hanging Rack Stage -->
@@ -209,19 +217,81 @@
           <div class="rack-rail-mount right"></div>
         </div>
 
-        <!-- 8 Garments Hanging on Rack -->
+        <!-- 8 Garments Hanging on Rack Across Pelle Pelle, Biker, Bomber & Varsity -->
         <div class="rack-track" id="rackTrack">
 
-          <!-- 1. BISAG Maroon Varsity Jacket -->
-          <div class="garment-slot" tabindex="0" role="button" data-id="HL-V01" data-index="0" aria-label="Product 1 of 8: BISAG Maroon Letterman Varsity Jacket, Price: $285.00">
-            <div class="hanger-hook" aria-hidden="true"></div>
+          <!-- 1. PELLE PELLE: America Quilted Heritage Leather Jacket -->
+          <div class="garment-slot" tabindex="0" role="button" data-id="HL-160" data-style="pelle" data-index="0" aria-label="Product 1 of 8: [Pelle Pelle] America Quilted Heritage Leather Jacket, Price: $598.00">
             <div class="garment-pendulum">
               <div class="garment-card">
                 <div class="photo-side-wrap">
-                  <img src="cloth-hanging/jacket_01_maroon_side.png" alt="BISAG Maroon Varsity Jacket Side Profile" class="garment-img" loading="eager">
+                  <img src="cloth-hanging/rack_01_pelle_side.png" alt="Pelle Pelle America Quilted Jacket Side Profile" class="garment-img" loading="eager">
                 </div>
                 <div class="photo-front-wrap">
-                  <img src="cloth-hanging/jacket_01_maroon_front.png" alt="BISAG Maroon Varsity Jacket Front View" class="garment-img" loading="eager">
+                  <img src="cloth-hanging/rack_01_pelle_front.png" alt="Pelle Pelle America Quilted Jacket Front View" class="garment-img" loading="eager">
+                </div>
+              </div>
+              <div class="tag-container">
+                <div class="tag-string"></div>
+                <div class="tag-card">
+                  <div class="tag-hole"></div>
+                  <span class="tag-price">$598</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. BIKER: Vanson Heavy Cowhide Racing Jacket -->
+          <div class="garment-slot" tabindex="0" role="button" data-id="HL-105" data-style="biker" data-index="1" aria-label="Product 2 of 8: [Biker &amp; Moto] Vanson Heavy Cowhide Biker Racing Jacket, Price: $895.00">
+            <div class="garment-pendulum">
+              <div class="garment-card">
+                <div class="photo-side-wrap">
+                  <img src="cloth-hanging/rack_02_biker_side.png" alt="Vanson Heavy Cowhide Biker Jacket Side Profile" class="garment-img" loading="eager">
+                </div>
+                <div class="photo-front-wrap">
+                  <img src="cloth-hanging/rack_02_biker_front.png" alt="Vanson Heavy Cowhide Biker Jacket Front View" class="garment-img" loading="eager">
+                </div>
+              </div>
+              <div class="tag-container">
+                <div class="tag-string"></div>
+                <div class="tag-card">
+                  <div class="tag-hole"></div>
+                  <span class="tag-price">$895</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. BOMBER: Vanson B-3 Sheepskin Shearling Flight Bomber -->
+          <div class="garment-slot" tabindex="0" role="button" data-id="HL-123" data-style="bomber" data-index="2" aria-label="Product 3 of 8: [Bomber &amp; Flight] Vanson B-3 Sheepskin Shearling Flight Bomber, Price: $1,700.00">
+            <div class="garment-pendulum">
+              <div class="garment-card">
+                <div class="photo-side-wrap">
+                  <img src="cloth-hanging/rack_03_bomber_side.png" alt="Vanson B-3 Shearling Flight Bomber Side Profile" class="garment-img" loading="eager">
+                </div>
+                <div class="photo-front-wrap">
+                  <img src="cloth-hanging/rack_03_bomber_front.png" alt="Vanson B-3 Shearling Flight Bomber Front View" class="garment-img" loading="eager">
+                </div>
+              </div>
+              <div class="tag-container">
+                <div class="tag-string"></div>
+                <div class="tag-card">
+                  <div class="tag-hole"></div>
+                  <span class="tag-price">$1,700</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. VARSITY: BISAG Maroon Collegiate Varsity Letterman -->
+          <div class="garment-slot" tabindex="0" role="button" data-id="HL-V01" data-style="varsity" data-index="3" aria-label="Product 4 of 8: [Varsity] BISAG Maroon Collegiate Varsity Letterman, Price: $285.00">
+            <div class="garment-pendulum">
+              <div class="garment-card">
+                <div class="photo-side-wrap">
+                  <img src="cloth-hanging/rack_04_varsity_side.png" alt="BISAG Maroon Varsity Jacket Side Profile" class="garment-img" loading="eager">
+                </div>
+                <div class="photo-front-wrap">
+                  <img src="cloth-hanging/rack_04_varsity_front.png" alt="BISAG Maroon Varsity Jacket Front View" class="garment-img" loading="eager">
                 </div>
               </div>
               <div class="tag-container">
@@ -234,126 +304,36 @@
             </div>
           </div>
 
-          <!-- 2. Navy Blue Collegiate Varsity -->
-          <div class="garment-slot" tabindex="0" role="button" data-id="HL-V02" data-index="1" aria-label="Product 2 of 8: Navy Blue Collegiate Varsity Jacket, Price: $260.00">
-            <div class="hanger-hook" aria-hidden="true"></div>
+          <!-- 5. PELLE PELLE: Encrusted Plush Varsity Leather Jacket -->
+          <div class="garment-slot" tabindex="0" role="button" data-id="HL-163" data-style="pelle" data-index="4" aria-label="Product 5 of 8: [Pelle Pelle] Encrusted Plush Varsity Leather Jacket, Price: $350.00">
             <div class="garment-pendulum">
               <div class="garment-card">
                 <div class="photo-side-wrap">
-                  <img src="cloth-hanging/jacket_02_navy_side.png" alt="Navy Blue Collegiate Varsity Side Profile" class="garment-img" loading="eager">
+                  <img src="cloth-hanging/rack_05_pelleplush_side.png" alt="Pelle Pelle Encrusted Plush Jacket Side Profile" class="garment-img" loading="eager">
                 </div>
                 <div class="photo-front-wrap">
-                  <img src="cloth-hanging/jacket_02_navy_front.png" alt="Navy Blue Collegiate Varsity Front View" class="garment-img" loading="eager">
+                  <img src="cloth-hanging/rack_05_pelleplush_front.png" alt="Pelle Pelle Encrusted Plush Jacket Front View" class="garment-img" loading="eager">
                 </div>
               </div>
               <div class="tag-container">
                 <div class="tag-string"></div>
                 <div class="tag-card">
                   <div class="tag-hole"></div>
-                  <span class="tag-price">$260</span>
+                  <span class="tag-price">$350</span>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- 3. Chenille Patches Varsity Jacket -->
-          <div class="garment-slot" tabindex="0" role="button" data-id="HL-V03" data-index="2" aria-label="Product 3 of 8: Chenille Patches Varsity Jacket, Price: $295.00">
-            <div class="hanger-hook" aria-hidden="true"></div>
+          <!-- 6. BOMBER: Gold Satin Athletic Baseball Bomber Jacket -->
+          <div class="garment-slot" tabindex="0" role="button" data-id="HL-V07" data-style="bomber" data-index="5" aria-label="Product 6 of 8: [Bomber &amp; Flight] Gold Satin Athletic Baseball Bomber Jacket, Price: $255.00">
             <div class="garment-pendulum">
               <div class="garment-card">
                 <div class="photo-side-wrap">
-                  <img src="cloth-hanging/jacket_03_patches_side.png" alt="Chenille Patches Varsity Jacket Side Profile" class="garment-img" loading="eager">
+                  <img src="cloth-hanging/rack_06_satinbomber_side.png" alt="Gold Satin Baseball Bomber Side Profile" class="garment-img" loading="eager">
                 </div>
                 <div class="photo-front-wrap">
-                  <img src="cloth-hanging/jacket_03_patches_front.png" alt="Chenille Patches Varsity Jacket Front View" class="garment-img" loading="eager">
-                </div>
-              </div>
-              <div class="tag-container">
-                <div class="tag-string"></div>
-                <div class="tag-card">
-                  <div class="tag-hole"></div>
-                  <span class="tag-price">$295</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- 4. Powder Blue Pastel Varsity -->
-          <div class="garment-slot" tabindex="0" role="button" data-id="HL-V04" data-index="3" aria-label="Product 4 of 8: Powder Blue Pastel Varsity Jacket, Price: $275.00">
-            <div class="hanger-hook" aria-hidden="true"></div>
-            <div class="garment-pendulum">
-              <div class="garment-card">
-                <div class="photo-side-wrap">
-                  <img src="cloth-hanging/jacket_04_powderblue_side.png" alt="Powder Blue Pastel Varsity Side Profile" class="garment-img" loading="eager">
-                </div>
-                <div class="photo-front-wrap">
-                  <img src="cloth-hanging/jacket_04_powderblue_front.png" alt="Powder Blue Pastel Varsity Front View" class="garment-img" loading="eager">
-                </div>
-              </div>
-              <div class="tag-container">
-                <div class="tag-string"></div>
-                <div class="tag-card">
-                  <div class="tag-hole"></div>
-                  <span class="tag-price">$275</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- 5. Purple Reign Letterman Jacket -->
-          <div class="garment-slot" tabindex="0" role="button" data-id="HL-V05" data-index="4" aria-label="Product 5 of 8: Purple Reign Letterman Jacket, Price: $290.00">
-            <div class="hanger-hook" aria-hidden="true"></div>
-            <div class="garment-pendulum">
-              <div class="garment-card">
-                <div class="photo-side-wrap">
-                  <img src="cloth-hanging/jacket_05_purple_side.png" alt="Purple Reign Letterman Jacket Side Profile" class="garment-img" loading="eager">
-                </div>
-                <div class="photo-front-wrap">
-                  <img src="cloth-hanging/jacket_05_purple_front.png" alt="Purple Reign Letterman Jacket Front View" class="garment-img" loading="eager">
-                </div>
-              </div>
-              <div class="tag-container">
-                <div class="tag-string"></div>
-                <div class="tag-card">
-                  <div class="tag-hole"></div>
-                  <span class="tag-price">$290</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- 6. Red & Royal Blue Classic Letterman -->
-          <div class="garment-slot" tabindex="0" role="button" data-id="HL-V06" data-index="5" aria-label="Product 6 of 8: Red & Royal Blue Classic Letterman, Price: $270.00">
-            <div class="hanger-hook" aria-hidden="true"></div>
-            <div class="garment-pendulum">
-              <div class="garment-card">
-                <div class="photo-side-wrap">
-                  <img src="cloth-hanging/jacket_06_redblue_side.png" alt="Red & Royal Blue Classic Letterman Side Profile" class="garment-img" loading="eager">
-                </div>
-                <div class="photo-front-wrap">
-                  <img src="cloth-hanging/jacket_06_redblue_front.png" alt="Red & Royal Blue Classic Letterman Front View" class="garment-img" loading="eager">
-                </div>
-              </div>
-              <div class="tag-container">
-                <div class="tag-string"></div>
-                <div class="tag-card">
-                  <div class="tag-hole"></div>
-                  <span class="tag-price">$270</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- 7. Satin Finish Athletic Varsity -->
-          <div class="garment-slot" tabindex="0" role="button" data-id="HL-V07" data-index="6" aria-label="Product 7 of 8: Satin Finish Athletic Varsity, Price: $255.00">
-            <div class="hanger-hook" aria-hidden="true"></div>
-            <div class="garment-pendulum">
-              <div class="garment-card">
-                <div class="photo-side-wrap">
-                  <img src="cloth-hanging/jacket_07_satin_side.png" alt="Satin Finish Athletic Varsity Side Profile" class="garment-img" loading="eager">
-                </div>
-                <div class="photo-front-wrap">
-                  <img src="cloth-hanging/jacket_07_satin_front.png" alt="Satin Finish Athletic Varsity Front View" class="garment-img" loading="eager">
+                  <img src="cloth-hanging/rack_06_satinbomber_front.png" alt="Gold Satin Baseball Bomber Front View" class="garment-img" loading="eager">
                 </div>
               </div>
               <div class="tag-container">
@@ -366,23 +346,43 @@
             </div>
           </div>
 
-          <!-- 8. Vintage Grey & Navy Varsity -->
-          <div class="garment-slot" tabindex="0" role="button" data-id="HL-V08" data-index="7" aria-label="Product 8 of 8: Vintage Grey & Navy Varsity, Price: $280.00">
-            <div class="hanger-hook" aria-hidden="true"></div>
+          <!-- 7. VARSITY: Chenille Patches Multi-Color Varsity Jacket -->
+          <div class="garment-slot" tabindex="0" role="button" data-id="HL-V03" data-style="varsity" data-index="6" aria-label="Product 7 of 8: [Varsity] Chenille Patches Multi-Color Varsity Jacket, Price: $295.00">
             <div class="garment-pendulum">
               <div class="garment-card">
                 <div class="photo-side-wrap">
-                  <img src="cloth-hanging/jacket_08_vintage_side.png" alt="Vintage Grey & Navy Varsity Side Profile" class="garment-img" loading="eager">
+                  <img src="cloth-hanging/rack_07_patches_side.png" alt="Chenille Patches Varsity Jacket Side Profile" class="garment-img" loading="eager">
                 </div>
                 <div class="photo-front-wrap">
-                  <img src="cloth-hanging/jacket_08_vintage_front.png" alt="Vintage Grey & Navy Varsity Front View" class="garment-img" loading="eager">
+                  <img src="cloth-hanging/rack_07_patches_front.png" alt="Chenille Patches Varsity Jacket Front View" class="garment-img" loading="eager">
                 </div>
               </div>
               <div class="tag-container">
                 <div class="tag-string"></div>
                 <div class="tag-card">
                   <div class="tag-hole"></div>
-                  <span class="tag-price">$280</span>
+                  <span class="tag-price">$295</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8. VARSITY: Navy Blue Collegiate Varsity Jacket -->
+          <div class="garment-slot" tabindex="0" role="button" data-id="HL-V02" data-style="varsity" data-index="7" aria-label="Product 8 of 8: [Varsity] Navy Blue Collegiate Varsity Jacket, Price: $260.00">
+            <div class="garment-pendulum">
+              <div class="garment-card">
+                <div class="photo-side-wrap">
+                  <img src="cloth-hanging/rack_08_navyvarsity_side.png" alt="Navy Blue Collegiate Varsity Side Profile" class="garment-img" loading="eager">
+                </div>
+                <div class="photo-front-wrap">
+                  <img src="cloth-hanging/rack_08_navyvarsity_front.png" alt="Navy Blue Collegiate Varsity Front View" class="garment-img" loading="eager">
+                </div>
+              </div>
+              <div class="tag-container">
+                <div class="tag-string"></div>
+                <div class="tag-card">
+                  <div class="tag-hole"></div>
+                  <span class="tag-price">$260</span>
                 </div>
               </div>
             </div>
@@ -394,18 +394,18 @@
       <!-- Rack Interactive Footer Status Line & Pill Action Buttons -->
       <div class="rack-footer" id="rackFooter">
         <div class="rack-status-line" id="rackStatusLine">
-          Handcrafted Wool &amp; Leather Letterman Jackets — Hover or tap any jacket to inspect &amp; quick view
+          Select any piece to inspect details • Pelle Pelle, Biker, Bomber &amp; Varsity
         </div>
         <div class="rack-action-pills">
-          <a href="#catalog" class="pill-btn primary-pill" data-category="Varsity Jackets">
-            <span>Shop The 8 Jackets</span>
+          <a href="#catalog" class="pill-btn primary-pill" data-category="Pelle Pelle">
+            <span>Shop Pelle Pelle (20)</span>
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
           </a>
           <a href="#catalog" class="pill-btn secondary-pill" data-category="all">
             <span>Explore All 78 Pieces</span>
           </a>
           <a href="#custom-atelier" class="pill-btn wa-pill">
-            <span>Custom Monogram Atelier</span>
+            <span>Custom Atelier Consultation</span>
           </a>
         </div>
       </div>
@@ -470,6 +470,18 @@
           <button class="cat-pill active" data-category="all">
             <span>All Products</span>
             <span class="pill-count" id="count-all">78</span>
+          </button>
+          <button class="cat-pill" data-category="Pelle Pelle">
+            <span>Pelle Pelle</span>
+            <span class="pill-count" id="count-pelle">20</span>
+          </button>
+          <button class="cat-pill" data-category="Biker & Moto">
+            <span>Biker &amp; Moto</span>
+            <span class="pill-count" id="count-biker">5</span>
+          </button>
+          <button class="cat-pill" data-category="Bomber & Flight">
+            <span>Bomber &amp; Flight</span>
+            <span class="pill-count" id="count-bomber">5</span>
           </button>
           <button class="cat-pill" data-category="Varsity Jackets">
             <span>Varsity Collection</span>
