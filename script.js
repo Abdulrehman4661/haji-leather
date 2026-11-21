@@ -1095,12 +1095,12 @@ document.addEventListener('DOMContentLoaded', () => {
       };
     });
 
-    // Resize calculation matching Dodgehell for 5 pieces
+    // Resize calculation matching Dodgehell for 5 pieces in sub-niche stage
     function calculateRackDimensions() {
       if (!rackTrack) return;
       const isMobile = window.innerWidth < 800;
       const stageHeight = wardrobeStage ? wardrobeStage.clientHeight : window.innerHeight * 0.75;
-      const height = isMobile ? Math.min(410, Math.max(340, window.innerHeight * 0.48)) : Math.min(560, Math.max(380, 0.62 * stageHeight));
+      const height = isMobile ? 310 : Math.min(380, Math.max(270, 0.42 * stageHeight));
       rackTrack.style.height = `${height}px`;
 
       const parentWidth = rackTrack.parentElement ? rackTrack.parentElement.clientWidth : window.innerWidth * 0.9;
@@ -1226,7 +1226,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
 
-    // Hover interactions
+    // Hover / selection interactions
     function onSlotEnter(targetIndex) {
       garments.forEach((g, idx) => {
         if (idx !== targetIndex) {
@@ -1247,9 +1247,31 @@ document.addEventListener('DOMContentLoaded', () => {
       if (targetIndex > 0) garments[targetIndex - 1].v += 15;
       if (targetIndex < garments.length - 1) garments[targetIndex + 1].v -= 15;
 
-      const badge = styleNames[current.styleType] || '[ATELIER]';
+      const badge = styleNames[current.styleType] || '[COLLECTION]';
+
+      // Update Featured Single Jacket in Header
+      const heroImg = document.getElementById('heroFeatureImg');
+      const heroName = document.getElementById('heroFeatureName');
+      const heroPrice = document.getElementById('heroFeaturePrice');
+      const heroBadge = document.getElementById('heroFeatureBadge');
+      const frontImgs = {
+        'HL-160': 'cloth-hanging/rack_01_pelle_front.png',
+        'HL-105': 'cloth-hanging/rack_02_biker_front.png',
+        'HL-123': 'cloth-hanging/rack_03_bomber_front.png',
+        'HL-163': 'cloth-hanging/rack_05_pelleplush_front.png',
+        'HL-V07': 'cloth-hanging/rack_06_satinbomber_front.png'
+      };
+
+      if (heroImg && frontImgs[current.id]) {
+        heroImg.src = frontImgs[current.id];
+      }
+      if (heroName) heroName.textContent = current.name;
+      if (heroPrice) heroPrice.textContent = current.price;
+      if (heroBadge) heroBadge.textContent = badge;
+      window.activeHeroFeatureId = current.id;
+
       if (rackStatusLine) {
-        rackStatusLine.textContent = `${badge} ${current.name} — ${current.price} (Click / Tap to open Quick View)`;
+        rackStatusLine.textContent = `${badge} ${current.name} — ${current.price}`;
       }
 
       triggerPhysicsLoop();
@@ -1392,6 +1414,12 @@ document.addEventListener('DOMContentLoaded', () => {
       }, 90 * i + 150);
     });
   }
+
+  // Hero Feature Jacket Quick View helper
+  window.activeHeroFeatureId = 'HL-160';
+  window.openHeroFeatureQuickView = function() {
+    openProductQuickView(window.activeHeroFeatureId || 'HL-160');
+  };
 
   // Boot
   renderProducts();
