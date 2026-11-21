@@ -3262,17 +3262,122 @@ button {
   position: relative;
   width: 100%;
   aspect-ratio: 4 / 5;
-  background: #111;
+  background: #0d0d0d;
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid rgba(230, 211, 184, 0.25);
   margin-bottom: 12px;
+  cursor: zoom-in;
+  touch-action: pan-x pan-y;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.modal-main-image-box.is-zoomed {
+  cursor: grab;
+}
+
+.modal-main-image-box.is-zoomed:active {
+  cursor: grabbing;
 }
 
 .modal-main-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.15s ease-out;
+  transform-origin: center center;
+  will-change: transform;
+  display: block;
+}
+
+/* High-Resolution Zoom Toolbar */
+.modal-zoom-toolbar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(14, 14, 14, 0.9);
+  border: 1px solid rgba(230, 211, 184, 0.35);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 3px 6px;
+  border-radius: var(--radius-pill);
+  z-index: 10;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.6);
+}
+
+.zoom-tool-btn {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(30, 30, 30, 0.85);
+  color: var(--accent-cream);
+  font-family: var(--font-mono);
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  border: 1px solid rgba(230, 211, 184, 0.25);
+  transition: all var(--transition-fast);
+}
+
+.zoom-tool-btn:hover {
+  background: var(--accent-cream);
+  color: #000;
+  border-color: var(--accent-cream);
+}
+
+.zoom-tool-btn.reset-btn {
+  width: auto;
+  border-radius: var(--radius-pill);
+  padding: 0 8px;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.zoom-level-badge {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 800;
+  color: #ffffff;
+  padding: 0 4px;
+  min-width: 32px;
+  text-align: center;
+}
+
+.modal-zoom-hint {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(10, 10, 10, 0.88);
+  border: 1px solid rgba(230, 211, 184, 0.3);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  color: var(--accent-cream);
+  pointer-events: none;
+  opacity: 0.95;
+  transition: opacity 0.2s ease;
+  white-space: nowrap;
+  z-index: 5;
+}
+
+.modal-main-image-box.is-zoomed .modal-zoom-hint {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .modal-badge-tag {

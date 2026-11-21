@@ -1,3 +1,5 @@
 node_modules/
 *.log
 scratch/
+build_pelle_catalog.js
+*_raw.json

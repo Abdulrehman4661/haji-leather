@@ -799,11 +799,122 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ==========================================================================
-  // 7. PRODUCT QUICK VIEW MODAL
+  // 7. PRODUCT QUICK VIEW MODAL & HIGH-RESOLUTION ZOOM ENGINE
   // ==========================================================================
+  const zoomContainer = document.getElementById('modal-zoom-container');
+  const modalMainImg = document.getElementById('modal-main-image');
+  const zoomInBtn = document.getElementById('zoom-in-btn');
+  const zoomOutBtn = document.getElementById('zoom-out-btn');
+  const zoomResetBtn = document.getElementById('zoom-reset-btn');
+  const zoomLevelIndicator = document.getElementById('zoom-level-indicator');
+
+  let currentZoom = 1.0;
+  let originX = 50;
+  let originY = 50;
+
+  function updateZoom(newZoom, centerX = originX, centerY = originY) {
+    currentZoom = Math.min(3.5, Math.max(1.0, Number(newZoom.toFixed(1))));
+    originX = Math.min(100, Math.max(0, centerX));
+    originY = Math.min(100, Math.max(0, centerY));
+
+    if (modalMainImg) {
+      if (currentZoom === 1.0) {
+        modalMainImg.style.transform = 'scale(1)';
+        modalMainImg.style.transformOrigin = 'center center';
+        zoomContainer?.classList.remove('is-zoomed');
+      } else {
+        modalMainImg.style.transformOrigin = `${originX}% ${originY}%`;
+        modalMainImg.style.transform = `scale(${currentZoom})`;
+        zoomContainer?.classList.add('is-zoomed');
+      }
+    }
+    if (zoomLevelIndicator) {
+      zoomLevelIndicator.textContent = `${currentZoom.toFixed(1)}×`;
+    }
+  }
+
+  function resetZoom() {
+    updateZoom(1.0, 50, 50);
+  }
+
+  if (zoomInBtn) {
+    zoomInBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      updateZoom(currentZoom + 0.5);
+    });
+  }
+
+  if (zoomOutBtn) {
+    zoomOutBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      updateZoom(currentZoom - 0.5);
+    });
+  }
+
+  if (zoomResetBtn) {
+    zoomResetBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      resetZoom();
+    });
+  }
+
+  // Interactive Cursor & Touch Pan when zoomed in
+  if (zoomContainer) {
+    zoomContainer.addEventListener('mousemove', (e) => {
+      if (currentZoom > 1.0) {
+        const rect = zoomContainer.getBoundingClientRect();
+        const x = ((e.clientX - rect.left) / rect.width) * 100;
+        const y = ((e.clientY - rect.top) / rect.height) * 100;
+        modalMainImg.style.transformOrigin = `${x}% ${y}%`;
+      }
+    });
+
+    // Click to toggle zoom between 1x and 2.5x
+    zoomContainer.addEventListener('click', (e) => {
+      if (e.target.closest('.modal-zoom-toolbar')) return;
+      const rect = zoomContainer.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width) * 100;
+      const y = ((e.clientY - rect.top) / rect.height) * 100;
+
+      if (currentZoom > 1.0) {
+        resetZoom();
+      } else {
+        updateZoom(2.5, x, y);
+      }
+    });
+
+    // Mouse wheel zoom
+    zoomContainer.addEventListener('wheel', (e) => {
+      e.preventDefault();
+      const rect = zoomContainer.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width) * 100;
+      const y = ((e.clientY - rect.top) / rect.height) * 100;
+      const delta = e.deltaY < 0 ? 0.3 : -0.3;
+      updateZoom(currentZoom + delta, x, y);
+    }, { passive: false });
+
+    // Touch support for mobile: double tap to zoom
+    let lastTap = 0;
+    zoomContainer.addEventListener('touchend', (e) => {
+      if (e.target.closest('.modal-zoom-toolbar')) return;
+      const now = Date.now();
+      if (now - lastTap < 320) {
+        e.preventDefault();
+        if (currentZoom > 1.0) {
+          resetZoom();
+        } else {
+          updateZoom(2.5, 50, 50);
+        }
+      }
+      lastTap = now;
+    });
+  }
+
   window.openProductQuickView = function(productId) {
     const product = rawProducts.find(p => p.id === productId);
     if (!product) return;
+
+    resetZoom();
 
     // Gallery
     const mainImg = document.getElementById('modal-main-image');
@@ -828,7 +939,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('modal-rating-text').textContent = `${(product.rating || 4.9).toFixed(1)} (${product.reviewCount || 24} reviews)`;
     document.getElementById('modal-price').textContent = `$${product.price.toFixed(2)}`;
     document.getElementById('modal-original-price').textContent = `$${product.originalPrice.toFixed(2)}`;
-    document.getElementById('modal-description').textContent = product.description || 'Handcrafted from competition-grade genuine leather hide with heavy-duty solid brass hardware and ergonomic comfort cut.';
+    document.getElementById('modal-description').textContent = product.description || 'Handcrafted from 100% genuine competition-grade leather hide with authentic Marc Buchanan embroidery and solid brass YKK hardware.';
 
     // Sizes
     const sizeOptionsContainer = document.getElementById('modal-size-options');
@@ -894,6 +1005,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   window.setModalMainImage = function(url, thumbEl) {
+    resetZoom();
     const mainImg = document.getElementById('modal-main-image');
     if (mainImg) mainImg.src = url;
     document.querySelectorAll('.modal-thumb').forEach(t => t.classList.remove('active'));
@@ -1043,12 +1155,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const slotElements = Array.from(rackTrack.querySelectorAll('.garment-slot'));
     if (!slotElements.length) return;
 
-    const defaultSubline = 'Trending Outerwear • Pelle Pelle • Biker • Bomber (Tap any piece to view details)';
+    const defaultSubline = 'Trending Pelle Pelle Archive — Chi City • Soda Club • Encrusted Plush (Tap any piece to view details)';
 
     const styleNames = {
-      'pelle': '[PELLE PELLE]',
-      'biker': '[BIKER & MOTO]',
-      'bomber': '[BOMBER & FLIGHT]'
+      'pelle': '[PELLE PELLE]'
     };
 
     // Garments physics state
@@ -1063,8 +1173,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const ariaLabel = slot.getAttribute('aria-label') || '';
 
       // Extract title & price for status line
-      let name = 'Archival Leather Jacket';
-      let price = '$285';
+      let name = 'Pelle Pelle Leather Jacket';
+      let price = '$350';
       const labelMatch = ariaLabel.match(/: (.*?), Price: (.*)/);
       if (labelMatch) {
         name = labelMatch[1];
@@ -1090,12 +1200,12 @@ document.addEventListener('DOMContentLoaded', () => {
         targetK: 0,
         isHovered: false,
         isLanding: true,
-        sideWidth: 90,
-        frontWidth: 250
+        sideWidth: 84,
+        frontWidth: 240
       };
     });
 
-    // Resize calculation for compact Trending Collection rack
+    // Resize calculation for 6 compact Trending Pelle Pelle pieces on the rack
     function calculateRackDimensions() {
       if (!rackTrack) return;
       const isMobile = window.innerWidth < 800;
@@ -1103,8 +1213,8 @@ document.addEventListener('DOMContentLoaded', () => {
       rackTrack.style.height = `${height}px`;
 
       const parentWidth = rackTrack.parentElement ? rackTrack.parentElement.clientWidth : window.innerWidth * 0.9;
-      const sideWidth = isMobile ? 88 : Math.min(130, Math.max(90, Math.floor((parentWidth - 120) / garments.length)));
-      const frontWidth = isMobile ? 230 : Math.min(310, Math.floor(2.65 * sideWidth));
+      const sideWidth = isMobile ? 74 : Math.min(125, Math.max(80, Math.floor((parentWidth - 110) / garments.length)));
+      const frontWidth = isMobile ? 210 : Math.min(290, Math.floor(2.6 * sideWidth));
 
       garments.forEach(g => {
         g.sideWidth = sideWidth;
@@ -1399,7 +1509,31 @@ document.addEventListener('DOMContentLoaded', () => {
     openProductQuickView(window.activeHeroFeatureId || 'HL-160');
   };
 
+  function updateCategoryCounts() {
+    const countAll = document.getElementById('count-all');
+    if (countAll) countAll.textContent = rawProducts.length;
+
+    const countChicity = document.getElementById('count-chicity');
+    if (countChicity) countChicity.textContent = rawProducts.filter(p => p.category === 'Chi City Series').length;
+
+    const countSoda = document.getElementById('count-soda');
+    if (countSoda) countSoda.textContent = rawProducts.filter(p => p.category === 'Soda Club & Heritage').length;
+
+    const countPlush = document.getElementById('count-plush');
+    if (countPlush) countPlush.textContent = rawProducts.filter(p => p.category === 'Plush & Encrusted').length;
+
+    const countWindy = document.getElementById('count-windy');
+    if (countWindy) countWindy.textContent = rawProducts.filter(p => p.category === 'Windy City & Sounds').length;
+
+    const countNba = document.getElementById('count-nba');
+    if (countNba) countNba.textContent = rawProducts.filter(p => p.category === 'NBA & Championship').length;
+
+    const countWomen = document.getElementById('count-women');
+    if (countWomen) countWomen.textContent = rawProducts.filter(p => p.category === "Women's Pelle Pelle").length;
+  }
+
   // Boot
+  updateCategoryCounts();
   renderProducts();
   updateCartUI();
   updateWishlistUI();
