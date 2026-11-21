@@ -327,6 +327,25 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Layout density switcher (Spacious vs Compact)
+  const layoutToggle = document.getElementById('layoutToggle');
+  if (layoutToggle) {
+    layoutToggle.querySelectorAll('.layout-toggle-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        layoutToggle.querySelectorAll('.layout-toggle-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const mode = btn.getAttribute('data-layout');
+        if (productsGrid) {
+          if (mode === 'compact') {
+            productsGrid.classList.add('compact-view');
+          } else {
+            productsGrid.classList.remove('compact-view');
+          }
+        }
+      });
+    });
+  }
+
   // Search logic
   function handleSearch(val) {
     searchQuery = val;
@@ -1024,13 +1043,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const slotElements = Array.from(rackTrack.querySelectorAll('.garment-slot'));
     if (!slotElements.length) return;
 
-    const defaultSubline = 'Archival Atelier Rack — Pelle Pelle • Biker • Bomber • Varsity (Select any piece to inspect)';
+    const defaultSubline = 'Archival Atelier Rack — Pelle Pelle • Biker • Bomber (Hover or tap any jacket to inspect)';
 
     const styleNames = {
       'pelle': '[PELLE PELLE]',
       'biker': '[BIKER & MOTO]',
-      'bomber': '[BOMBER & FLIGHT]',
-      'varsity': '[VARSITY & LETTERMAN]'
+      'bomber': '[BOMBER & FLIGHT]'
     };
 
     // Garments physics state
@@ -1041,7 +1059,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const tagContainer = slot.querySelector('.tag-container');
       const tagCard = slot.querySelector('.tag-card');
       const id = slot.getAttribute('data-id');
-      const styleType = slot.getAttribute('data-style') || 'varsity';
+      const styleType = slot.getAttribute('data-style') || 'pelle';
       const ariaLabel = slot.getAttribute('aria-label') || '';
 
       // Extract title & price for status line
@@ -1072,22 +1090,22 @@ document.addEventListener('DOMContentLoaded', () => {
         targetK: 0,
         isHovered: false,
         isLanding: true,
-        sideWidth: 88,
-        frontWidth: 245
+        sideWidth: 96,
+        frontWidth: 260
       };
     });
 
-    // Resize calculation matching Dodgehell
+    // Resize calculation matching Dodgehell for 5 pieces
     function calculateRackDimensions() {
       if (!rackTrack) return;
       const isMobile = window.innerWidth < 800;
       const stageHeight = wardrobeStage ? wardrobeStage.clientHeight : window.innerHeight * 0.75;
-      const height = isMobile ? Math.min(390, Math.max(320, window.innerHeight * 0.46)) : Math.min(540, Math.max(300, 0.58 * stageHeight));
+      const height = isMobile ? Math.min(410, Math.max(340, window.innerHeight * 0.48)) : Math.min(560, Math.max(380, 0.62 * stageHeight));
       rackTrack.style.height = `${height}px`;
 
       const parentWidth = rackTrack.parentElement ? rackTrack.parentElement.clientWidth : window.innerWidth * 0.9;
-      const sideWidth = isMobile ? 86 : Math.min(98, Math.max(64, Math.floor((parentWidth - 260) / garments.length)));
-      const frontWidth = isMobile ? 220 : Math.min(270, Math.floor(2.85 * sideWidth));
+      const sideWidth = isMobile ? 96 : Math.min(135, Math.max(90, Math.floor((parentWidth - 160) / garments.length)));
+      const frontWidth = isMobile ? 250 : Math.min(330, Math.floor(2.65 * sideWidth));
 
       garments.forEach(g => {
         g.sideWidth = sideWidth;

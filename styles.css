@@ -582,8 +582,10 @@ button {
   width: 100%;
   aspect-ratio: 1600 / 900;
   min-height: 600px;
-  background-color: #0e0d0b;
-  background-image: url('cloth-hanging/wardrobe_bg.png');
+  background-color: #24221d;
+  background-image: 
+    radial-gradient(ellipse 70% 60% at 50% 36%, rgba(230, 211, 184, 0.32) 0%, rgba(127, 125, 112, 0.45) 45%, rgba(20, 20, 20, 0.94) 100%),
+    url('cloth-hanging/wardrobe_bg.png');
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -591,13 +593,13 @@ button {
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
-  box-shadow: inset 0 -30px 60px rgba(0, 0, 0, 0.85);
+  box-shadow: inset 0 -40px 80px rgba(0, 0, 0, 0.9), inset 0 20px 40px rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 1024px) {
   .wardrobe-stage {
     aspect-ratio: auto;
-    min-height: 580px;
+    min-height: 560px;
     padding: 24px 0 20px;
     background-size: cover;
     background-position: center top;
@@ -609,7 +611,7 @@ button {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background: radial-gradient(circle at 50% 18%, rgba(230, 211, 184, 0.12) 0%, rgba(14, 13, 11, 0.3) 60%, rgba(10, 9, 8, 0.85) 100%);
+  background: radial-gradient(circle at 50% 25%, rgba(230, 211, 184, 0.16) 0%, rgba(127, 125, 112, 0.1) 50%, rgba(14, 13, 11, 0.75) 100%);
   z-index: 1;
 }
 
@@ -878,9 +880,9 @@ button {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 8px;
+  gap: 18px;
   width: 100%;
-  max-width: 1260px;
+  max-width: 1140px;
   position: relative;
   margin: 0 auto;
 }
@@ -889,7 +891,8 @@ button {
   .rack-track {
     justify-content: flex-start;
     width: max-content;
-    padding: 0 20px;
+    padding: 0 24px;
+    gap: 14px;
   }
 }
 
@@ -1291,22 +1294,70 @@ button {
   background: rgba(20, 20, 20, 0.2);
 }
 
-/* Catalog Bar */
+/* Catalog Bar Controls & Layout Density Switch */
 .catalog-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
   background: var(--dark-charcoal);
-  border: 1px solid rgba(230, 211, 184, 0.2);
+  border: 1px solid rgba(230, 211, 184, 0.25);
   border-radius: var(--radius-pill);
-  padding: 10px 20px;
-  margin-bottom: 26px;
-  font-size: 13px;
+  padding: 12px 24px;
+  margin-bottom: 34px;
+  font-size: 13.5px;
+}
+
+.catalog-controls-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.catalog-layout-toggle {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(20, 20, 20, 0.65);
+  border: 1px solid rgba(230, 211, 184, 0.25);
+  border-radius: var(--radius-pill);
+  padding: 3px;
+  gap: 3px;
+}
+
+.layout-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: none;
+  color: var(--text-offwhite);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 5px 12px;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.layout-toggle-btn:hover {
+  color: var(--accent-cream);
+}
+
+.layout-toggle-btn.active {
+  background: var(--accent-cream);
+  color: var(--dark-charcoal);
+  font-weight: 800;
+  box-shadow: 0 2px 8px var(--accent-cream-glow);
 }
 
 .catalog-count-indicator strong {
   color: var(--accent-cream);
   font-family: var(--font-mono);
+  font-weight: 800;
 }
 
 .catalog-sort-box {
@@ -1322,7 +1373,7 @@ button {
   background: var(--dark-card);
   color: var(--text-offwhite);
   border: 1px solid rgba(230, 211, 184, 0.3);
-  padding: 5px 12px;
+  padding: 6px 14px;
   border-radius: var(--radius-pill);
   font-size: 12.5px;
   cursor: pointer;
@@ -1333,32 +1384,86 @@ button {
    ========================================================================== */
 .editorial-products-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 14px;
+  grid-template-columns: 1fr;
+  gap: 28px;
+  row-gap: 36px;
+  width: 100%;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 540px) {
   .editorial-products-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 22px;
+    row-gap: 36px;
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 960px) {
   .editorial-products-grid {
     grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
+    gap: 28px;
+    row-gap: 44px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1240px) {
   .editorial-products-grid {
     grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
+    gap: 30px;
+    row-gap: 48px;
   }
 }
 
-/* Dark Card */
+/* Compact layout mode when toggled */
+.editorial-products-grid.compact-view {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  row-gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .editorial-products-grid.compact-view {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    row-gap: 26px;
+  }
+}
+
+@media (min-width: 1140px) {
+  .editorial-products-grid.compact-view {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    row-gap: 30px;
+  }
+}
+
+.editorial-products-grid.compact-view .card-editorial-body {
+  padding: 12px 10px 14px;
+}
+
+.editorial-products-grid.compact-view .card-garment-title {
+  font-size: 13px;
+  min-height: 34px;
+  margin-bottom: 6px;
+}
+
+.editorial-products-grid.compact-view .card-size-pills {
+  display: none;
+}
+
+.editorial-products-grid.compact-view .card-price-bar {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  margin-bottom: 8px;
+}
+
+.editorial-products-grid.compact-view .card-shipping-flag {
+  margin-left: 0;
+  font-size: 10px;
+}
+
+/* Dark Editorial Card with Generous Breathing Space */
 .editorial-card {
   background: var(--dark-charcoal);
   border: 1px solid rgba(230, 211, 184, 0.22);
@@ -1368,12 +1473,13 @@ button {
   flex-direction: column;
   position: relative;
   transition: transform var(--transition-smooth), border-color var(--transition-smooth), box-shadow var(--transition-smooth);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
 }
 
 .editorial-card:hover {
   transform: translateY(-6px);
   border-color: var(--accent-cream);
-  box-shadow: 0 16px 32px rgba(20, 20, 20, 0.5), 0 0 20px var(--accent-cream-glow);
+  box-shadow: 0 18px 36px rgba(20, 20, 20, 0.6), 0 0 24px var(--accent-cream-glow);
 }
 
 .card-media-stage {
@@ -1497,7 +1603,7 @@ button {
 
 /* Card Content Details */
 .card-editorial-body {
-  padding: 16px;
+  padding: 22px 20px 24px;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -1507,25 +1613,25 @@ button {
   font-family: var(--font-mono);
   font-size: 10.5px;
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.14em;
   color: var(--accent-cream);
   text-transform: uppercase;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
 .card-garment-title {
   font-family: var(--font-display);
-  font-size: 14.5px;
+  font-size: 15.5px;
   font-weight: 700;
   color: var(--text-offwhite);
-  line-height: 1.35;
-  margin-bottom: 8px;
+  line-height: 1.4;
+  margin-bottom: 10px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   cursor: pointer;
-  min-height: 38px;
+  min-height: 44px;
 }
 
 .card-garment-title:hover {
@@ -1535,11 +1641,11 @@ button {
 .card-star-row {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 6px;
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 11.5px;
   color: #fbbf24;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .card-star-row span {
@@ -1549,21 +1655,22 @@ button {
 .card-price-bar {
   display: flex;
   align-items: baseline;
-  gap: 8px;
+  gap: 10px;
   margin-top: auto;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
 }
 
 .card-price-val {
   font-family: var(--font-mono);
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 800;
   color: var(--accent-cream);
 }
 
 .card-strike-val {
   font-family: var(--font-mono);
-  font-size: 13px;
+  font-size: 13.5px;
   color: var(--text-dim);
   text-decoration: line-through;
 }
@@ -1579,15 +1686,15 @@ button {
 .card-size-pills {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
-  margin-bottom: 14px;
+  gap: 6px;
+  margin-bottom: 16px;
 }
 
 .size-pill-btn {
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 700;
-  padding: 3px 8px;
+  padding: 4px 10px;
   border-radius: var(--radius-pill);
   background: var(--dark-card);
   border: 1px solid rgba(230, 211, 184, 0.25);
@@ -1607,20 +1714,24 @@ button {
 .card-actions-grid {
   display: grid;
   grid-template-columns: 1fr auto;
-  gap: 8px;
+  gap: 10px;
 }
 
 .card-cart-btn {
   background: var(--accent-cream);
   color: var(--dark-charcoal);
   border: 1px solid var(--accent-cream);
-  padding: 9px 12px;
+  padding: 10px 14px;
   border-radius: var(--radius-pill);
-  font-size: 12.5px;
+  font-size: 13px;
   font-weight: 800;
   letter-spacing: 0.02em;
   transition: all var(--transition-fast);
   text-align: center;
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card-cart-btn:hover {
@@ -1629,11 +1740,11 @@ button {
 }
 
 .card-whatsapp-btn {
-  background: rgba(37, 211, 102, 0.12);
+  background: rgba(37, 211, 102, 0.15);
   color: var(--wa-green);
-  border: 1px solid rgba(37, 211, 102, 0.4);
-  width: 38px;
-  height: 38px;
+  border: 1px solid rgba(37, 211, 102, 0.5);
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   display: flex;
   align-items: center;
