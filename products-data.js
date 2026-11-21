@@ -4,64 +4,6 @@
 
 window.HAJI_PRODUCTS = [
   {
-    "id": "HL-160",
-    "name": "Pelle Pelle America Quilted Heritage Leather Jacket",
-    "category": "Soda Club & Heritage",
-    "price": 340,
-    "originalPrice": 1650,
-    "image": "cloth-hanging/rack_01_pelle_front.png",
-    "sideImage": "cloth-hanging/rack_01_pelle_side.png",
-    "images": [
-      "cloth-hanging/rack_01_pelle_front.png",
-      "cloth-hanging/rack_01_pelle_side.png",
-      "https://cdn.shopify.com/s/files/1/0669/7159/9167/files/Pelle_Pelle_18.jpg?v=1733595741&width=1600"
-    ],
-    "description": "Iconic Pelle Pelle American Heritage Quilted Leather Jacket handcrafted from competition-grade heavyweight cowhide hide. Features hand-cut multi-layer American shield appliqué on back and sleeves with signature brass hardware.",
-    "rating": 5,
-    "reviewCount": 46,
-    "brand": "Pelle Pelle Atelier by Haji Leather",
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "2XL",
-      "3XL",
-      "4XL"
-    ],
-    "inStock": true
-  },
-  {
-    "id": "HL-P02",
-    "name": "Pelle-Pelle X TB Exclusive Men's Chi City Leather Jacket",
-    "category": "Chi City Series",
-    "price": 350,
-    "originalPrice": 1800,
-    "image": "cloth-hanging/rack_02_chicity_front.png",
-    "sideImage": "cloth-hanging/rack_02_chicity_side.png",
-    "images": [
-      "cloth-hanging/rack_02_chicity_front.png",
-      "cloth-hanging/rack_02_chicity_side.png",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/326-37635-BRI_2.webp?v=1791565680&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/326-37635-BRI_1_9809b63e-dea4-4160-98a6-d3fe0e7f8a7b.webp?v=1791565808&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/326-37635-BRI_3_47e68806-759c-42eb-b285-93eef81d46f1.webp?v=1791565808&width=1600"
-    ],
-    "description": "The world-renowned Chi City Limited Edition Pelle Pelle leather jacket. Handcrafted from premium supple drum-dyed black cowhide with vibrant multi-colored Chicago skyline embroidery, raised letter patches, and signature Marc Buchanan hardware.",
-    "rating": 5,
-    "reviewCount": 52,
-    "brand": "Pelle Pelle Atelier by Haji Leather",
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "2XL",
-      "3XL",
-      "4XL"
-    ],
-    "inStock": true
-  },
-  {
     "id": "HL-P03",
     "name": "Pelle Pelle Script Soda Club 1978 Leather Jacket",
     "category": "Soda Club & Heritage",
@@ -92,34 +34,6 @@ window.HAJI_PRODUCTS = [
     "inStock": true
   },
   {
-    "id": "HL-163",
-    "name": "Pelle Pelle Marc Buchanan Encrusted Plush Leather Jacket",
-    "category": "Plush & Encrusted",
-    "price": 350,
-    "originalPrice": 1850,
-    "image": "cloth-hanging/rack_05_pelleplush_front.png",
-    "sideImage": "cloth-hanging/rack_05_pelleplush_side.png",
-    "images": [
-      "cloth-hanging/rack_05_pelleplush_front.png",
-      "cloth-hanging/rack_05_pelleplush_side.png",
-      "https://cdn.shopify.com/s/files/1/0669/7159/9167/files/Pelle_Pelle_24.jpg?v=1733595742&width=1600"
-    ],
-    "description": "Luxe heavyweight Marc Buchanan Encrusted Plush jacket. Adorned with brilliant hand-set rhinestone encrusting across the grand back crest, deep faux-fur plush collar, and ultra-soft drum-dyed nappa leather.",
-    "rating": 5,
-    "reviewCount": 61,
-    "brand": "Pelle Pelle Atelier by Haji Leather",
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "2XL",
-      "3XL",
-      "4XL"
-    ],
-    "inStock": true
-  },
-  {
     "id": "HL-P05",
     "name": "Pelle Pelle Sounds World Tour Heavy Leather Jacket",
     "category": "Windy City & Sounds",
@@ -136,35 +50,6 @@ window.HAJI_PRODUCTS = [
     "description": "Iconic Sounds World Tour leather masterpiece. Detailed with intricate multi-color music and acoustic graphic embroidery, ribbed leather shoulder gussets, and heavy industrial front zipper.",
     "rating": 4.9,
     "reviewCount": 34,
-    "brand": "Pelle Pelle Atelier by Haji Leather",
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "2XL",
-      "3XL",
-      "4XL"
-    ],
-    "inStock": true
-  },
-  {
-    "id": "HL-P06",
-    "name": "Pelle-Pelle X TB Men's Windy City Leather Jacket",
-    "category": "Windy City & Sounds",
-    "price": 335,
-    "originalPrice": 1600,
-    "image": "cloth-hanging/rack_06_windycity_front.png",
-    "sideImage": "cloth-hanging/rack_06_windycity_side.png",
-    "images": [
-      "cloth-hanging/rack_06_windycity_front.png",
-      "cloth-hanging/rack_06_windycity_side.png",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/3_8c7e50b0-e25c-4234-8274-0a18bf034380.webp?v=1782953411&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/2_9218408a-44e4-4cfb-9af7-493658054b14.webp?v=1782953411&width=1600"
-    ],
-    "description": "Chicago Windy City Edition Pelle Pelle leather jacket. Tailored with heavyweight genuine cowhide, hand-stitched star crest, and authentic vintage fit.",
-    "rating": 5,
-    "reviewCount": 44,
     "brand": "Pelle Pelle Atelier by Haji Leather",
     "sizes": [
       "S",
