@@ -67,7 +67,7 @@
       <!-- Desktop Navigation Links -->
       <nav class="desktop-nav" aria-label="Primary Navigation">
         <ul class="nav-list">
-          <li><a href="#heroSection" class="nav-link highlight-link">Collection</a></li>
+          <li><a href="#heroSection" class="nav-link highlight-link">Trending</a></li>
           <li><a href="#catalog" class="nav-link active" data-cat="all">Archive (78)</a></li>
           <li><a href="#catalog" class="nav-link" data-cat="Pelle Pelle">Pelle Pelle</a></li>
           <li><a href="#catalog" class="nav-link" data-cat="Biker & Moto">Biker</a></li>
@@ -140,7 +140,7 @@
         <p>15% OFF entire order with coupon <strong>WELCOME15</strong></p>
       </div>
       <ul class="drawer-nav">
-        <li><a href="#heroSection" class="drawer-link special">🧥 Atelier Hanging Clothes Rack (8)</a></li>
+        <li><a href="#heroSection" class="drawer-link special">🧥 Trending Collection Rack (5)</a></li>
         <li><a href="#catalog" class="drawer-link active" data-cat="all">✦ Complete Archive (78)</a></li>
         <li><a href="#catalog" class="drawer-link" data-cat="Pelle Pelle">💎 Pelle Pelle Collection (20)</a></li>
         <li><a href="#catalog" class="drawer-link" data-cat="Biker & Moto">⚡ Heavy Biker &amp; Moto Hides</a></li>
@@ -173,33 +173,20 @@
   </aside>
   <div class="drawer-backdrop" id="drawer-backdrop"></div>
 
-  <!-- Hero Section: Featured Jacket in Header + Sub-niche Rack (Black Ground & Simple) -->
-  <section class="editorial-hero" id="heroSection">
-    <div class="wardrobe-stage" id="wardrobeStage">
+  <!-- Trending Collection Top Section (Small, Compact & Mobile-Friendly) -->
+  <section class="editorial-hero trending-hero" id="heroSection">
+    <div class="trending-stage" id="wardrobeStage">
       <!-- Ambient Lighting Sheen -->
       <div class="wardrobe-ambient-sheen" aria-hidden="true"></div>
 
-      <!-- Clean Header: write COLLECTION not other this -->
-      <div class="hero-clean-header">
-        <h1 class="hero-collection-title">COLLECTION</h1>
+      <!-- Small, Accurate Trending Header -->
+      <div class="trending-header">
+        <span class="trending-eyebrow">[ ATELIER CURATION ]</span>
+        <h2 class="trending-title">TRENDING COLLECTION</h2>
+        <p class="trending-subtext">Curated Leather &amp; Bomber Editions • Tap Any Piece to Inspect &amp; Order</p>
       </div>
 
-      <!-- ONE Feature Jacket in Header Showcase -->
-      <div class="hero-feature-showcase" id="heroJacketShowcase">
-        <div class="hero-jacket-wrap" onclick="openHeroFeatureQuickView()" title="Click to view details">
-          <img id="heroFeatureImg" src="cloth-hanging/rack_01_pelle_front.png" alt="Pelle Pelle America Quilted Heritage Leather Jacket" class="hero-feature-img">
-        </div>
-        <div class="hero-feature-details">
-          <div class="hero-feature-badge" id="heroFeatureBadge">[PELLE PELLE]</div>
-          <h2 class="hero-feature-title" id="heroFeatureName">America Quilted Heritage Leather Jacket</h2>
-          <div class="hero-feature-meta">
-            <span class="hero-feature-price" id="heroFeaturePrice">$598.00</span>
-            <button type="button" class="hero-feature-btn" id="heroFeatureBtn" onclick="openHeroFeatureQuickView()">Quick View ↗</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Sub-niche: Hanging Clothes Rack for Other Pieces -->
+      <!-- Hanging Clothes Rack with Curated Pieces -->
       <div class="rack-subniche-stage" id="rackStage">
         <!-- Brushed Steel & Brass Rail Rod -->
         <div class="rack-rail-rod" aria-hidden="true">
@@ -322,16 +309,7 @@
       <!-- Rack Interactive Footer Status Line -->
       <div class="rack-footer" id="rackFooter">
         <div class="rack-status-line" id="rackStatusLine">
-          Tap or hover any jacket on the rack to swap feature
-        </div>
-        <div class="rack-action-pills">
-          <a href="#catalog" class="pill-btn primary-pill" data-category="all">
-            <span>Explore All Pieces</span>
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-          </a>
-          <a href="https://wa.me/923046251824" target="_blank" rel="noopener noreferrer" class="pill-btn wa-pill">
-            <span>Direct WhatsApp Concierge</span>
-          </a>
+          Tap or hover any piece on the rack to inspect details
         </div>
       </div>
 
