@@ -4,65 +4,6 @@
 
 window.HAJI_PRODUCTS = [
   {
-    "id": "HL-P03",
-    "name": "Pelle Pelle Script Soda Club 1978 Leather Jacket",
-    "category": "Soda Club & Heritage",
-    "price": 330,
-    "originalPrice": 1550,
-    "image": "cloth-hanging/rack_03_sodaclub_front.png",
-    "sideImage": "cloth-hanging/rack_03_sodaclub_side.png",
-    "images": [
-      "cloth-hanging/rack_03_sodaclub_front.png",
-      "cloth-hanging/rack_03_sodaclub_side.png",
-      "https://cdn.shopify.com/s/files/1/0669/7159/9167/files/326-37594_Blk_Red_Ghosting.jpg?v=1792612420&width=1600",
-      "https://cdn.shopify.com/s/files/1/0669/7159/9167/files/326-37594_Blk_Red_Ghosting_2.jpg?v=1792612420&width=1600",
-      "https://cdn.shopify.com/s/files/1/0669/7159/9167/files/326-37594_Blk_Red_Ghosting_Details_2.jpg?v=1792612423&width=1600"
-    ],
-    "description": "The iconic 1978 vintage Script Soda Club heavyweight leather bomber jacket. Tailored with raised cursive Soda Club chest embroidery, bold two-tone sleeve striping, and ribbed cuffs and hem.",
-    "rating": 4.9,
-    "reviewCount": 39,
-    "brand": "Pelle Pelle Atelier by Haji Leather",
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "2XL",
-      "3XL",
-      "4XL"
-    ],
-    "inStock": true
-  },
-  {
-    "id": "HL-P05",
-    "name": "Pelle Pelle Sounds World Tour Heavy Leather Jacket",
-    "category": "Windy City & Sounds",
-    "price": 345,
-    "originalPrice": 1700,
-    "image": "cloth-hanging/rack_05_sounds_front.png",
-    "sideImage": "cloth-hanging/rack_05_sounds_side.png",
-    "images": [
-      "cloth-hanging/rack_05_sounds_front.png",
-      "cloth-hanging/rack_05_sounds_side.png",
-      "https://cdn.shopify.com/s/files/1/0669/7159/9167/files/326-37548_Blk_Cab_Grn_Ivory.jpg?v=1792634523&width=1600",
-      "https://cdn.shopify.com/s/files/1/0669/7159/9167/files/326-37548_Blk_Cab_Grn_Ivory_Back.jpg?v=1792634522&width=1600"
-    ],
-    "description": "Iconic Sounds World Tour leather masterpiece. Detailed with intricate multi-color music and acoustic graphic embroidery, ribbed leather shoulder gussets, and heavy industrial front zipper.",
-    "rating": 4.9,
-    "reviewCount": 34,
-    "brand": "Pelle Pelle Atelier by Haji Leather",
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "2XL",
-      "3XL",
-      "4XL"
-    ],
-    "inStock": true
-  },
-  {
     "id": "HL-PP001",
     "name": "Pelle Pelle x Opium Classic 00 Jacket",
     "category": "Chi City Series",
@@ -1713,67 +1654,6 @@ window.HAJI_PRODUCTS = [
     "inStock": true
   },
   {
-    "id": "HL-TB056",
-    "name": "Men's Renegades Leather Jacket",
-    "category": "Chi City Series",
-    "price": 325,
-    "originalPrice": 1560,
-    "image": "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-renegades-leather-jacket-324-37497-cbm_3.webp?v=1740607521&width=1600",
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-renegades-leather-jacket-324-37497-cbm_3.webp?v=1740607521&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-renegades-leather-jacket-324-37497-cbm_4.webp?v=1740607521&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-renegades-leather-jacket-324-37497-cbm_5.webp?v=1740607521&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-renegades-leather-jacket-324-37497-cbm_1.webp?v=1740607521&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-renegades-leather-jacket-324-37497-cbm_2.webp?v=1740607521&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-renegades-leather-jacket-324-37497-cbm_6.webp?v=1740607521&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/324-37497-CBM_7.webp?v=1740607582&width=1600"
-    ],
-    "description": "Official Pelle Pelle limited edition leather release. Hand-cut and assembled by master craftsmen using 100% genuine full-grain leather, solid brass YKK zippers, and ultra-dense satin lining.",
-    "rating": 5,
-    "reviewCount": 63,
-    "brand": "Pelle Pelle Atelier by Haji Leather",
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "2XL",
-      "3XL",
-      "4XL"
-    ],
-    "inStock": true
-  },
-  {
-    "id": "HL-TB057",
-    "name": "Men's Soda Club Leather Jacket",
-    "category": "Soda Club & Heritage",
-    "price": 330,
-    "originalPrice": 1584,
-    "image": "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/2434B_5.webp?v=1736797590&width=1600",
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/2434B_5.webp?v=1736797590&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/2434B_4.webp?v=1736797731&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/2434B_1.webp?v=1736797731&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/2434B_6.webp?v=1736797731&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/2434B_3.webp?v=1736797731&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/2434B_2.webp?v=1736797731&width=1600"
-    ],
-    "description": "Official Pelle Pelle limited edition leather release. Hand-cut and assembled by master craftsmen using 100% genuine full-grain leather, solid brass YKK zippers, and ultra-dense satin lining.",
-    "rating": 4.9,
-    "reviewCount": 70,
-    "brand": "Pelle Pelle Atelier by Haji Leather",
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "2XL",
-      "3XL",
-      "4XL"
-    ],
-    "inStock": true
-  },
-  {
     "id": "HL-TB062",
     "name": "Pelle-Pelle X TB Men's Chi-Town Leather Jacket",
     "category": "Chi City Series",
@@ -1825,40 +1705,6 @@ window.HAJI_PRODUCTS = [
     "description": "Official Pelle Pelle limited edition leather release. Hand-cut and assembled by master craftsmen using 100% genuine full-grain leather, solid brass YKK zippers, and ultra-dense satin lining.",
     "rating": 4.9,
     "reviewCount": 76,
-    "brand": "Pelle Pelle Atelier by Haji Leather",
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "2XL",
-      "3XL",
-      "4XL"
-    ],
-    "inStock": true
-  },
-  {
-    "id": "HL-TB066",
-    "name": "Women's Picasso Crop Leather Jacket",
-    "category": "Women's Pelle Pelle",
-    "price": 295,
-    "originalPrice": 1416,
-    "image": "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-womens-picasso-crop-leather-jacket-324-37503-btp_2_3bdebfe6-f27f-444e-b37d-2572d0f9343c.webp?v=1733436034&width=1600",
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-womens-picasso-crop-leather-jacket-324-37503-btp_2_3bdebfe6-f27f-444e-b37d-2572d0f9343c.webp?v=1733436034&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-womens-picasso-crop-leather-jacket-324-37503-btp_1_05d6b039-ed1b-4e15-856a-3cd00955d2fc.webp?v=1782956790&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-womens-picasso-crop-leather-jacket-324-37503-btp_3_bdd1eaa6-773d-4d37-9a2b-32735f0c0375.webp?v=1734369806&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-womens-picasso-crop-leather-jacket-324-37503-btp_2_229f1848-dda8-4cf5-9a7d-ffb9115f1970.webp?v=1734369806&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-womens-picasso-crop-leather-jacket-324-37503-btp_4_2c3372c2-3c76-4ecb-85c5-b55dcc02c56b.webp?v=1734369806&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-womens-picasso-crop-leather-jacket-324-37503-btp_3_1c51d759-1c8c-4058-8efa-c05633540629.webp?v=1734369806&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-womens-picasso-crop-leather-jacket-324-37503-btp_5_c19440cc-3a9e-40a7-9ea7-f0f0461e8a9c.webp?v=1734369806&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-womens-picasso-crop-leather-jacket-324-37503-btp_7_2014839f-e1da-4c43-a595-0e84cf145018.webp?v=1734369806&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-womens-picasso-crop-leather-jacket-324-37503-btp_6_0eb02896-c245-4f6e-b008-e76e307aa11d.webp?v=1734369806&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-womens-picasso-crop-leather-jacket-324-37503-btp_1_8c0bad40-32f4-486a-9137-384ca711f0b1.webp?v=1734369806&width=1600"
-    ],
-    "description": "Official Pelle Pelle limited edition leather release. Hand-cut and assembled by master craftsmen using 100% genuine full-grain leather, solid brass YKK zippers, and ultra-dense satin lining.",
-    "rating": 5,
-    "reviewCount": 33,
     "brand": "Pelle Pelle Atelier by Haji Leather",
     "sizes": [
       "S",
@@ -2026,38 +1872,6 @@ window.HAJI_PRODUCTS = [
     "inStock": true
   },
   {
-    "id": "HL-TB083",
-    "name": "Men's 50 Years Of Hip Hop Leather Jacket",
-    "category": "Chi City Series",
-    "price": 325,
-    "originalPrice": 1560,
-    "image": "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-50-years-of-hip-hop-leather-jacket-324-37492-tpb_1.webp?v=1732733280&width=1600",
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-50-years-of-hip-hop-leather-jacket-324-37492-tpb_1.webp?v=1732733280&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-50-years-of-hip-hop-leather-jacket-324-37492-tpb_7.webp?v=1732733280&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-50-years-of-hip-hop-leather-jacket-324-37492-tpb_5.webp?v=1732733280&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-50-years-of-hip-hop-leather-jacket-324-37492-tpb_2.webp?v=1732733280&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-50-years-of-hip-hop-leather-jacket-324-37492-tpb_8.webp?v=1732733280&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-50-years-of-hip-hop-leather-jacket-324-37492-tpb_6.webp?v=1732733280&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-50-years-of-hip-hop-leather-jacket-324-37492-tpb_4.webp?v=1732733280&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-50-years-of-hip-hop-leather-jacket-324-37492-tpb_3.webp?v=1732733280&width=1600"
-    ],
-    "description": "Official Pelle Pelle limited edition leather release. Hand-cut and assembled by master craftsmen using 100% genuine full-grain leather, solid brass YKK zippers, and ultra-dense satin lining.",
-    "rating": 4.9,
-    "reviewCount": 52,
-    "brand": "Pelle Pelle Atelier by Haji Leather",
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "2XL",
-      "3XL",
-      "4XL"
-    ],
-    "inStock": true
-  },
-  {
     "id": "HL-TB084",
     "name": "Men's Picasso Plush Leather Jacket",
     "category": "Plush & Encrusted",
@@ -2166,37 +1980,6 @@ window.HAJI_PRODUCTS = [
     "description": "Official Pelle Pelle limited edition leather release. Hand-cut and assembled by master craftsmen using 100% genuine full-grain leather, solid brass YKK zippers, and ultra-dense satin lining.",
     "rating": 5,
     "reviewCount": 65,
-    "brand": "Pelle Pelle Atelier by Haji Leather",
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "2XL",
-      "3XL",
-      "4XL"
-    ],
-    "inStock": true
-  },
-  {
-    "id": "HL-TB094",
-    "name": "Men's Shoulder Crest Leather Jacket",
-    "category": "Chi City Series",
-    "price": 325,
-    "originalPrice": 1560,
-    "image": "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-shoulder-crest-leather-jacket-324-37499-bbs_8.webp?v=1730751199&width=1600",
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-shoulder-crest-leather-jacket-324-37499-bbs_8.webp?v=1730751199&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-shoulder-crest-leather-jacket-324-37499-bbs_7.webp?v=1730751199&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-shoulder-crest-leather-jacket-324-37499-bbs_6.webp?v=1730751200&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-shoulder-crest-leather-jacket-324-37499-bbs_2.webp?v=1730751203&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-shoulder-crest-leather-jacket-324-37499-bbs_3.webp?v=1730751203&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-shoulder-crest-leather-jacket-324-37499-bbs_4.webp?v=1730751203&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-shoulder-crest-leather-jacket-324-37499-bbs_1.webp?v=1730751203&width=1600"
-    ],
-    "description": "Official Pelle Pelle limited edition leather release. Hand-cut and assembled by master craftsmen using 100% genuine full-grain leather, solid brass YKK zippers, and ultra-dense satin lining.",
-    "rating": 5,
-    "reviewCount": 29,
     "brand": "Pelle Pelle Atelier by Haji Leather",
     "sizes": [
       "S",
@@ -2344,98 +2127,6 @@ window.HAJI_PRODUCTS = [
     "inStock": true
   },
   {
-    "id": "HL-TB120",
-    "name": "Men's World Famous Soda Club Plush Leather Jacket",
-    "category": "Soda Club & Heritage",
-    "price": 350,
-    "originalPrice": 1680,
-    "image": "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/0021_pelle-pelle-mens-world-famous-soda-club-plush-leather-jacket-422-37466-icn_2_3dd1d315-d5c9-462a-be2c-1a99b6bc1ecf.jpg?v=1701979339&width=1600",
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/0021_pelle-pelle-mens-world-famous-soda-club-plush-leather-jacket-422-37466-icn_2_3dd1d315-d5c9-462a-be2c-1a99b6bc1ecf.jpg?v=1701979339&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/0019_pelle-pelle-mens-world-famous-soda-club-plush-leather-jacket-422-37466-icn_4_3e15f0fe-ff12-40bf-a4e8-938209fdabb6.jpg?v=1701979339&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/0020_pelle-pelle-mens-world-famous-soda-club-plush-leather-jacket-422-37466-icn_3_6503e3b2-4aa4-4681-bdd3-af9d691cf5aa.jpg?v=1701979339&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-world-famous-soda-club-plush-leather-jacket-422-37466-icn_5.jpg?v=1701979339&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-world-famous-soda-club-plush-leather-jacket-422-37466-icn_5-Copy_d1f0c469-7daa-4726-8401-e9831c284d17.jpg?v=1701979339&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-world-famous-soda-club-plush-leather-jacket-422-37466-icn_6-Copy.jpg?v=1701979339&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-world-famous-soda-club-plush-leather-jacket-422-37466-icn_1_0b5a612e-062c-492c-b067-cc22b7c1d306.jpg?v=1701979337&width=1600"
-    ],
-    "description": "Official Pelle Pelle limited edition leather release. Hand-cut and assembled by master craftsmen using 100% genuine full-grain leather, solid brass YKK zippers, and ultra-dense satin lining.",
-    "rating": 5,
-    "reviewCount": 61,
-    "brand": "Pelle Pelle Atelier by Haji Leather",
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "2XL",
-      "3XL",
-      "4XL"
-    ],
-    "inStock": true
-  },
-  {
-    "id": "HL-TB124",
-    "name": "Men's Two Tone Pelle Leather Jacket",
-    "category": "Chi City Series",
-    "price": 325,
-    "originalPrice": 1560,
-    "image": "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-two-tone-pelle-leather-jacket-325-37552-bra_2.webp?v=1762969499&width=1600",
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-two-tone-pelle-leather-jacket-325-37552-bra_2.webp?v=1762969499&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-two-tone-pelle-leather-jacket-325-37552-bra_1.webp?v=1762969499&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-two-tone-pelle-leather-jacket-325-37552-bra_7.webp?v=1762969499&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-two-tone-pelle-leather-jacket-325-37552-bra_6.webp?v=1762969499&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-two-tone-pelle-leather-jacket-325-37552-bra_3.webp?v=1762969485&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-two-tone-pelle-leather-jacket-325-37552-bra_4.webp?v=1762969485&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-two-tone-pelle-leather-jacket-325-37552-bra_5.webp?v=1762969486&width=1600"
-    ],
-    "description": "Official Pelle Pelle limited edition leather release. Hand-cut and assembled by master craftsmen using 100% genuine full-grain leather, solid brass YKK zippers, and ultra-dense satin lining.",
-    "rating": 5,
-    "reviewCount": 39,
-    "brand": "Pelle Pelle Atelier by Haji Leather",
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "2XL",
-      "3XL",
-      "4XL"
-    ],
-    "inStock": true
-  },
-  {
-    "id": "HL-TB127",
-    "name": "Men's Stars And Stripes Leather Jacket",
-    "category": "Chi City Series",
-    "price": 325,
-    "originalPrice": 1560,
-    "image": "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-stars-and-stripes-leather-jacket-325-37540-bci_3.webp?v=1762973358&width=1600",
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-stars-and-stripes-leather-jacket-325-37540-bci_3.webp?v=1762973358&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-stars-and-stripes-leather-jacket-325-37540-bci_4.webp?v=1762973358&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-stars-and-stripes-leather-jacket-325-37540-bci_5.webp?v=1762973358&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-stars-and-stripes-leather-jacket-325-37540-bci_6.webp?v=1762973358&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-stars-and-stripes-leather-jacket-325-37540-bci_1.webp?v=1762973358&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-stars-and-stripes-leather-jacket-325-37540-bci_2.webp?v=1762973358&width=1600"
-    ],
-    "description": "Official Pelle Pelle limited edition leather release. Hand-cut and assembled by master craftsmen using 100% genuine full-grain leather, solid brass YKK zippers, and ultra-dense satin lining.",
-    "rating": 4.9,
-    "reviewCount": 60,
-    "brand": "Pelle Pelle Atelier by Haji Leather",
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "2XL",
-      "3XL",
-      "4XL"
-    ],
-    "inStock": true
-  },
-  {
     "id": "HL-TB128",
     "name": "Men's Daytona Special Leather Jacket",
     "category": "Chi City Series",
@@ -2457,39 +2148,6 @@ window.HAJI_PRODUCTS = [
     "description": "Official Pelle Pelle limited edition leather release. Hand-cut and assembled by master craftsmen using 100% genuine full-grain leather, solid brass YKK zippers, and ultra-dense satin lining.",
     "rating": 5,
     "reviewCount": 67,
-    "brand": "Pelle Pelle Atelier by Haji Leather",
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "2XL",
-      "3XL",
-      "4XL"
-    ],
-    "inStock": true
-  },
-  {
-    "id": "HL-TB130",
-    "name": "Men's American Bruiser Varsity Jacket",
-    "category": "Chi City Series",
-    "price": 325,
-    "originalPrice": 1560,
-    "image": "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-american-bruiser-varsity-jacket-325-37554-bkb_3.webp?v=1762972928&width=1600",
-    "images": [
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-american-bruiser-varsity-jacket-325-37554-bkb_3.webp?v=1762972928&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-american-bruiser-varsity-jacket-325-37554-bkb_4.webp?v=1762972928&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-american-bruiser-varsity-jacket-325-37554-bkb_1.webp?v=1762972928&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-american-bruiser-varsity-jacket-325-37554-bkb_6.webp?v=1762972928&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-american-bruiser-varsity-jacket-325-37554-bkb_5.webp?v=1762972928&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-american-bruiser-varsity-jacket-325-37554-bkb_2.webp?v=1762972928&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-american-bruiser-varsity-jacket-325-37554-bkb_7.webp?v=1762972928&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-american-bruiser-varsity-jacket-325-37554-bkb_8.webp?v=1762972928&width=1600",
-      "https://cdn.shopify.com/s/files/1/0563/4723/0273/files/pelle-pelle-mens-american-bruiser-varsity-jacket-325-37554-bkb_9.webp?v=1762972928&width=1600"
-    ],
-    "description": "Official Pelle Pelle limited edition leather release. Hand-cut and assembled by master craftsmen using 100% genuine full-grain leather, solid brass YKK zippers, and ultra-dense satin lining.",
-    "rating": 5,
-    "reviewCount": 31,
     "brand": "Pelle Pelle Atelier by Haji Leather",
     "sizes": [
       "S",
