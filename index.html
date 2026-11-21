@@ -3,133 +3,128 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>Haji Leather | Handcrafted Premium Leather Jackets & Goods</title>
-  <meta name="description" content="Discover premium handcrafted leather jackets, motorcycle suits, biker gear, and bespoke outerwear at Haji Leather. Genuine leather, worldwide shipping, secure card checkout.">
+  <title>Haji Leather | Handcrafted Luxury Leather & Varsity Archive</title>
+  <meta name="description" content="Haji Leather Atelier — Manufacturer and exporter of handcrafted premium leather jackets, varsity teamwear, motorcycle suits, and bespoke luxury outerwear.">
   <meta name="google-site-verification" content="f15237b84c7970b0">
   <link rel="icon" href="logo.jpg" type="image/jpeg">
   <link rel="canonical" href="https://hajileather.company/">
 
-  <!-- Open Graph / Facebook -->
+  <!-- Open Graph / Meta -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://hajileather.company/">
-  <meta property="og:title" content="Haji Leather | Handcrafted Premium Leather Jackets">
-  <meta property="og:description" content="Discover premium handcrafted leather jackets, motorcycle suits, biker gear, and bespoke outerwear at Haji Leather.">
+  <meta property="og:title" content="Haji Leather | Handcrafted Luxury Leather & Varsity Archive">
+  <meta property="og:description" content="Minimalist, high-fashion editorial leather archive. Handcrafted genuine cowhide, sheepskin & bespoke varsity apparel.">
   <meta property="og:image" content="https://hajileather.company/logo.jpg">
 
-  <!-- Google Fonts -->
+  <!-- Google Fonts: Syne (Condensed Editorial Display), JetBrains Mono (Tech/Atelier), Plus Jakarta Sans (Modern Editorial Body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="editorial-theme">
 
-  <!-- Top Announcement Bar (Luxwearz Style) -->
-  <div class="top-announcement-bar">
-    <div class="announcement-track">
-      <span class="announcement-item">
-        🔥 <strong>Welcome Offer:</strong> 15% OFF storewide with code <span class="coupon-tag" id="copy-welcome-btn" title="Click to copy coupon">WELCOME15</span>
-      </span>
-      <span class="announcement-bullet">•</span>
-      <span class="announcement-item">
-        ✈️ <strong>Free Express Worldwide Shipping</strong> on all orders over $399
-      </span>
-      <span class="announcement-bullet">•</span>
-      <span class="announcement-item">
-        🛡️ <strong>100% Genuine Full-Grain Leather</strong> Handcrafted to Perfection
-      </span>
-      <span class="announcement-bullet">•</span>
-      <span class="announcement-item">
-        💳 <strong>Secure Checkout:</strong> Stripe, Visa, Mastercard, Amex, Apple Pay, Google Pay & Cash on Delivery
-      </span>
+  <!-- Top Announcement Bar -->
+  <aside class="editorial-top-bar">
+    <div class="container top-bar-inner">
+      <div class="announcement-left">
+        <span class="editorial-tag-mono">ATELIER ARCHIVE</span>
+        <span class="announcement-text">Welcome Offer: <strong>15% OFF</strong> Storewide with Code <button type="button" class="promo-pill" id="copy-promo-pill" title="Click to copy coupon">WELCOME15</button></span>
+      </div>
+      <div class="announcement-right">
+        <span class="announcement-highlight">✈️ Complimentary Express Delivery over $399</span>
+        <span class="top-divider">/</span>
+        <a href="https://wa.me/923046251824" target="_blank" rel="noopener noreferrer" class="top-support-link">
+          <span>WhatsApp: +92 304 6251824</span>
+        </a>
+      </div>
     </div>
-  </div>
+  </aside>
 
-  <!-- Main Luxury Header -->
+  <!-- Editorial Main Header -->
   <header class="site-header" id="site-header">
     <div class="header-inner container">
       
       <!-- Mobile Menu Toggle Button -->
-      <button class="mobile-nav-toggle" id="mobile-menu-open" aria-label="Open mobile menu">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      <button class="mobile-nav-toggle" id="mobile-menu-open" aria-label="Open Navigation">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
       </button>
 
       <!-- Brand Logo -->
       <a href="#" class="brand-logo">
-        <img src="logo.jpg" alt="Haji Leather" class="logo-image">
+        <img src="logo.jpg" alt="Haji Leather Atelier" class="logo-image">
         <div class="logo-text-group">
           <span class="logo-title">HAJI LEATHER</span>
-          <span class="logo-tagline">MASTER CRAFTSMEN</span>
+          <span class="logo-tagline">VARSITY & LEATHER ATELIER</span>
         </div>
       </a>
 
       <!-- Desktop Navigation Links -->
-      <nav class="desktop-nav" aria-label="Main Navigation">
+      <nav class="desktop-nav" aria-label="Primary Navigation">
         <ul class="nav-list">
-          <li><a href="#catalog" class="nav-link active" data-cat="all">All Products</a></li>
+          <li><a href="#catalog" class="nav-link active" data-cat="all">Archive (70)</a></li>
           <li><a href="#catalog" class="nav-link" data-cat="Classic Leather">Men's Classic</a></li>
-          <li><a href="#catalog" class="nav-link" data-cat="Women's Jackets">Women's Collection</a></li>
-          <li><a href="#catalog" class="nav-link" data-cat="Racing & Motorcycle">Motorcycle & Racing</a></li>
-          <li><a href="#catalog" class="nav-link" data-cat="Bomber & Flight">Bomber & Flight</a></li>
-          <li><a href="#custom-order" class="nav-link special-link">Custom Made</a></li>
-          <li><a href="#size-guide" class="nav-link" id="nav-size-guide-btn">Size Guide</a></li>
+          <li><a href="#catalog" class="nav-link" data-cat="Women's Jackets">Women's Edition</a></li>
+          <li><a href="#catalog" class="nav-link" data-cat="Racing & Motorcycle">Motorsport & Suits</a></li>
+          <li><a href="#catalog" class="nav-link" data-cat="Bomber & Flight">Bomber & Shearling</a></li>
+          <li><a href="#custom-atelier" class="nav-link highlight-link">Custom Made</a></li>
+          <li><a href="#payoneer-payment" class="nav-link">Payoneer / Banking</a></li>
+          <li><a href="#size-guide" class="nav-link" id="nav-size-guide-btn">Size Chart</a></li>
         </ul>
       </nav>
 
-      <!-- Header Search Bar -->
-      <div class="header-search-box">
-        <div class="search-input-wrapper">
-          <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-          <input type="text" id="header-search-input" placeholder="Search 70+ luxury jackets, pants, gear..." autocomplete="off">
+      <!-- Search Input Box -->
+      <div class="header-search-wrap">
+        <div class="search-pill-box">
+          <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="header-search-input" placeholder="Search archive..." autocomplete="off">
           <button class="clear-search-btn" id="clear-search" style="display:none;" aria-label="Clear search">×</button>
         </div>
       </div>
 
-      <!-- Header Action Icons -->
+      <!-- Header Action Buttons -->
       <div class="header-actions">
-        <!-- Search Toggle for Mobile -->
-        <button class="action-btn mobile-search-btn" id="mobile-search-toggle" aria-label="Toggle mobile search">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <!-- Mobile Search Toggle -->
+        <button class="action-btn mobile-search-btn" id="mobile-search-toggle" aria-label="Search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
         </button>
 
-        <!-- Wishlist Button -->
-        <button class="action-btn wishlist-btn" id="wishlist-drawer-open" aria-label="View Wishlist">
-          <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>
+        <!-- Wishlist -->
+        <button class="action-btn wishlist-btn" id="wishlist-drawer-open" aria-label="Saved Wishlist">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>
           <span class="badge-count" id="wishlist-count">0</span>
         </button>
 
-        <!-- Shopping Cart Button -->
-        <button class="action-btn cart-btn" id="cart-drawer-open" aria-label="View Shopping Cart">
-          <div class="cart-icon-wrap">
-            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
-            <span class="badge-count" id="cart-count">0</span>
-          </div>
-          <span class="cart-total-preview" id="cart-total-header">$0.00</span>
+        <!-- Shopping Cart -->
+        <button class="action-btn cart-pill-btn" id="cart-drawer-open" aria-label="View Shopping Cart">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="cart-pill-text">Bag</span>
+          <span class="cart-pill-count" id="cart-count">0</span>
         </button>
 
-        <!-- WhatsApp Direct Inquiry -->
-        <a href="https://wa.me/923046251824?text=Hello%20Haji%20Leather,%20I%20have%20an%20inquiry%20about%20your%20products" target="_blank" rel="noopener noreferrer" class="whatsapp-header-btn" title="Chat on WhatsApp">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zM12.05 20.2c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.66.31-.23.25-.87.85-.87 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.07-.12-.23-.19-.48-.31z"/></svg>
-          <span class="wa-btn-text">WhatsApp</span>
+        <!-- Direct WhatsApp Action -->
+        <a href="https://wa.me/923046251824?text=Hello%20Haji%20Leather%20Atelier,%20I%20have%20an%20inquiry" target="_blank" rel="noopener noreferrer" class="editorial-wa-pill" title="WhatsApp Concierge">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zM12.05 20.2c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.66.31-.23.25-.87.85-.87 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.07-.12-.23-.19-.48-.31z"/></svg>
+          <span>Chat</span>
         </a>
 
       </div>
     </div>
 
-    <!-- Mobile Search Form (Slide Down on Mobile) -->
+    <!-- Mobile Slide-Down Search -->
     <div class="mobile-search-bar" id="mobile-search-bar">
       <div class="container">
-        <div class="search-input-wrapper">
-          <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-          <input type="text" id="mobile-search-input" placeholder="Search jackets, motorcycle gear...">
+        <div class="search-pill-box">
+          <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="mobile-search-input" placeholder="Search 70+ jackets, racing gear, varsity...">
         </div>
       </div>
     </div>
   </header>
 
-  <!-- Mobile Drawer Menu -->
-  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation Drawer">
+  <!-- Mobile Slide Navigation Drawer -->
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation">
     <div class="drawer-header">
       <div class="drawer-brand">
         <img src="logo.jpg" alt="Haji Leather" class="drawer-logo">
@@ -138,146 +133,171 @@
       <button class="drawer-close-btn" id="mobile-menu-close" aria-label="Close menu">&times;</button>
     </div>
     <div class="drawer-content">
-      <div class="drawer-promo">
-        <span>🔥 15% OFF with code <strong>WELCOME15</strong></span>
+      <div class="drawer-promo-box">
+        <span class="mono-label">PROMO DISCOUNT</span>
+        <p>15% OFF entire order with coupon <strong>WELCOME15</strong></p>
       </div>
       <ul class="drawer-nav">
-        <li><a href="#catalog" class="drawer-link active" data-cat="all">⚡ All Products (70)</a></li>
+        <li><a href="#catalog" class="drawer-link active" data-cat="all">✦ Complete Archive (70)</a></li>
         <li><a href="#catalog" class="drawer-link" data-cat="Classic Leather">🧥 Men's Classic Leather</a></li>
-        <li><a href="#catalog" class="drawer-link" data-cat="Women's Jackets">👗 Women's Collection</a></li>
-        <li><a href="#catalog" class="drawer-link" data-cat="Racing & Motorcycle">🏍️ Racing & Motorcycle Suits</a></li>
-        <li><a href="#catalog" class="drawer-link" data-cat="Biker & Moto">⚡ Biker & Moto Jackets</a></li>
-        <li><a href="#catalog" class="drawer-link" data-cat="Bomber & Flight">✈️ Bomber & Flight Jackets</a></li>
-        <li><a href="#catalog" class="drawer-link" data-cat="Riding Gear & Accessories">🧤 Riding Pants & Accessories</a></li>
-        <li><a href="#custom-order" class="drawer-link special">✂️ Custom Bespoke Orders</a></li>
-        <li><a href="#size-guide" class="drawer-link" id="mobile-size-guide-btn">📏 Size Guide Chart</a></li>
+        <li><a href="#catalog" class="drawer-link" data-cat="Women's Jackets">👗 Women's Silhouette Collection</a></li>
+        <li><a href="#catalog" class="drawer-link" data-cat="Racing & Motorcycle">🏍️ Motorsport & Track Suits</a></li>
+        <li><a href="#catalog" class="drawer-link" data-cat="Biker & Moto">⚡ Heavy Biker & Moto Hides</a></li>
+        <li><a href="#catalog" class="drawer-link" data-cat="Bomber & Flight">✈️ Bomber & Shearling Jackets</a></li>
+        <li><a href="#catalog" class="drawer-link" data-cat="Riding Gear & Accessories">🧤 Technical Pants & Gear</a></li>
+        <li><a href="#custom-atelier" class="drawer-link special">✂️ Bespoke Custom Commission</a></li>
+        <li><a href="#payoneer-payment" class="drawer-link">💳 Payoneer / Bank Transfer Details</a></li>
+        <li><a href="#size-guide" class="drawer-link" id="mobile-size-guide-btn">📏 Precision Sizing Guide</a></li>
       </ul>
 
-      <div class="drawer-contact-box">
-        <p class="drawer-contact-title">Direct Customer Support</p>
-        <a href="https://wa.me/923046251824?text=Hello%20Haji%20Leather" target="_blank" class="drawer-contact-item">
-          <span>💬 WhatsApp:</span> <strong>+92 304 6251824</strong>
-        </a>
-        <a href="mailto:1230101328@uskt.edu.pk" class="drawer-contact-item">
-          <span>✉️ Email:</span> <strong>1230101328@uskt.edu.pk</strong>
-        </a>
-        <a href="https://www.instagram.com/haji.ustad.babar.3251965?hvrq=MW9ldWhsenMzaGdkMg%3D%3D&utm_source=qr" target="_blank" class="drawer-contact-item">
-          <span>📸 Instagram:</span> <strong>@haji.ustad.babar</strong>
-        </a>
+      <div class="drawer-bank-quickinfo">
+        <span class="mono-label">PAYONEER RECEIVING ACCOUNT</span>
+        <p>Bank: <strong>Citibank (New York, USA)</strong></p>
+        <p>Beneficiary: <strong>Uman Ahmad</strong></p>
+        <p>Upload screenshot at checkout for instant order placement.</p>
       </div>
 
-      <div class="drawer-payment-methods">
-        <p class="drawer-payment-title">Accepted Payment Methods</p>
-        <div class="payment-icons-row mini">
-          <span class="pay-badge">Stripe</span>
-          <span class="pay-badge">Visa</span>
-          <span class="pay-badge">Mastercard</span>
-          <span class="pay-badge">Amex</span>
-          <span class="pay-badge">Apple Pay</span>
-          <span class="pay-badge">Google Pay</span>
-          <span class="pay-badge">COD</span>
-        </div>
+      <div class="drawer-contact-box">
+        <span class="mono-label">DIRECT ATELIER SUPPORT</span>
+        <a href="https://wa.me/923046251824" target="_blank" class="drawer-contact-item">
+          <span>WhatsApp / Direct:</span> <strong>+92 304 6251824</strong>
+        </a>
+        <a href="mailto:1230101328@uskt.edu.pk" class="drawer-contact-item">
+          <span>Official Email:</span> <strong>1230101328@uskt.edu.pk</strong>
+        </a>
       </div>
     </div>
   </aside>
   <div class="drawer-backdrop" id="drawer-backdrop"></div>
 
-  <!-- Hero Banner Slider (Luxwearz Style) -->
-  <section class="hero-section">
-    <div class="hero-slider" id="hero-slider">
+  <!-- Editorial Hero Section (Inspired by Dodge Hell Varsity Wardrobe & High-Fashion Layout) -->
+  <section class="editorial-hero">
+    <!-- Geometric Diagonal Accent Lines -->
+    <div class="hero-diagonal-accent"></div>
+    <div class="hero-diagonal-accent-2"></div>
+
+    <!-- Low-Opacity Outlined Background Watermark Typography -->
+    <div class="hero-watermark-text" aria-hidden="true">HAJI LEATHER ATELIER</div>
+
+    <div class="container hero-inner">
       
-      <!-- Slide 1: Vice City Sunset Drive Style -->
-      <div class="hero-slide active" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.7)), url('https://store.luxwearz.com/wp-content/uploads/2026/11/luxwearz-sunset-drive-gta-vi-hero-desktop.webp');">
-        <div class="container hero-content">
-          <div class="hero-badge">AUTHENTIC HANDCRAFTED LEATHER</div>
-          <h1 class="hero-title">VICE CITY. YOUR STYLE.<br><span class="hero-highlight">HAJI LEATHER</span></h1>
-          <p class="hero-subtitle">Custom Leather Jackets tailored to perfection. Choose your colors, patches, custom fit & heirloom quality hide.</p>
-          <div class="hero-buttons">
-            <a href="#catalog" class="btn btn-primary" data-cat="all">Explore 70+ Products</a>
-            <a href="https://wa.me/923046251824?text=Hello%20Haji%20Leather,%20I%20want%20a%20custom%20leather%20jacket%20quote" target="_blank" class="btn btn-secondary">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zM12.05 20.2c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.66.31-.23.25-.87.85-.87 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.07-.12-.23-.19-.48-.31z"/></svg>
-              Get Custom Quote
-            </a>
+      <!-- Left Editorial Column -->
+      <div class="hero-editorial-copy">
+        <div class="hero-eyebrow">
+          <span class="eyebrow-dot"></span>
+          <span class="eyebrow-text">SIALKOT ATELIER • EST. 1998 • GLOBAL EXPORT</span>
+        </div>
+
+        <h1 class="hero-display-headline">
+          VARSITY & LEATHER <br>
+          <span class="headline-contrast">ARCHIVE 2026</span>
+        </h1>
+
+        <p class="hero-editorial-sub">
+          Handcrafted luxury outerwear, track-certified competition cowhide, and bespoke varsity letterman jackets. Engineered with zero break-in precision, solid brass hardware, and fall-weight density.
+        </p>
+
+        <div class="hero-action-pills">
+          <a href="#catalog" class="pill-btn primary-pill" data-cat="all">
+            <span>Explore 70+ Products</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+          </a>
+          <a href="#custom-atelier" class="pill-btn secondary-pill">
+            <span>Bespoke Atelier</span>
+          </a>
+          <a href="https://wa.me/923046251824?text=Hello%20Haji%20Leather,%20I%20want%20to%20discuss%20a%20custom%20jacket" target="_blank" rel="noopener noreferrer" class="pill-btn wa-pill">
+            <span>WhatsApp Consultation</span>
+          </a>
+        </div>
+
+        <!-- Monospaced Stats Row -->
+        <div class="hero-specs-strip">
+          <div class="spec-stat">
+            <span class="stat-number">70+</span>
+            <span class="stat-label">ARCHIVE PIECES</span>
+          </div>
+          <div class="spec-divider"></div>
+          <div class="spec-stat">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">FULL GRAIN HIDE</span>
+          </div>
+          <div class="spec-divider"></div>
+          <div class="spec-stat">
+            <span class="stat-number">USA</span>
+            <span class="stat-label">CITIBANK PAYONEER</span>
           </div>
         </div>
       </div>
 
-      <!-- Slide 2: Men's Leather Collection -->
-      <div class="hero-slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.75)), url('https://store.luxwearz.com/wp-content/uploads/2026/10/Fashion-banner-with-layered-sale-watermark.webp');">
-        <div class="container hero-content">
-          <div class="hero-badge">FALL / WINTER SALE — UP TO 35% OFF</div>
-          <h2 class="hero-title">MEN'S RACER & BIKER<br><span class="hero-highlight">COLLECTION</span></h2>
-          <p class="hero-subtitle">Competition-weight cowhide, solid brass YKK hardware, and zero break-in precision comfort.</p>
-          <div class="hero-buttons">
-            <a href="#catalog" class="btn btn-primary" data-cat="Classic Leather">Shop Men's Leather</a>
-            <a href="#catalog" class="btn btn-secondary" data-cat="Racing & Motorcycle">Motorcycle Gear</a>
+      <!-- Right Editorial Wardrobe Stage (Dodgehell Varsity Style) -->
+      <div class="hero-wardrobe-showcase">
+        <div class="wardrobe-card-frame">
+          <div class="wardrobe-badge-strip">
+            <span class="mono-badge">FALL / WINTER EDITION</span>
+            <span class="mono-badge gold">ZERO BREAK-IN REQUIRED</span>
+          </div>
+
+          <div class="wardrobe-image-stage">
+            <img src="https://store.luxwearz.com/wp-content/uploads/2026/10/ladies-full-throttle-jacket-gallery-1-original-44baa07619.webp" alt="Haji Leather Featured Garment" class="wardrobe-hero-img" id="hero-feature-img">
+            
+            <!-- Hanging Tag & Price (Dodgehell Style) -->
+            <div class="hanging-tag-container">
+              <div class="tag-string"></div>
+              <div class="tag-card">
+                <div class="tag-hole"></div>
+                <span class="tag-brand">HAJI ATELIER</span>
+                <span class="tag-price" id="hero-feature-price">$799</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="wardrobe-footer-info">
+            <div class="wardrobe-titles">
+              <h3 class="wardrobe-item-name" id="hero-feature-title">Vanson Leather Full Throttle Women's Jacket</h3>
+              <p class="wardrobe-item-desc">Competition-Weight Cowhide • Armor Pockets • Solid Brass Fasteners</p>
+            </div>
+            <button type="button" class="wardrobe-view-pill" onclick="openProductQuickView('HL-102')">
+              Quick View ↗
+            </button>
           </div>
         </div>
       </div>
 
-      <!-- Slide 3: Women's Luxury Leather -->
-      <div class="hero-slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.75)), url('https://store.luxwearz.com/wp-content/uploads/2026/10/LUXWEARZ-leather-jacket-collection-1.webp');">
-        <div class="container hero-content">
-          <div class="hero-badge">NEW IN LUXURY</div>
-          <h2 class="hero-title">WOMEN'S BESPOKE<br><span class="hero-highlight">LEATHER JACKETS</span></h2>
-          <p class="hero-subtitle">Iconic feminine silhouettes, supple lambskin hides, and tailored waist gussets engineered for elegance.</p>
-          <div class="hero-buttons">
-            <a href="#catalog" class="btn btn-primary" data-cat="Women's Jackets">Shop Women's</a>
-            <a href="#custom-order" class="btn btn-secondary">Custom Fitting</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Slider Navigation Dots -->
-    <div class="slider-dots" id="slider-dots">
-      <button class="slider-dot active" data-slide="0" aria-label="Slide 1"></button>
-      <button class="slider-dot" data-slide="1" aria-label="Slide 2"></button>
-      <button class="slider-dot" data-slide="2" aria-label="Slide 3"></button>
     </div>
   </section>
 
-  <!-- Trust Value Bar (Luxwearz Style) -->
-  <section class="trust-value-bar">
-    <div class="container trust-grid">
-      <div class="trust-card">
-        <div class="trust-icon">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
-        </div>
-        <div class="trust-text">
-          <span class="trust-title">Free Worldwide Express</span>
-          <span class="trust-desc">Complimentary shipping on orders over $399</span>
+  <!-- Editorial Value Strip -->
+  <section class="editorial-trust-strip">
+    <div class="container trust-strip-grid">
+      <div class="trust-pill-box">
+        <div class="trust-num">01</div>
+        <div class="trust-meta">
+          <strong>Worldwide Express</strong>
+          <span>Complimentary delivery over $399</span>
         </div>
       </div>
 
-      <div class="trust-card">
-        <div class="trust-icon">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-        </div>
-        <div class="trust-text">
-          <span class="trust-title">100% Genuine Leather</span>
-          <span class="trust-desc">Competition-grade cowhide, sheepskin & steerhide</span>
+      <div class="trust-pill-box">
+        <div class="trust-num">02</div>
+        <div class="trust-meta">
+          <strong>Payoneer / Citibank</strong>
+          <span>Instant USA ACH & wire account details</span>
         </div>
       </div>
 
-      <div class="trust-card">
-        <div class="trust-icon">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
-        </div>
-        <div class="trust-text">
-          <span class="trust-title">Secure Stripe & Express Cards</span>
-          <span class="trust-desc">Visa, Mastercard, Amex, Apple Pay, Google Pay & COD</span>
+      <div class="trust-pill-box">
+        <div class="trust-num">03</div>
+        <div class="trust-meta">
+          <strong>Full-Grain Genuine Hide</strong>
+          <span>Fall River density cowhide & sheepskin</span>
         </div>
       </div>
 
-      <div class="trust-card">
-        <div class="trust-icon">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
-        </div>
-        <div class="trust-text">
-          <span class="trust-title">30-Day Guaranteed Returns</span>
-          <span class="trust-desc">Easy exchanges and size guarantee</span>
+      <div class="trust-pill-box">
+        <div class="trust-num">04</div>
+        <div class="trust-meta">
+          <strong>Custom Tailored Sizing</strong>
+          <span>Made-to-measure bespoke craftsmanship</span>
         </div>
       </div>
     </div>
@@ -288,47 +308,57 @@
     <div class="container">
       
       <!-- Section Header -->
-      <div class="section-title-wrap">
-        <span class="section-tag">HANDCRAFTED COLLECTION</span>
-        <h2 class="section-heading">Explore Haji Leather Catalog</h2>
-        <p class="section-subheading">Over 70 luxury leather outerwear designs, track-tested motorcycle gear, and bespoke commissions.</p>
+      <div class="editorial-section-header">
+        <div class="section-eyebrow">
+          <span class="eyebrow-dash"></span>
+          <span>CURATED SILHOUETTES & RUNWAY ARCHIVE</span>
+        </div>
+        <h2 class="section-title">The Complete Archive</h2>
+        <p class="section-subtitle">Browse through 70 handcrafted leather outerwear commissions, racing motorcycle armor suits, and vintage varsity editions.</p>
       </div>
 
-      <!-- Category Filter Pills (Luxwearz Style) -->
+      <!-- Category Filter Pills (Minimalist Dodgehell Style) -->
       <div class="category-tabs-scroll">
         <div class="category-tabs" id="category-tabs">
           <button class="cat-pill active" data-category="all">
-            All Products <span class="pill-count" id="count-all">70</span>
+            <span>All Products</span>
+            <span class="pill-count" id="count-all">70</span>
           </button>
           <button class="cat-pill" data-category="Classic Leather">
-            Men's Classic <span class="pill-count" id="count-classic">37</span>
+            <span>Men's Classic</span>
+            <span class="pill-count" id="count-classic">37</span>
           </button>
           <button class="cat-pill" data-category="Women's Jackets">
-            Women's Collection <span class="pill-count" id="count-women">13</span>
+            <span>Women's Edition</span>
+            <span class="pill-count" id="count-women">13</span>
           </button>
           <button class="cat-pill" data-category="Racing & Motorcycle">
-            Racing & Motorcycle <span class="pill-count" id="count-racing">5</span>
+            <span>Motorsport & Suits</span>
+            <span class="pill-count" id="count-racing">5</span>
           </button>
           <button class="cat-pill" data-category="Biker & Moto">
-            Biker & Moto <span class="pill-count" id="count-biker">5</span>
+            <span>Biker & Moto</span>
+            <span class="pill-count" id="count-biker">5</span>
           </button>
           <button class="cat-pill" data-category="Bomber & Flight">
-            Bomber & Flight <span class="pill-count" id="count-bomber">4</span>
+            <span>Bomber & Flight</span>
+            <span class="pill-count" id="count-bomber">4</span>
           </button>
           <button class="cat-pill" data-category="Riding Gear & Accessories">
-            Riding Pants & Gear <span class="pill-count" id="count-gear">6</span>
+            <span>Riding Pants & Gear</span>
+            <span class="pill-count" id="count-gear">6</span>
           </button>
         </div>
       </div>
 
-      <!-- Filter / Sort Bar -->
-      <div class="catalog-controls">
-        <div class="catalog-info">
-          Showing <span id="visible-count">70</span> luxury leather products
+      <!-- Catalog Controls Bar -->
+      <div class="catalog-bar">
+        <div class="catalog-count-indicator">
+          Showing <strong id="visible-count">70</strong> Archive Pieces
         </div>
-        <div class="catalog-sort">
-          <label for="sort-select">Sort by:</label>
-          <select id="sort-select" class="sort-dropdown">
+        <div class="catalog-sort-box">
+          <label for="sort-select">SORT BY:</label>
+          <select id="sort-select" class="editorial-select">
             <option value="featured">Featured / Newest</option>
             <option value="price-low">Price: Low to High</option>
             <option value="price-high">Price: High to Low</option>
@@ -338,687 +368,757 @@
       </div>
 
       <!-- Products Grid -->
-      <div class="products-grid" id="products-grid">
-        <!-- Dynamically rendered via script.js from products-data.js -->
+      <div class="editorial-products-grid" id="products-grid">
         <div class="loading-state">
           <div class="spinner"></div>
-          <p>Loading handcrafted leather products...</p>
+          <p>Loading curated leather garments...</p>
         </div>
       </div>
 
       <!-- No Products Found Message -->
       <div class="no-products-state" id="no-products" style="display: none;">
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-        <h3>No matching products found</h3>
-        <p>Try searching with another keyword or reset the filter.</p>
-        <button class="btn btn-primary" id="reset-filter-btn">Reset All Filters</button>
+        <h3>No matching archive pieces found</h3>
+        <p>Try searching another keyword or reset the category filter.</p>
+        <button class="pill-btn primary-pill" id="reset-filter-btn">Reset All Filters</button>
       </div>
 
     </div>
   </section>
 
-  <!-- Custom Order / Bespoke Commission Section -->
-  <section class="custom-order-section" id="custom-order">
-    <div class="container custom-grid">
-      <div class="custom-text-box">
-        <span class="custom-badge">BESPOKE ATELIER</span>
-        <h2 class="custom-title">Made-To-Measure Custom Leather Jackets</h2>
-        <p class="custom-desc">
-          Can't find your exact size or want a custom design? At Haji Leather, every jacket can be tailored to your precise chest, shoulder, arm length and torso measurements.
+  <!-- Payoneer Receiving Account Spotlight Section -->
+  <section class="payoneer-spotlight-section" id="payoneer-payment">
+    <div class="container">
+      <div class="payoneer-spotlight-card">
+        
+        <div class="spotlight-left">
+          <span class="spotlight-tag">PRIMARY DIRECT PAYMENT METHOD</span>
+          <h2 class="spotlight-title">Payoneer / Citibank (USA) Direct Transfer</h2>
+          <p class="spotlight-desc">
+            Make payment directly to our verified US Receiving Account. Once sent, simply upload your transaction screenshot or transfer receipt below to confirm your order immediately.
+          </p>
+
+          <div class="spotlight-instructions">
+            <div class="step-line">
+              <span class="step-num">1</span>
+              <span>Send payment via Payoneer, Wire, or USA ACH transfer to the Citibank details shown.</span>
+            </div>
+            <div class="step-line">
+              <span class="step-num">2</span>
+              <span>Take a clear screenshot or save your payment receipt.</span>
+            </div>
+            <div class="step-line">
+              <span class="step-num">3</span>
+              <span>Attach your screenshot in the Checkout form, or send it directly on WhatsApp.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bank Details Box with 1-Click Copy Buttons -->
+        <div class="spotlight-bank-box">
+          <div class="bank-box-header">
+            <div class="bank-logo-title">
+              <span class="bank-icon">🏛️</span>
+              <div>
+                <strong>Citibank, N.A.</strong>
+                <span class="bank-sub">USA Receiving Account</span>
+              </div>
+            </div>
+            <span class="verified-pill">✓ Verified Account</span>
+          </div>
+
+          <div class="bank-details-grid">
+            <div class="bank-field-row">
+              <span class="field-label">Beneficiary Name</span>
+              <div class="field-val-wrap">
+                <span class="field-value" id="spot-beneficiary">Uman Ahmad</span>
+                <button type="button" class="copy-btn" onclick="copyText('Uman Ahmad', this)">Copy</button>
+              </div>
+            </div>
+
+            <div class="bank-field-row">
+              <span class="field-label">Account Number</span>
+              <div class="field-val-wrap">
+                <span class="field-value mono" id="spot-acc">70581930002285453</span>
+                <button type="button" class="copy-btn" onclick="copyText('70581930002285453', this)">Copy</button>
+              </div>
+            </div>
+
+            <div class="bank-field-row">
+              <span class="field-label">Routing (ABA)</span>
+              <div class="field-val-wrap">
+                <span class="field-value mono" id="spot-routing">031100209</span>
+                <button type="button" class="copy-btn" onclick="copyText('031100209', this)">Copy</button>
+              </div>
+            </div>
+
+            <div class="bank-field-row">
+              <span class="field-label">SWIFT Code</span>
+              <div class="field-val-wrap">
+                <span class="field-value mono" id="spot-swift">CITIUS33</span>
+                <button type="button" class="copy-btn" onclick="copyText('CITIUS33', this)">Copy</button>
+              </div>
+            </div>
+
+            <div class="bank-field-row">
+              <span class="field-label">Account Type</span>
+              <span class="field-value">CHECKING</span>
+            </div>
+
+            <div class="bank-field-row">
+              <span class="field-label">Bank Address</span>
+              <span class="field-value small">111 Wall Street, New York, NY 10043, USA</span>
+            </div>
+          </div>
+
+          <div class="bank-box-footer">
+            <button type="button" class="pill-btn primary-pill btn-block" onclick="openCheckoutModalWithPayoneer()">
+              <span>Place Order with Payoneer Proof</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Custom Made Atelier Section -->
+  <section class="custom-atelier-section" id="custom-atelier">
+    <div class="container custom-atelier-grid">
+      <div class="custom-atelier-copy">
+        <span class="section-tag-mono">BESPOKE ATELIER LAB</span>
+        <h2 class="custom-atelier-title">Build It. <br><span class="accent-text">Your Exact Fit.</span></h2>
+        <p class="custom-atelier-desc">
+          Upload custom patches, specify exact chest, shoulder, arm length, and torso dimensions. Every jacket is individually drafted and hand-cut by Master Craftsmen in our Sialkot atelier.
         </p>
-        <ul class="custom-features">
-          <li>✨ Choose from Top-Grain Cowhide, Supple Lambskin or Suede</li>
-          <li>🎨 Custom Dye Colors, Hand-Painted Patches & Racing Logos</li>
-          <li>🛡️ Optional CE Level 2 Impact Armor Pockets for Motorcyclists</li>
-          <li>⚡ Direct Video/Chat Consultation with Master Craftsmen in Sialkot</li>
+
+        <ul class="custom-atelier-bullets">
+          <li><strong>Hand-Selected Hides:</strong> Heavy cowhide, lightweight lambskin, or nubuck suede</li>
+          <li><strong>Chenille & Leather Patches:</strong> Multi-layer embroidery & custom monograms</li>
+          <li><strong>Impact Protection:</strong> CE-Level 2 armor integration available for riders</li>
+          <li><strong>Direct Tailor Access:</strong> Video call & measurements review over WhatsApp</li>
         </ul>
-        <div class="custom-cta">
-          <a href="https://wa.me/923046251824?text=Hello%20Haji%20Leather,%20I%20would%20like%20to%20order%20a%20Custom%20Made-to-Measure%20Leather%20Jacket" target="_blank" rel="noopener noreferrer" class="btn btn-wa-large">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zM12.05 20.2c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.66.31-.23.25-.87.85-.87 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.07-.12-.23-.19-.48-.31z"/></svg>
-            Start Custom Commission on WhatsApp
+
+        <div class="custom-atelier-cta">
+          <a href="https://wa.me/923046251824?text=Hello%20Haji%20Leather,%20I%20would%20like%20to%20order%20a%20Bespoke%20Made-to-Measure%20Leather%20or%20Varsity%20Jacket" target="_blank" rel="noopener noreferrer" class="pill-btn primary-pill">
+            <span>Launch WhatsApp Bespoke Studio</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
           </a>
         </div>
       </div>
-      <div class="custom-image-box">
-        <img src="https://store.luxwearz.com/wp-content/uploads/2026/10/ladies-drifter-w-slv-stripes-gallery-1-original-3fac97533a.webp" alt="Custom Haji Leather Jacket" class="custom-preview-img">
-        <div class="custom-seal">
-          <span class="seal-year">SINCE 1998</span>
-          <span class="seal-sub">SIALKOT, PK</span>
+
+      <div class="custom-atelier-visual">
+        <div class="visual-frame">
+          <img src="https://store.luxwearz.com/wp-content/uploads/2026/10/ladies-drifter-w-slv-stripes-gallery-1-original-3fac97533a.webp" alt="Bespoke Tailoring at Haji Leather" class="visual-img">
+          <div class="visual-stamp">
+            <span class="stamp-year">EST. 1998</span>
+            <span class="stamp-sub">HAND-SEWN IN PK</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Payment Methods & Security Guarantee Banner -->
-  <section class="payment-guarantee-section">
+  <!-- Editorial Testimonials -->
+  <section class="editorial-reviews-section">
     <div class="container">
-      <div class="payment-banner-box">
-        <div class="payment-banner-left">
-          <span class="payment-banner-tag">SECURE PAYMENT METHODS</span>
-          <h3>Shop With 100% Buyer Protection</h3>
-          <p>We process payments through industry-leading encrypted checkout. Accept Visa, MasterCard, American Express, Apple Pay, Google Pay, and Cash on Delivery.</p>
+      <div class="editorial-section-header text-center">
+        <div class="section-eyebrow justify-center">
+          <span>CLIENT REVIEWS & ROAD TESTS</span>
         </div>
-        <div class="payment-badges-collection">
-          <div class="pay-logo-card">
-            <span class="pay-title">STRIPE</span>
-            <span class="pay-sub">256-Bit SSL</span>
+        <h2 class="section-title">Enduring Quality That Speaks</h2>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-box">
+          <div class="review-quote-mark">“</div>
+          <p class="review-quote-text">
+            Sent payment through Payoneer Citibank transfer and uploaded my receipt. The jacket arrived in Texas in pristine condition. Zero break-in required, Fall River density cowhide, and heavy brass zippers that deflect 70mph winds.
+          </p>
+          <div class="reviewer-footer">
+            <span class="reviewer-name">Hudson Wright</span>
+            <span class="reviewer-loc">Austin, TX • Verified Collector</span>
           </div>
-          <div class="pay-logo-card">
-            <span class="pay-title">VISA</span>
-            <span class="pay-sub">Verified</span>
+        </div>
+
+        <div class="review-box">
+          <div class="review-quote-mark">“</div>
+          <p class="review-quote-text">
+            The made-to-measure bespoke fitting for my motorcycle suit was flawless. Every measurement provided on WhatsApp was tailored down to the millimeter. Outstanding craftsmanship and direct communication.
+          </p>
+          <div class="reviewer-footer">
+            <span class="reviewer-name">Amelia White</span>
+            <span class="reviewer-loc">London, UK • Verified Rider</span>
           </div>
-          <div class="pay-logo-card">
-            <span class="pay-title">MASTERCARD</span>
-            <span class="pay-sub">SecureCode</span>
-          </div>
-          <div class="pay-logo-card">
-            <span class="pay-title">AMEX</span>
-            <span class="pay-sub">Express</span>
-          </div>
-          <div class="pay-logo-card">
-            <span class="pay-title">APPLE PAY</span>
-            <span class="pay-sub">1-Click</span>
-          </div>
-          <div class="pay-logo-card">
-            <span class="pay-title">GOOGLE PAY</span>
-            <span class="pay-sub">Encrypted</span>
-          </div>
-          <div class="pay-logo-card highlight">
-            <span class="pay-title">CASH ON DELIVERY</span>
-            <span class="pay-sub">Pay at Door</span>
+        </div>
+
+        <div class="review-box">
+          <div class="review-quote-mark">“</div>
+          <p class="review-quote-text">
+            Phenomenal attention to detail. The satin quilted lining feels luxurious, and the weight of the jacket confirms authentic premium hide. Best leather acquisition in years.
+          </p>
+          <div class="reviewer-footer">
+            <span class="reviewer-name">Benjamin Martinez</span>
+            <span class="reviewer-loc">Chicago, IL • Verified Buyer</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Customer Reviews / Testimonials -->
-  <section class="testimonials-section">
-    <div class="container">
-      <div class="section-title-wrap">
-        <span class="section-tag">VERIFIED BUYERS</span>
-        <h2 class="section-heading">Loved By Riders & Enthusiasts Worldwide</h2>
-      </div>
-      <div class="testimonials-grid">
-        <div class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <h4 class="review-title">"Zero break-in required, Fall River density"</h4>
-          <p class="review-body">
-            "I was skeptical about buying leather online, but the genuine hide density and heavy-duty brass YKK zippers put all doubts to rest. Kept me warm on 40-degree rides. Easily the best outerwear investment I've made."
-          </p>
-          <div class="reviewer-meta">
-            <strong>Hudson Wright</strong> — Austin, Texas
-            <span class="verified-badge">✓ Verified Buyer</span>
-          </div>
-        </div>
-
-        <div class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <h4 class="review-title">"Phenomenal custom tailored fit"</h4>
-          <p class="review-body">
-            "Sent my chest and arm measurements over WhatsApp. The jacket fits like a second skin. The leather aroma, smooth quilted lining, and flawless double-needle stitching rival pieces costing double."
-          </p>
-          <div class="reviewer-meta">
-            <strong>Amelia White</strong> — London, UK
-            <span class="verified-badge">✓ Verified Buyer</span>
-          </div>
-        </div>
-
-        <div class="review-card">
-          <div class="review-stars">★★★★★</div>
-          <h4 class="review-title">"Built for a lifetime on the open road"</h4>
-          <p class="review-body">
-            "Tested the motorcycle racing jacket through high wind highway rides. Deflected wind completely. The armor sits exactly where it should. Payment through Stripe was seamless and quick."
-          </p>
-          <div class="reviewer-meta">
-            <strong>Benjamin Martinez</strong> — Chicago, IL
-            <span class="verified-badge">✓ Verified Buyer</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Luxury Footer -->
-  <footer class="site-footer">
-    <div class="container footer-grid">
+  <!-- Editorial Footer -->
+  <footer class="editorial-footer">
+    <div class="container footer-inner">
       
-      <!-- Col 1: Brand Info -->
-      <div class="footer-col brand-col">
-        <div class="footer-logo-row">
-          <img src="logo.jpg" alt="Haji Leather" class="footer-logo">
-          <span class="footer-brand-title">HAJI LEATHER</span>
-        </div>
-        <p class="footer-about">
-          Haji Leather is a premier manufacturer and exporter of handcrafted luxury leather jackets, motorbike riding suits, and bespoke leather goods based in Sialkot, Pakistan, delivering worldwide with unmatched artisan quality.
-        </p>
-        <div class="footer-social-links">
-          <a href="https://wa.me/923046251824" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="WhatsApp">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zM12.05 20.2c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.66.31-.23.25-.87.85-.87 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.07-.12-.23-.19-.48-.31z"/></svg>
-          </a>
-          <a href="https://www.instagram.com/haji.ustad.babar.3251965?hvrq=MW9ldWhsenMzaGdkMg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-          </a>
-          <a href="mailto:1230101328@uskt.edu.pk" class="social-icon-btn" aria-label="Email">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-          </a>
-        </div>
-      </div>
-
-      <!-- Col 2: Quick Links -->
-      <div class="footer-col">
-        <h4 class="footer-heading">Shop Categories</h4>
-        <ul class="footer-links">
-          <li><a href="#catalog" data-cat="all">All 70+ Products</a></li>
-          <li><a href="#catalog" data-cat="Classic Leather">Men's Classic Jackets</a></li>
-          <li><a href="#catalog" data-cat="Women's Jackets">Women's Leather Collection</a></li>
-          <li><a href="#catalog" data-cat="Racing & Motorcycle">Motorcycle Racing Suits</a></li>
-          <li><a href="#catalog" data-cat="Bomber & Flight">Flight & Shearling Jackets</a></li>
-          <li><a href="#catalog" data-cat="Biker & Moto">Biker & Moto Styles</a></li>
-          <li><a href="#custom-order">Bespoke Custom Orders</a></li>
-        </ul>
-      </div>
-
-      <!-- Col 3: Customer Care -->
-      <div class="footer-col">
-        <h4 class="footer-heading">Customer Care</h4>
-        <ul class="footer-links">
-          <li><a href="#size-guide" id="footer-size-guide-link">Size Guide & Measuring</a></li>
-          <li><a href="https://wa.me/923046251824?text=Order%20Tracking%20Request" target="_blank">Track Your Shipment</a></li>
-          <li><a href="https://wa.me/923046251824?text=Returns%20and%20Exchange%20Query" target="_blank">30-Day Return Policy</a></li>
-          <li><a href="https://wa.me/923046251824?text=Wholesale%20Inquiry" target="_blank">Wholesale & Export Orders</a></li>
-          <li><a href="googlef15237b84c7970b0.html">Google Verification</a></li>
-        </ul>
-      </div>
-
-      <!-- Col 4: Contact & Payment Methods -->
-      <div class="footer-col">
-        <h4 class="footer-heading">Direct Contacts</h4>
-        <p class="footer-contact-line">
-          <strong>WhatsApp / Call:</strong><br>
-          <a href="https://wa.me/923046251824" target="_blank" class="highlight-link">+92 304 6251824</a>
-        </p>
-        <p class="footer-contact-line">
-          <strong>Email:</strong><br>
-          <a href="mailto:1230101328@uskt.edu.pk">1230101328@uskt.edu.pk</a>
-        </p>
-        <p class="footer-contact-line">
-          <strong>Factory & Workshop:</strong><br>
-          Haji Leather Works, Sialkot, Punjab, Pakistan
-        </p>
-        <div class="footer-payments-block">
-          <span class="footer-payments-label">Supported Payment Gateways:</span>
-          <div class="payment-badges-row">
-            <span class="mini-pay-tag">Stripe</span>
-            <span class="mini-pay-tag">Visa</span>
-            <span class="mini-pay-tag">Mastercard</span>
-            <span class="mini-pay-tag">Amex</span>
-            <span class="mini-pay-tag">Apple Pay</span>
-            <span class="mini-pay-tag">Google Pay</span>
-            <span class="mini-pay-tag">COD</span>
+      <div class="footer-top-row">
+        <div class="footer-brand-meta">
+          <div class="footer-logo-title">
+            <img src="logo.jpg" alt="Haji Leather" class="footer-logo">
+            <span class="footer-title">HAJI LEATHER ATELIER</span>
+          </div>
+          <p class="footer-summary">
+            Fine handcrafted leather jackets, motorsport armor apparel, and bespoke varsity jackets produced with uncompromised artisan standards in Sialkot, Pakistan.
+          </p>
+          <div class="footer-social-strip">
+            <a href="https://wa.me/923046251824" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="WhatsApp">WA</a>
+            <a href="https://www.instagram.com/haji.ustad.babar.3251965?hvrq=MW9ldWhsenMzaGdkMg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="Instagram">IG</a>
+            <a href="mailto:1230101328@uskt.edu.pk" class="social-circle" aria-label="Email">EM</a>
           </div>
         </div>
-      </div>
 
-    </div>
+        <div class="footer-links-col">
+          <h4 class="col-heading">Archive Categories</h4>
+          <ul class="col-list">
+            <li><a href="#catalog" data-cat="all">Complete Collection (70)</a></li>
+            <li><a href="#catalog" data-cat="Classic Leather">Men's Classic Leather</a></li>
+            <li><a href="#catalog" data-cat="Women's Jackets">Women's Silhouette Edition</a></li>
+            <li><a href="#catalog" data-cat="Racing & Motorcycle">Motorsport Racing Suits</a></li>
+            <li><a href="#catalog" data-cat="Bomber & Flight">Bomber & Shearling</a></li>
+            <li><a href="#custom-atelier">Bespoke Monogram Atelier</a></li>
+          </ul>
+        </div>
 
-    <!-- Bottom Copyright Bar -->
-    <div class="footer-bottom-bar">
-      <div class="container footer-bottom-inner">
-        <p>&copy; 2026 Haji Leather (hajileather.company). All Rights Reserved. Handcrafted in Sialkot, Pakistan.</p>
-        <div class="footer-bottom-links">
-          <span>Official Domain: <strong>hajileather.company</strong></span>
-          <span class="sep">•</span>
-          <a href="https://wa.me/923046251824" target="_blank">24/7 WhatsApp Assistance</a>
+        <div class="footer-links-col">
+          <h4 class="col-heading">Payment & Care</h4>
+          <ul class="col-list">
+            <li><a href="#payoneer-payment">Payoneer / Citibank Details</a></li>
+            <li><a href="#size-guide" id="footer-size-chart-link">Precision Sizing Guide</a></li>
+            <li><a href="https://wa.me/923046251824?text=Track%20Order%20Status" target="_blank">Track Order Shipment</a></li>
+            <li><a href="https://wa.me/923046251824?text=Returns%20Policy" target="_blank">30-Day Guaranteed Returns</a></li>
+            <li><a href="googlef15237b84c7970b0.html">Google Site Verification</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="col-heading">Direct Concierge</h4>
+          <p class="concierge-line">
+            <span class="label">WHATSAPP / CALL:</span>
+            <a href="https://wa.me/923046251824" target="_blank" class="accent-link">+92 304 6251824</a>
+          </p>
+          <p class="concierge-line">
+            <span class="label">OFFICIAL EMAIL:</span>
+            <a href="mailto:1230101328@uskt.edu.pk">1230101328@uskt.edu.pk</a>
+          </p>
+          <p class="concierge-line">
+            <span class="label">PRIMARY PAYMENT:</span>
+            <span class="cream-text">Payoneer (Citibank USA)</span>
+          </p>
         </div>
       </div>
+
+      <div class="footer-bottom-row">
+        <p>&copy; 2026 Haji Leather (hajileather.company). Master Crafted in Sialkot, Pakistan. All Rights Reserved.</p>
+        <div class="accepted-badges">
+          <span class="f-badge">PAYONEER</span>
+          <span class="f-badge">CITIBANK</span>
+          <span class="f-badge">STRIPE</span>
+          <span class="f-badge">VISA</span>
+          <span class="f-badge">MASTERCARD</span>
+          <span class="f-badge">COD</span>
+        </div>
+      </div>
+
     </div>
   </footer>
 
-  <!-- Floating WhatsApp Action Button -->
-  <a href="https://wa.me/923046251824?text=Hello%20Haji%20Leather,%20I%20have%20an%20inquiry" target="_blank" rel="noopener noreferrer" class="floating-wa-btn" aria-label="Chat with Haji Leather on WhatsApp">
-    <span class="wa-tooltip">Chat with us on WhatsApp</span>
-    <div class="wa-pulse"></div>
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zM12.05 20.2c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.66.31-.23.25-.87.85-.87 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.07-.12-.23-.19-.48-.31z"/></svg>
+  <!-- Floating WhatsApp Concierge Button -->
+  <a href="https://wa.me/923046251824?text=Hello%20Haji%20Leather%20Atelier,%20I%20have%20an%20inquiry" target="_blank" rel="noopener noreferrer" class="floating-wa-btn" aria-label="WhatsApp Concierge">
+    <div class="wa-ping-pulse"></div>
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zM12.05 20.2c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.66.31-.23.25-.87.85-.87 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.07-.12-.23-.19-.48-.31z"/></svg>
   </a>
 
-  <!-- Mobile Bottom Sticky Navigation Bar -->
-  <nav class="mobile-bottom-bar" aria-label="Mobile Bottom Navigation">
-    <a href="#" class="mobile-bar-item active">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-      <span>Home</span>
+  <!-- Mobile Sticky Bottom Bar -->
+  <nav class="mobile-bottom-bar" aria-label="Mobile Bottom Controls">
+    <a href="#" class="mobile-bottom-link active">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+      <span>Atelier</span>
     </a>
-    <a href="#catalog" class="mobile-bar-item" data-cat="all">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
-      <span>Shop (70)</span>
+    <a href="#catalog" class="mobile-bottom-link" data-cat="all">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+      <span>Archive</span>
     </a>
-    <button class="mobile-bar-item" id="mobile-bar-search">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+    <button type="button" class="mobile-bottom-link" id="mobile-bar-search">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
       <span>Search</span>
     </button>
-    <button class="mobile-bar-item" id="mobile-bar-cart">
-      <div class="mobile-bar-icon-wrap">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+    <button type="button" class="mobile-bottom-link" id="mobile-bar-cart">
+      <div class="cart-icon-wrapper">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
         <span class="badge-count mobile-cart-count">0</span>
       </div>
-      <span>Cart</span>
+      <span>Bag</span>
     </button>
-    <a href="https://wa.me/923046251824?text=Hello%20Haji%20Leather" target="_blank" class="mobile-bar-item highlight">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zM12.05 20.2c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.66.31-.23.25-.87.85-.87 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.07-.12-.23-.19-.48-.31z"/></svg>
+    <a href="https://wa.me/923046251824?text=Hello%20Haji%20Leather" target="_blank" class="mobile-bottom-link wa-item">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zM12.05 20.2c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.66.31-.23.25-.87.85-.87 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.07-.12-.23-.19-.48-.31z"/></svg>
       <span>WhatsApp</span>
     </a>
   </nav>
 
-  <!-- Slide-out Cart Drawer -->
-  <div class="cart-drawer" id="cart-drawer">
+  <!-- Slide-out Shopping Cart Drawer -->
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping Bag">
     <div class="cart-drawer-header">
-      <div class="cart-header-title">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
-        <h3>Your Shopping Cart (<span id="cart-drawer-count">0</span>)</h3>
+      <div class="cart-title-row">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <h3>Your Bag (<span id="cart-drawer-count">0</span>)</h3>
       </div>
-      <button class="cart-drawer-close" id="cart-drawer-close" aria-label="Close cart">&times;</button>
+      <button class="cart-close-pill" id="cart-drawer-close" aria-label="Close bag">&times;</button>
     </div>
 
-    <!-- Free Shipping Bar -->
-    <div class="free-shipping-meter">
-      <div class="shipping-meter-text" id="shipping-meter-text">
-        Add <strong>$399.00</strong> more to qualify for <strong>FREE Worldwide Express Delivery</strong>!
+    <!-- Free Delivery Progress Meter -->
+    <div class="shipping-meter-wrap">
+      <div class="shipping-meter-label" id="shipping-meter-text">
+        Add <strong>$399.00</strong> more for <strong>FREE Worldwide Express</strong>!
       </div>
-      <div class="shipping-meter-track">
-        <div class="shipping-meter-fill" id="shipping-meter-fill" style="width: 0%;"></div>
+      <div class="shipping-track">
+        <div class="shipping-fill" id="shipping-meter-fill" style="width:0%;"></div>
       </div>
     </div>
 
-    <!-- Cart Items List -->
+    <!-- Items list -->
     <div class="cart-items-wrap" id="cart-items-wrap">
-      <!-- Items dynamically populated -->
       <div class="empty-cart-state" id="empty-cart-state">
-        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
-        <h4>Your Cart is Empty</h4>
-        <p>Explore our handcrafted leather collection and add your favorite jackets.</p>
-        <button class="btn btn-primary" id="start-shopping-btn">Explore Products</button>
+        <div class="empty-icon">👜</div>
+        <h4>Your Bag is Empty</h4>
+        <p>Explore the 70+ luxury leather archive pieces and add your desired selections.</p>
+        <button class="pill-btn primary-pill" id="start-shopping-btn">Explore Archive</button>
       </div>
     </div>
 
-    <!-- Cart Footer & Checkout Summary -->
+    <!-- Cart Footer & Actions -->
     <div class="cart-drawer-footer" id="cart-drawer-footer">
       
-      <!-- Coupon Box -->
+      <!-- Promo code input -->
       <div class="cart-coupon-row">
         <input type="text" id="coupon-input" placeholder="Promo code (e.g. WELCOME15)">
-        <button class="btn btn-coupon" id="apply-coupon-btn">Apply</button>
+        <button class="pill-btn secondary-pill" id="apply-coupon-btn">Apply</button>
       </div>
       <div class="coupon-feedback" id="coupon-feedback"></div>
 
-      <!-- Price Breakdown -->
-      <div class="cart-summary-line">
+      <!-- Price breakdown -->
+      <div class="summary-line">
         <span>Subtotal</span>
         <span id="cart-subtotal">$0.00</span>
       </div>
-      <div class="cart-summary-line discount-line" id="discount-row" style="display: none;">
-        <span>Promo Discount (15% OFF)</span>
+      <div class="summary-line discount-line" id="discount-row" style="display:none;">
+        <span>Promo Discount (WELCOME15)</span>
         <span id="cart-discount">-$0.00</span>
       </div>
-      <div class="cart-summary-line">
-        <span>Estimated Shipping</span>
+      <div class="summary-line">
+        <span>Worldwide Shipping</span>
         <span id="cart-shipping">$33.00</span>
       </div>
-      <div class="cart-summary-line total-line">
+      <div class="summary-line total-line">
         <span>Total Due</span>
         <span id="cart-total">$0.00</span>
       </div>
 
-      <!-- Accepted Payment Badges Mini -->
-      <div class="cart-payment-icons">
-        <span class="pay-icon-tag">Stripe</span>
-        <span class="pay-icon-tag">Visa</span>
-        <span class="pay-icon-tag">Mastercard</span>
-        <span class="pay-icon-tag">Apple Pay</span>
-        <span class="pay-icon-tag">Google Pay</span>
-        <span class="pay-icon-tag">COD</span>
-      </div>
-
-      <!-- Action Buttons -->
-      <div class="cart-action-buttons">
-        <button class="btn btn-primary btn-block checkout-action-btn" id="open-checkout-modal-btn">
-          🔒 Proceed to Checkout
+      <!-- Action buttons -->
+      <div class="cart-buttons-group">
+        <button class="pill-btn primary-pill btn-block" id="open-checkout-modal-btn">
+          <span>Proceed to Checkout</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
         </button>
-        <button class="btn btn-wa-cart btn-block" id="whatsapp-quick-order-btn">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zM12.05 20.2c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.66.31-.23.25-.87.85-.87 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.07-.12-.23-.19-.48-.31z"/></svg>
-          Order Directly via WhatsApp
+        <button class="pill-btn wa-pill btn-block" id="whatsapp-quick-order-btn">
+          <span>Order via WhatsApp Direct</span>
         </button>
       </div>
 
+      <div class="payment-badges-mini">
+        <span>Accepted: Payoneer Citibank • Stripe • Visa • Amex • COD</span>
+      </div>
     </div>
-  </div>
+  </aside>
   <div class="cart-backdrop" id="cart-backdrop"></div>
 
-  <!-- Interactive Checkout Modal (Luxwearz Payment Methods) -->
-  <div class="checkout-modal" id="checkout-modal">
+  <!-- Interactive Checkout Modal (Payoneer Receiving Account + Screenshot Upload) -->
+  <div class="checkout-modal" id="checkout-modal" role="dialog" aria-modal="true">
     <div class="checkout-modal-dialog">
+      
       <div class="checkout-modal-header">
-        <div class="modal-header-branding">
-          <img src="logo.jpg" alt="Haji Leather" class="modal-logo">
-          <div>
-            <h3>Secure Checkout</h3>
-            <span class="modal-sub">256-Bit Encrypted Payment</span>
-          </div>
+        <div class="checkout-branding">
+          <span class="checkout-badge-mono">SECURE CHECKOUT</span>
+          <h3>Complete Your Order</h3>
         </div>
-        <button class="modal-close-btn" id="checkout-modal-close">&times;</button>
+        <button class="modal-close-btn" id="checkout-modal-close" aria-label="Close checkout">&times;</button>
       </div>
 
       <div class="checkout-modal-body">
         
-        <!-- Step 1: Customer Details -->
         <form id="checkout-form" onsubmit="return false;">
-          <h4 class="form-section-title">1. Shipping & Customer Details</h4>
-          <div class="form-row">
-            <div class="form-col">
-              <label for="c-name">Full Name *</label>
-              <input type="text" id="c-name" placeholder="John Doe" required>
-            </div>
-            <div class="form-col">
-              <label for="c-phone">Phone / WhatsApp Number *</label>
-              <input type="tel" id="c-phone" placeholder="+1 555 123 4567" required>
-            </div>
-          </div>
-
-          <div class="form-row">
-            <div class="form-col">
-              <label for="c-email">Email Address *</label>
-              <input type="email" id="c-email" placeholder="john@example.com" required>
-            </div>
-            <div class="form-col">
-              <label for="c-country">Country *</label>
-              <select id="c-country">
-                <option value="United States">United States</option>
-                <option value="United Kingdom">United Kingdom</option>
-                <option value="Pakistan">Pakistan</option>
-                <option value="Canada">Canada</option>
-                <option value="Australia">Australia</option>
-                <option value="Germany">Germany</option>
-                <option value="France">France</option>
-                <option value="United Arab Emirates">United Arab Emirates</option>
-                <option value="Other">Other Country</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="form-row">
-            <div class="form-col full-width">
-              <label for="c-address">Street Address *</label>
-              <input type="text" id="c-address" placeholder="123 Leather Boulevard, Apt 4B" required>
-            </div>
-          </div>
-
-          <div class="form-row">
-            <div class="form-col">
-              <label for="c-city">City *</label>
-              <input type="text" id="c-city" placeholder="New York" required>
-            </div>
-            <div class="form-col">
-              <label for="c-zip">Postal / Zip Code</label>
-              <input type="text" id="c-zip" placeholder="10001">
-            </div>
-          </div>
-
-          <!-- Step 2: Payment Method Selection (Luxwearz Payment Methods) -->
-          <h4 class="form-section-title" style="margin-top: 24px;">2. Payment Method</h4>
           
-          <div class="payment-selection-group">
-            
-            <!-- Option 1: Credit / Debit Card (Stripe) -->
-            <label class="payment-radio-label active" id="label-card">
-              <div class="radio-header-line">
-                <input type="radio" name="payment_method" value="stripe" checked id="radio-stripe">
-                <div class="radio-title-group">
-                  <strong>Credit / Debit Card (Stripe)</strong>
-                  <span class="radio-desc">Pay securely via Stripe with Visa, Mastercard, Amex, Discover</span>
-                </div>
+          <!-- Section 1: Customer Details -->
+          <div class="checkout-step-block">
+            <h4 class="step-title">1. Shipping & Contact Information</h4>
+            <div class="form-grid">
+              <div class="input-col">
+                <label for="c-name">Full Name *</label>
+                <input type="text" id="c-name" placeholder="John Doe" required>
               </div>
-              <div class="card-brand-logos">
-                <span class="c-badge">VISA</span>
-                <span class="c-badge">MASTERCARD</span>
-                <span class="c-badge">AMEX</span>
-                <span class="c-badge">DISCOVER</span>
-                <span class="c-badge">JCB</span>
+              <div class="input-col">
+                <label for="c-phone">Phone / WhatsApp Number *</label>
+                <input type="tel" id="c-phone" placeholder="+1 555 123 4567" required>
               </div>
-            </label>
+              <div class="input-col">
+                <label for="c-email">Email Address *</label>
+                <input type="email" id="c-email" placeholder="john@example.com" required>
+              </div>
+              <div class="input-col">
+                <label for="c-country">Country *</label>
+                <select id="c-country" class="editorial-select">
+                  <option value="United States">United States</option>
+                  <option value="United Kingdom">United Kingdom</option>
+                  <option value="Pakistan">Pakistan</option>
+                  <option value="Canada">Canada</option>
+                  <option value="Australia">Australia</option>
+                  <option value="Germany">Germany</option>
+                  <option value="France">France</option>
+                  <option value="United Arab Emirates">United Arab Emirates</option>
+                  <option value="Other">Other Country</option>
+                </select>
+              </div>
+              <div class="input-col full">
+                <label for="c-address">Street Address *</label>
+                <input type="text" id="c-address" placeholder="111 Wall Street, Apt 4B" required>
+              </div>
+              <div class="input-col">
+                <label for="c-city">City *</label>
+                <input type="text" id="c-city" placeholder="New York" required>
+              </div>
+              <div class="input-col">
+                <label for="c-zip">Postal / Zip Code</label>
+                <input type="text" id="c-zip" placeholder="10043">
+              </div>
+            </div>
+          </div>
 
-            <!-- Card Input Fields (Collapsible / Active) -->
-            <div class="card-details-fields" id="stripe-card-fields">
-              <div class="form-row">
-                <div class="form-col full-width">
-                  <label for="stripe-card-num">Card Number</label>
-                  <div class="card-input-with-icon">
-                    <input type="text" id="stripe-card-num" placeholder="4242 •••• •••• 4242" maxlength="19">
-                    <span class="lock-icon">🔒</span>
+          <!-- Section 2: Payment Method Selection -->
+          <div class="checkout-step-block">
+            <h4 class="step-title">2. Select Payment Method</h4>
+            
+            <div class="payment-tabs-group">
+              
+              <!-- Tab 1: Payoneer Receiving Account (FEATURED & DEFAULT) -->
+              <label class="payment-card-option active" id="label-payoneer">
+                <div class="option-header-row">
+                  <input type="radio" name="payment_method" value="payoneer" id="radio-payoneer" checked>
+                  <div class="option-text">
+                    <strong class="option-title">Payoneer / Direct Bank Transfer (Citibank USA)</strong>
+                    <span class="option-sub">Transfer to our US Receiving Account & upload screenshot proof</span>
+                  </div>
+                  <span class="option-recommended-tag">RECOMMENDED</span>
+                </div>
+
+                <!-- Payoneer Details Box -->
+                <div class="payoneer-transfer-details" id="payoneer-box">
+                  <div class="bank-card-inner">
+                    <div class="bank-top-row">
+                      <span class="bank-name-tag">CITIBANK, N.A. (USA)</span>
+                      <span class="bank-type-tag">CHECKING ACCOUNT</span>
+                    </div>
+
+                    <div class="bank-fields-table">
+                      <div class="b-row">
+                        <span class="b-label">Beneficiary Name</span>
+                        <div class="b-val-copy">
+                          <strong id="b-name">Uman Ahmad</strong>
+                          <button type="button" class="mini-copy" onclick="copyText('Uman Ahmad', this)">Copy</button>
+                        </div>
+                      </div>
+
+                      <div class="b-row">
+                        <span class="b-label">Account Number</span>
+                        <div class="b-val-copy">
+                          <strong class="mono" id="b-acc">70581930002285453</strong>
+                          <button type="button" class="mini-copy" onclick="copyText('70581930002285453', this)">Copy</button>
+                        </div>
+                      </div>
+
+                      <div class="b-row">
+                        <span class="b-label">Routing (ABA)</span>
+                        <div class="b-val-copy">
+                          <strong class="mono" id="b-routing">031100209</strong>
+                          <button type="button" class="mini-copy" onclick="copyText('031100209', this)">Copy</button>
+                        </div>
+                      </div>
+
+                      <div class="b-row">
+                        <span class="b-label">SWIFT Code</span>
+                        <div class="b-val-copy">
+                          <strong class="mono" id="b-swift">CITIUS33</strong>
+                          <button type="button" class="mini-copy" onclick="copyText('CITIUS33', this)">Copy</button>
+                        </div>
+                      </div>
+
+                      <div class="b-row">
+                        <span class="b-label">Bank Address</span>
+                        <span class="b-text">111 Wall Street New York, NY 10043 USA</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Upload Screenshot Dropzone -->
+                  <div class="screenshot-uploader-box">
+                    <label class="upload-label">
+                      📸 <strong>Upload Payment Transfer Screenshot / Receipt *</strong>
+                    </label>
+                    <p class="upload-subtext">Attach your Payoneer, wire receipt, or banking confirmation screenshot:</p>
+
+                    <div class="upload-dropzone" id="upload-dropzone">
+                      <input type="file" id="payment-screenshot-file" accept="image/*,.pdf" style="display:none;">
+                      <div class="dropzone-content" id="dropzone-prompt">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+                        <span>Click to choose or drag screenshot here</span>
+                        <span class="formats">PNG, JPG, JPEG or PDF (Max 15MB)</span>
+                      </div>
+                      
+                      <!-- Preview Box -->
+                      <div class="dropzone-preview" id="dropzone-preview" style="display:none;">
+                        <img id="preview-thumbnail" src="" alt="Payment Proof Preview">
+                        <div class="preview-meta">
+                          <strong id="preview-filename">screenshot.png</strong>
+                          <span class="preview-status">✓ Screenshot Attached</span>
+                          <button type="button" class="remove-proof-btn" id="remove-proof-btn">Change File</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </label>
+
+              <!-- Tab 2: Credit / Debit Card (Stripe) -->
+              <label class="payment-card-option" id="label-card">
+                <div class="option-header-row">
+                  <input type="radio" name="payment_method" value="stripe" id="radio-stripe">
+                  <div class="option-text">
+                    <strong class="option-title">Credit / Debit Card (Stripe)</strong>
+                    <span class="option-sub">Visa, MasterCard, American Express, Discover</span>
+                  </div>
+                  <div class="option-logos">
+                    <span class="mini-tag">VISA</span>
+                    <span class="mini-tag">MC</span>
+                    <span class="mini-tag">AMEX</span>
                   </div>
                 </div>
-              </div>
-              <div class="form-row">
-                <div class="form-col">
-                  <label for="stripe-card-exp">Expiry (MM / YY)</label>
-                  <input type="text" id="stripe-card-exp" placeholder="MM / YY" maxlength="5">
+
+                <div class="stripe-fields-box" id="stripe-fields-box" style="display:none;">
+                  <div class="input-col full">
+                    <label for="s-card-num">Card Number</label>
+                    <input type="text" id="s-card-num" placeholder="4242 •••• •••• 4242" maxlength="19">
+                  </div>
+                  <div class="form-grid two-col" style="margin-top:10px;">
+                    <div class="input-col">
+                      <label for="s-card-exp">Expiry (MM / YY)</label>
+                      <input type="text" id="s-card-exp" placeholder="MM / YY" maxlength="5">
+                    </div>
+                    <div class="input-col">
+                      <label for="s-card-cvc">CVC</label>
+                      <input type="password" id="s-card-cvc" placeholder="CVC" maxlength="4">
+                    </div>
+                  </div>
                 </div>
-                <div class="form-col">
-                  <label for="stripe-card-cvc">CVC / Security Code</label>
-                  <input type="password" id="stripe-card-cvc" placeholder="CVC" maxlength="4">
+              </label>
+
+              <!-- Tab 3: Cash on Delivery (COD) -->
+              <label class="payment-card-option" id="label-cod">
+                <div class="option-header-row">
+                  <input type="radio" name="payment_method" value="cod" id="radio-cod">
+                  <div class="option-text">
+                    <strong class="option-title">Cash on Delivery (COD)</strong>
+                    <span class="option-sub">Pay cash when jacket arrives at your doorstep</span>
+                  </div>
+                  <span class="mini-tag cod">COD</span>
                 </div>
-              </div>
-              <div class="form-row">
-                <div class="form-col full-width">
-                  <label for="stripe-card-name">Cardholder Name</label>
-                  <input type="text" id="stripe-card-name" placeholder="Name on Card">
+              </label>
+
+              <!-- Tab 4: Direct WhatsApp Checkout -->
+              <label class="payment-card-option" id="label-wa">
+                <div class="option-header-row">
+                  <input type="radio" name="payment_method" value="whatsapp_direct" id="radio-wa">
+                  <div class="option-text">
+                    <strong class="option-title">Direct WhatsApp Order</strong>
+                    <span class="option-sub">Place order and send measurements / wire proof on WhatsApp</span>
+                  </div>
+                  <span class="mini-tag wa">WHATSAPP</span>
                 </div>
-              </div>
-              <p class="stripe-secure-notice">
-                🛡️ Your payment details are encrypted using Stripe's 256-bit TLS connection. No card data is stored on our servers.
-              </p>
+              </label>
+
             </div>
-
-            <!-- Option 2: Apple Pay / Google Pay -->
-            <label class="payment-radio-label" id="label-digital-wallets">
-              <div class="radio-header-line">
-                <input type="radio" name="payment_method" value="express_wallet" id="radio-wallets">
-                <div class="radio-title-group">
-                  <strong>Apple Pay / Google Pay</strong>
-                  <span class="radio-desc">Fast, 1-click biometric checkout on supported devices</span>
-                </div>
-              </div>
-              <div class="card-brand-logos">
-                <span class="c-badge black">Pay</span>
-                <span class="c-badge">GPay</span>
-              </div>
-            </label>
-
-            <!-- Option 3: Cash on Delivery (COD) -->
-            <label class="payment-radio-label" id="label-cod">
-              <div class="radio-header-line">
-                <input type="radio" name="payment_method" value="cod" id="radio-cod">
-                <div class="radio-title-group">
-                  <strong>Cash on Delivery (COD)</strong>
-                  <span class="radio-desc">Pay cash when your jacket is delivered to your address</span>
-                </div>
-              </div>
-              <div class="card-brand-logos">
-                <span class="c-badge green">COD Available</span>
-              </div>
-            </label>
-
-            <!-- Option 4: Direct WhatsApp Checkout / Bank Transfer -->
-            <label class="payment-radio-label" id="label-wa">
-              <div class="radio-header-line">
-                <input type="radio" name="payment_method" value="whatsapp_bank" id="radio-wa">
-                <div class="radio-title-group">
-                  <strong>WhatsApp Order / Bank Transfer</strong>
-                  <span class="radio-desc">Confirm order on WhatsApp & pay via Direct Wire / Bank Transfer</span>
-                </div>
-              </div>
-              <div class="card-brand-logos">
-                <span class="c-badge wa-green">WhatsApp</span>
-              </div>
-            </label>
-
           </div>
 
-          <!-- Order Summary in Checkout -->
-          <div class="checkout-order-summary-box">
-            <div class="summary-row">
-              <span>Items Subtotal:</span>
+          <!-- Section 3: Order Summary -->
+          <div class="checkout-step-block summary-block">
+            <div class="modal-summary-line">
+              <span>Items Total:</span>
               <strong id="modal-subtotal">$0.00</strong>
             </div>
-            <div class="summary-row" id="modal-discount-row" style="display:none; color:#10b981;">
+            <div class="modal-summary-line discount-color" id="modal-discount-row" style="display:none;">
               <span>Promo Discount (WELCOME15):</span>
               <strong id="modal-discount">-$0.00</strong>
             </div>
-            <div class="summary-row">
+            <div class="modal-summary-line">
               <span>Worldwide Shipping:</span>
               <strong id="modal-shipping">$33.00</strong>
             </div>
-            <div class="summary-row total">
+            <div class="modal-summary-line total">
               <span>Total Payment:</span>
-              <strong id="modal-total" style="color:#d4af37; font-size:1.3rem;">$0.00</strong>
+              <strong id="modal-total">$0.00</strong>
             </div>
           </div>
 
-          <div class="checkout-submit-row">
-            <button type="submit" class="btn btn-primary btn-block submit-order-btn" id="confirm-order-btn">
-              🔒 Confirm & Place Order Now
+          <div class="checkout-submit-wrap">
+            <button type="submit" class="pill-btn primary-pill btn-block" id="confirm-order-btn">
+              <span>Confirm & Place Order Now</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
             </button>
           </div>
+
         </form>
 
         <!-- Order Success State -->
         <div class="order-success-state" id="order-success-state" style="display:none;">
-          <div class="success-icon">✓</div>
-          <h3>Order Received Successfully!</h3>
-          <p class="order-id-display">Order Reference: <strong id="placed-order-id">HL-9824</strong></p>
-          <p class="order-note">
-            Thank you for choosing Haji Leather. A confirmation has been generated and our master craftsmen will begin drafting your tailored pieces.
-          </p>
-          <div class="success-actions">
-            <a href="#" class="btn btn-primary" id="success-wa-confirm-btn" target="_blank">
-              Send Order Details to WhatsApp (+92 304 6251824)
+          <div class="success-seal">✓</div>
+          <span class="success-badge-mono">ORDER CONFIRMED</span>
+          <h3 class="success-title">Thank You, Order Placed!</h3>
+          <p class="order-ref-text">Order Reference Number: <strong id="placed-order-id">HL-9824</strong></p>
+          
+          <div class="success-receipt-box">
+            <p id="success-method-text">Payment Method: <strong>Payoneer / Citibank USA Direct Transfer</strong></p>
+            <p id="success-proof-status">Screenshot Proof: <span class="proof-attached-tag">Attached ✓</span></p>
+            <p class="success-note">
+              Our Master Craftsmen are preparing your order. For immediate priority dispatch and custom measurements verification, tap the button below to forward your receipt to our WhatsApp:
+            </p>
+          </div>
+
+          <div class="success-actions-col">
+            <a href="#" class="pill-btn wa-pill btn-block" id="success-wa-confirm-btn" target="_blank">
+              <span>Forward Order & Screenshot on WhatsApp (+92 304 6251824)</span>
             </a>
-            <button class="btn btn-secondary" id="success-close-btn">Continue Shopping</button>
+            <button type="button" class="pill-btn secondary-pill btn-block" id="success-close-btn">
+              <span>Back to Atelier</span>
+            </button>
           </div>
         </div>
 
       </div>
+
     </div>
   </div>
   <div class="checkout-backdrop" id="checkout-backdrop"></div>
 
-  <!-- Product Detail / Quick View Modal -->
-  <div class="product-modal" id="product-modal">
+  <!-- Product Quick View Modal -->
+  <div class="product-modal" id="product-modal" role="dialog" aria-modal="true">
     <div class="product-modal-dialog">
-      <button class="modal-close-btn" id="product-modal-close">&times;</button>
+      <button class="modal-close-btn" id="product-modal-close" aria-label="Close product view">&times;</button>
+      
       <div class="product-modal-grid">
-        
-        <!-- Left: Image Gallery with Thumbnails -->
-        <div class="product-modal-gallery">
-          <div class="main-image-wrap">
+        <!-- Gallery -->
+        <div class="modal-gallery-wrap">
+          <div class="modal-main-image-box">
             <img src="" alt="" id="modal-main-image" class="modal-main-img">
-            <span class="modal-badge-tag" id="modal-product-badge">100% GENUINE LEATHER</span>
+            <span class="modal-badge-tag" id="modal-product-badge">SIALKOT ATELIER</span>
           </div>
-          <div class="modal-thumbnails" id="modal-thumbnails">
-            <!-- Thumbnails inserted here -->
-          </div>
+          <div class="modal-thumbnails" id="modal-thumbnails"></div>
         </div>
 
-        <!-- Right: Details, Sizes, Add to Cart -->
-        <div class="product-modal-info">
-          <span class="modal-category" id="modal-category">Category</span>
+        <!-- Details -->
+        <div class="modal-info-wrap">
+          <span class="modal-category" id="modal-category">CATEGORY</span>
           <h2 class="modal-title" id="modal-title">Product Title</h2>
           
-          <div class="modal-rating-row">
-            <div class="stars" id="modal-stars">★★★★★</div>
-            <span class="rating-text" id="modal-rating-text">4.9 (28 reviews)</span>
-            <span class="in-stock-tag">✓ In Stock & Ready to Ship</span>
+          <div class="modal-rating-line">
+            <span class="rating-stars">★★★★★</span>
+            <span class="rating-val" id="modal-rating-text">4.9 (28 reviews)</span>
+            <span class="status-in-stock">✓ Ready to Handcraft</span>
           </div>
 
-          <div class="modal-price-row">
-            <span class="modal-price" id="modal-price">$0.00</span>
-            <span class="modal-original-price" id="modal-original-price">$0.00</span>
-            <span class="modal-save-pill" id="modal-save-pill">SAVE 25%</span>
+          <div class="modal-price-line">
+            <span class="modal-current-price" id="modal-price">$0.00</span>
+            <span class="modal-strike-price" id="modal-original-price">$0.00</span>
+            <span class="save-tag">SAVE 25%</span>
           </div>
 
-          <p class="modal-description" id="modal-description">
-            Handcrafted from competition-grade genuine leather with heavy-duty solid brass hardware and ergonomic comfort cut.
+          <p class="modal-desc" id="modal-description">
+            Handcrafted from competition-grade genuine leather hide with heavy-duty solid brass hardware and ergonomic comfort cut.
           </p>
 
-          <!-- Specifications Bullet Points -->
-          <div class="modal-specs">
-            <div class="spec-item"><strong>Leather:</strong> 100% Genuine Full-Grain Hide</div>
-            <div class="spec-item"><strong>Hardware:</strong> Heavy-Duty YKK Brass Zippers</div>
-            <div class="spec-item"><strong>Lining:</strong> Breathable Quilted Satin / Mesh</div>
-            <div class="spec-item"><strong>Origin:</strong> Handcrafted in Sialkot, Pakistan</div>
+          <!-- Specifications Table -->
+          <div class="modal-specs-grid">
+            <div class="spec-cell"><strong>Leather:</strong> 100% Genuine Full-Grain</div>
+            <div class="spec-cell"><strong>Fasteners:</strong> Solid Brass YKK Zippers</div>
+            <div class="spec-cell"><strong>Lining:</strong> Quilted Satin / Breathable Mesh</div>
+            <div class="spec-cell"><strong>Origin:</strong> Sialkot Master Craftsmen</div>
           </div>
 
           <!-- Size Selector -->
-          <div class="modal-size-selector">
-            <div class="size-header">
+          <div class="modal-size-block">
+            <div class="size-label-row">
               <label>Select Size:</label>
-              <button class="open-size-chart-btn" id="modal-open-size-guide">📏 Size Chart</button>
+              <button type="button" class="open-chart-btn" id="modal-open-size-guide">📏 Size Chart</button>
             </div>
-            <div class="size-options-grid" id="modal-size-options">
-              <!-- Sizes inserted here -->
-            </div>
+            <div class="modal-sizes-grid" id="modal-size-options"></div>
           </div>
 
-          <!-- Quantity Selector -->
-          <div class="modal-qty-row">
+          <!-- Quantity Stepper -->
+          <div class="modal-qty-block">
             <label>Quantity:</label>
-            <div class="qty-control">
-              <button class="qty-btn" id="qty-minus">-</button>
+            <div class="qty-pill-stepper">
+              <button type="button" class="qty-step-btn" id="qty-minus">-</button>
               <input type="number" id="qty-input" value="1" min="1" max="10">
-              <button class="qty-btn" id="qty-plus">+</button>
+              <button type="button" class="qty-step-btn" id="qty-plus">+</button>
             </div>
           </div>
 
-          <!-- Action Buttons -->
-          <div class="modal-actions-row">
-            <button class="btn btn-primary btn-block modal-add-cart-btn" id="modal-add-to-cart-btn">
-              Add to Shopping Cart
+          <!-- Actions -->
+          <div class="modal-actions-block">
+            <button type="button" class="pill-btn primary-pill btn-block" id="modal-add-to-cart-btn">
+              <span>Add to Bag</span>
             </button>
-            <a href="#" target="_blank" class="btn btn-wa-modal btn-block" id="modal-whatsapp-inquiry-btn">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zM12.05 20.2c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.66.31-.23.25-.87.85-.87 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.07-.12-.23-.19-.48-.31z"/></svg>
-              Inquire / Custom Fit on WhatsApp
+            <a href="#" target="_blank" class="pill-btn wa-pill btn-block" id="modal-whatsapp-inquiry-btn">
+              <span>Inquire / Custom Fit on WhatsApp</span>
             </a>
           </div>
 
-          <!-- Accepted Payment Methods Badge -->
-          <div class="modal-trust-box">
-            <span>Guaranteed Safe Checkout:</span>
-            <div class="trust-pill-list">
-              <span class="trust-pill">Stripe</span>
-              <span class="trust-pill">Visa</span>
-              <span class="trust-pill">Mastercard</span>
-              <span class="trust-pill">Apple Pay</span>
-              <span class="trust-pill">Google Pay</span>
-              <span class="trust-pill">COD</span>
-            </div>
+          <div class="modal-payment-assurance">
+            <span>Direct Payment Available: Payoneer Citibank USA • Wire • Stripe • COD</span>
           </div>
-
         </div>
-
       </div>
+
     </div>
   </div>
   <div class="product-modal-backdrop" id="product-modal-backdrop"></div>
 
-  <!-- Size Guide Modal -->
-  <div class="size-guide-modal" id="size-guide-modal">
+  <!-- Precision Size Guide Modal -->
+  <div class="size-guide-modal" id="size-guide-modal" role="dialog" aria-modal="true">
     <div class="size-guide-dialog">
       <div class="size-guide-header">
-        <h3>Standard Sizing & Measurement Guide</h3>
+        <h3>Precision Sizing & Measurement Chart</h3>
         <button class="modal-close-btn" id="size-guide-close">&times;</button>
       </div>
       <div class="size-guide-body">
-        <p>All measurements are in inches. If you are between sizes, we recommend sizing up for comfortable layering.</p>
-        <div class="table-responsive">
-          <table class="size-table">
+        <p class="chart-subtext">All measurements in inches. If you plan to layer hoodies or knitwear, sizing up one size is recommended.</p>
+        <div class="table-wrap">
+          <table class="editorial-table">
             <thead>
               <tr>
                 <th>Size</th>
@@ -1039,8 +1139,8 @@
             </tbody>
           </table>
         </div>
-        <div class="size-guide-footer-note">
-          <p>💡 <strong>Custom Sizing:</strong> Send us your exact chest, shoulder, and arm measurements on WhatsApp (+92 304 6251824) for a 100% made-to-measure bespoke piece with no extra alteration fee!</p>
+        <div class="size-guide-note">
+          <p>✂️ <strong>100% Custom Bespoke Fit:</strong> You can send your exact chest, shoulder, arm length, and torso height over WhatsApp (+92 304 6251824) for a tailor-made bespoke commission at no extra charge!</p>
         </div>
       </div>
     </div>
@@ -1048,27 +1148,24 @@
   <div class="size-guide-backdrop" id="size-guide-backdrop"></div>
 
   <!-- Wishlist Drawer -->
-  <div class="wishlist-drawer" id="wishlist-drawer">
+  <aside class="wishlist-drawer" id="wishlist-drawer" aria-label="Saved Wishlist">
     <div class="wishlist-header">
       <div class="wishlist-title">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>
-        <h3>Your Saved Wishlist (<span id="wishlist-drawer-count">0</span>)</h3>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>
+        <h3>Saved Wishlist (<span id="wishlist-drawer-count">0</span>)</h3>
       </div>
-      <button class="drawer-close-btn" id="wishlist-drawer-close">&times;</button>
+      <button class="cart-close-pill" id="wishlist-drawer-close">&times;</button>
     </div>
     <div class="wishlist-items-wrap" id="wishlist-items-wrap">
-      <!-- Items dynamically populated -->
       <div class="empty-wishlist-state" id="empty-wishlist-state">
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path></svg>
-        <h4>No saved items yet</h4>
-        <p>Click the heart icon on any jacket to save it to your wishlist.</p>
+        <p>No saved garments yet. Tap the heart on any item to save it.</p>
       </div>
     </div>
-  </div>
+  </aside>
   <div class="wishlist-backdrop" id="wishlist-backdrop"></div>
 
   <!-- Toast Notification -->
-  <div class="toast-notification" id="toast-notification">Item added to cart!</div>
+  <div class="toast-notification" id="toast-notification">Item added to bag</div>
 
   <!-- Scripts -->
   <script src="products-data.js"></script>
