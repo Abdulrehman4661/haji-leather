@@ -1505,9 +1505,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Hero Feature Jacket Quick View helper
-  window.activeHeroFeatureId = 'HL-PP001';
+  window.activeHeroFeatureId = 'HL-PP011';
   window.openHeroFeatureQuickView = function() {
-    openProductQuickView(window.activeHeroFeatureId || 'HL-PP001');
+    openProductQuickView(window.activeHeroFeatureId || 'HL-PP011');
   };
 
   function updateCategoryCounts() {
@@ -1515,22 +1515,19 @@ document.addEventListener('DOMContentLoaded', () => {
     if (countAll) countAll.textContent = rawProducts.length;
 
     const countChicity = document.getElementById('count-chicity');
-    if (countChicity) countChicity.textContent = rawProducts.filter(p => p.category === 'Chi City Series').length;
+    if (countChicity) countChicity.textContent = rawProducts.filter(p => p.category === 'Chi City & Archives').length;
 
     const countSoda = document.getElementById('count-soda');
     if (countSoda) countSoda.textContent = rawProducts.filter(p => p.category === 'Soda Club & Heritage').length;
 
-    const countPlush = document.getElementById('count-plush');
-    if (countPlush) countPlush.textContent = rawProducts.filter(p => p.category === 'Plush & Encrusted').length;
+    const countNba = document.getElementById('count-nba');
+    if (countNba) countNba.textContent = rawProducts.filter(p => p.category === 'NBA & Championship').length;
 
     const countWindy = document.getElementById('count-windy');
     if (countWindy) countWindy.textContent = rawProducts.filter(p => p.category === 'Windy City & Sounds').length;
 
-    const countNba = document.getElementById('count-nba');
-    if (countNba) countNba.textContent = rawProducts.filter(p => p.category === 'NBA & Championship').length;
-
-    const countWomen = document.getElementById('count-women');
-    if (countWomen) countWomen.textContent = rawProducts.filter(p => p.category === "Women's Pelle Pelle").length;
+    const countPlush = document.getElementById('count-plush');
+    if (countPlush) countPlush.textContent = rawProducts.filter(p => p.category === 'Plush & Encrusted').length;
   }
 
   // Boot
