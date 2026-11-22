@@ -2769,15 +2769,12 @@ button {
 }
 
 .social-circle {
-  width: 36px;
-  height: 36px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
   background: var(--dark-card);
   border: 1px solid rgba(230, 211, 184, 0.3);
   color: var(--text-offwhite);
-  font-family: var(--font-mono);
-  font-size: 11px;
-  font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2785,29 +2782,65 @@ button {
   transition: all var(--transition-fast);
 }
 
-.social-circle:hover {
-  background: var(--accent-cream);
-  color: var(--dark-charcoal);
+.social-circle svg {
+  display: block;
+  flex-shrink: 0;
+}
+
+.social-circle.wa-circle {
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(37, 211, 102, 0.45);
+}
+
+.social-circle.wa-circle svg {
+  fill: #ffffff;
+}
+
+.social-circle.wa-circle:hover {
+  transform: translateY(-2px) scale(1.08);
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.7);
+  color: #ffffff;
 }
 
 .social-circle.insta-circle {
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%),
-              linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
   border: 1.5px solid rgba(255, 255, 255, 0.4);
   color: #ffffff;
   box-shadow: 0 2px 8px rgba(220, 39, 67, 0.45);
 }
 
+.social-circle.insta-circle svg {
+  stroke: #ffffff;
+}
+
 .social-circle.insta-circle:hover {
   transform: translateY(-2px) scale(1.08);
-  box-shadow: 0 4px 14px rgba(220, 39, 67, 0.7);
+  box-shadow: 0 4px 14px rgba(220, 39, 67, 0.75);
   color: #ffffff;
 }
 
-.social-circle.wa-circle:hover {
-  background: var(--wa-green);
+.social-circle.email-circle {
+  background: rgba(230, 211, 184, 0.12);
+  border: 1.5px solid rgba(230, 211, 184, 0.4);
+  color: var(--accent-cream);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.social-circle.email-circle svg {
+  stroke: var(--accent-cream);
+}
+
+.social-circle.email-circle:hover {
+  transform: translateY(-2px) scale(1.08);
+  background: var(--accent-cream);
   color: #000000;
-  border-color: var(--wa-green);
+  box-shadow: 0 4px 14px rgba(230, 211, 184, 0.5);
+}
+
+.social-circle.email-circle:hover svg {
+  stroke: #000000;
 }
 
 .col-heading {
