@@ -263,6 +263,14 @@ button {
 }
 
 @media (max-width: 768px) {
+  .site-header {
+    background: rgba(10, 10, 10, 0.96);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(230, 211, 184, 0.18);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.65);
+  }
+
   .header-inner {
     height: 60px;
     gap: 10px;
@@ -837,6 +845,10 @@ button {
 }
 
 @media (max-width: 768px) {
+  .hero-slider-section {
+    padding-top: 60px;
+  }
+
   .hero-slider-wrap {
     aspect-ratio: 16 / 9;
     min-height: auto;
@@ -1684,13 +1696,13 @@ button {
    ========================================================================== */
 .editorial-products-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 28px;
-  row-gap: 36px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  row-gap: 20px;
   width: 100%;
 }
 
-@media (min-width: 540px) {
+@media (min-width: 600px) {
   .editorial-products-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 22px;
@@ -2055,6 +2067,87 @@ button {
 .card-whatsapp-btn:hover {
   background: var(--wa-green);
   color: var(--dark-charcoal);
+}
+
+@media (max-width: 599px) {
+  .editorial-products-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px;
+    row-gap: 16px;
+  }
+  .card-editorial-body {
+    padding: 10px 8px 12px;
+  }
+  .card-cat-label {
+    font-size: 8.5px;
+    margin-bottom: 3px;
+  }
+  .card-garment-title {
+    font-size: 12px;
+    min-height: 32px;
+    line-height: 1.3;
+    margin-bottom: 6px;
+  }
+  .card-star-row {
+    font-size: 9.5px;
+    margin-bottom: 6px;
+    gap: 3px;
+  }
+  .card-price-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    margin-bottom: 8px;
+  }
+  .card-price-val {
+    font-size: 15px;
+  }
+  .card-strike-val {
+    font-size: 11px;
+  }
+  .card-shipping-flag {
+    font-size: 9px;
+    margin-left: 0;
+  }
+  .card-size-pills {
+    gap: 3px;
+    margin-bottom: 8px;
+  }
+  .size-pill-btn {
+    font-size: 9px;
+    padding: 2px 5px;
+  }
+  .card-actions-grid {
+    gap: 6px;
+  }
+  .card-cart-btn {
+    padding: 6px 8px;
+    font-size: 11px;
+    min-height: 34px;
+  }
+  .card-whatsapp-btn {
+    width: 34px;
+    height: 34px;
+  }
+  .card-whatsapp-btn svg {
+    width: 16px;
+    height: 16px;
+  }
+  .card-wish-btn {
+    width: 28px;
+    height: 28px;
+    top: 6px;
+    right: 6px;
+  }
+  .card-badges-stack {
+    top: 6px;
+    left: 6px;
+    gap: 3px;
+  }
+  .card-pill-tag {
+    font-size: 8px;
+    padding: 2px 5px;
+  }
 }
 
 /* Loading & Empty State */
