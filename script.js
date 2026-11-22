@@ -1671,6 +1671,32 @@ document.addEventListener('DOMContentLoaded', () => {
     startAutoPlay();
   }
 
+  // 12. DYNAMIC HEADER TRANSPARENCY OVER HERO SLIDES
+  // ==========================================================================
+  function initHeaderScroll() {
+    const siteHeader = document.getElementById('site-header');
+    if (!siteHeader) return;
+
+    let ticking = false;
+    function updateHeader() {
+      if (window.scrollY > 40) {
+        siteHeader.classList.add('header-scrolled');
+      } else {
+        siteHeader.classList.remove('header-scrolled');
+      }
+      ticking = false;
+    }
+
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        window.requestAnimationFrame(updateHeader);
+        ticking = true;
+      }
+    }, { passive: true });
+
+    updateHeader();
+  }
+
   // Boot
   updateCategoryCounts();
   renderProducts();
@@ -1678,4 +1704,5 @@ document.addEventListener('DOMContentLoaded', () => {
   updateWishlistUI();
   initVarsityWardrobeRack();
   initHeroCampaignSlider();
+  initHeaderScroll();
 });

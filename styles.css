@@ -57,6 +57,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 72px;
   font-size: 16px;
   -webkit-text-size-adjust: 100%;
   overflow-x: clip;
@@ -229,18 +230,28 @@ button {
 }
 
 /* ==========================================================================
-   MAIN EDITORIAL HEADER
+   MAIN EDITORIAL HEADER (TRANSPARENT LUXURY OVERLAY OVER HERO SLIDES)
    ========================================================================== */
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 999;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: linear-gradient(180deg, rgba(6, 6, 6, 0.88) 0%, rgba(6, 6, 6, 0.45) 60%, rgba(6, 6, 6, 0) 100%);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: none;
+  transition: background 0.35s ease, backdrop-filter 0.35s ease, -webkit-backdrop-filter 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.site-header.header-scrolled {
   background: rgba(10, 10, 10, 0.96);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid rgba(230, 211, 184, 0.18);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.65);
-  transition: background var(--transition-fast), box-shadow var(--transition-fast);
 }
 
 .header-inner {
@@ -727,7 +738,7 @@ button {
   max-width: 100%;
   margin: 0;
   aspect-ratio: 16 / 9;
-  max-height: 85vh;
+  max-height: none;
   min-height: auto;
   background-color: #000000;
   overflow: hidden;
@@ -777,7 +788,7 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center center;
+  object-position: center top;
   display: block;
   background-color: #000000;
   image-rendering: -webkit-optimize-contrast;
@@ -835,6 +846,7 @@ button {
 
   .hero-slide-media {
     object-fit: cover;
+    object-position: center top;
     background: #000000;
   }
 
